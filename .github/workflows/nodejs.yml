@@ -35,6 +35,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Run tests with --detectOpenHandles flag
+      # Step 4: Compile TypeScript
+      - name: Compile TypeScript
+        run: npm run build  # This assumes you have a "build" script in package.json that runs "tsc"
+
+      # Step 5: Run tests with --detectOpenHandles flag
       - name: Run tests
         run: npm test -- --detectOpenHandles

@@ -24,6 +24,7 @@
   },
   "scripts": {
     "test": "jest",
+    "build": "tsc",
     "clear": "rimraf build jobsdb_scrape_logs jobsdb_scrape_results.txt"
   }
 }
