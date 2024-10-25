@@ -11,34 +11,30 @@ on:
 
 jobs:
   test:
-    # Run the job on Ubuntu, macOS, and Windows
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-
-    # Run the job on the matrix OS
     runs-on: ${{ matrix.os }}
-
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Step 2: Set up Node.js (ensure >= 18.x)
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          # Use the latest Node.js version that is >= 18
           node-version: '>=18'
 
-      # Step 3: Install dependencies
+      # Set the CI environment variable to true
+      - name: Set CI environment variable
+        if: runner.os == 'Windows'
+        run: |
+          echo "CI=true" >> $GITHUB_ENV
+
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-optional
 
-      # Step 4: Compile TypeScript
       - name: Compile TypeScript
-        run: npm run build  # This assumes you have a "build" script in package.json that runs "tsc"
+        run: npm run build
 
-      # Step 5: Run tests with --detectOpenHandles flag
       - name: Run tests
         run: npm test -- --detectOpenHandles
