@@ -31,7 +31,7 @@ jobs:
           echo "CI=true" >> $GITHUB_ENV
 
       - name: Install dependencies
-        run: npm ci install -omit=optional --loglevel verbose
+        run: npm ci -omit=optional --loglevel verbose
         timeout-minutes: 10
 
       - name: Compile TypeScript
