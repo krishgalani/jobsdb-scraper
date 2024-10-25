@@ -11,7 +11,7 @@ on:
 
 jobs:
   test:
-    # Run the tests on Ubuntu, macOS, and Windows
+    # Run the job on Ubuntu, macOS, and Windows
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
@@ -24,12 +24,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Step 2: Set up Node.js based on the version specified in package.json
+      # Step 2: Set up Node.js (ensure >= 18.x)
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          # Use the Node.js version specified in package.json (engines)
-          node-version-file: './package.json'
+          # Use the latest Node.js version that is >= 18
+          node-version: '>=18'
 
       # Step 3: Install dependencies
       - name: Install dependencies
