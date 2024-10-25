@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@types/double-ended-queue": "^2.1.7",
-    "@types/jest": "^29.5.13",
+    "@types/jest": "^29.5.14",
     "@types/tmp": "^0.2.6",
     "@types/uuid": "^10.0.0",
     "double-ended-queue": "^2.1.0-0",
@@ -18,11 +18,12 @@
     "rimraf": "^6.0.1",
     "ts-jest": "^29.2.5"
   },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "scripts": {
     "test": "jest",
     "clear": "rimraf build jobsdb_scrape_logs jobsdb_scrape_results.txt"
-  },
-  "engines": {
-    "node": ">=14.14.0"
   }
 }

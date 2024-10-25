@@ -1,0 +1,40 @@
+name: Node.js CI
+
+# Trigger the workflow on push or pull request to the master branch
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    # Run the tests on Ubuntu, macOS, and Windows
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    # Run the job on the matrix OS
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Node.js based on the version specified in package.json
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          # Use the Node.js version specified in package.json (engines)
+          node-version-file: './package.json'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Run tests with --detectOpenHandles flag
+      - name: Run tests
+        run: npm test -- --detectOpenHandles
