@@ -61,12 +61,11 @@ export class TempFile {
       }
       if (os.platform() === 'win32' && path.parse(this.tempFilePath).root != path.parse(newFilePath).root){
         await this.copyFile(newFilePath)
-        return
+      } else {
+        // Rename the temporary file to the new file path
+        fs.renameSync(this.tempFilePath, newFilePath);
       }
-      // Rename the temporary file to the new file path
-      fs.renameSync(this.tempFilePath, newFilePath);
       // console.log(`Temporary file renamed to: ${newFilePath}`);
-      
       // Update the file path
       this.tempFilePath = newFilePath;
     } catch (error) {
