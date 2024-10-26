@@ -14,8 +14,6 @@ import * as os from 'os';
 import * as path from 'path';
 import { Mutex } from 'async-mutex';
 import { reverseString } from './utils';
-import { file } from 'tmp';
-const { v4: uuidv4 } = require('uuid');
 export class TempFile {
   private tempFilePath: string | undefined;
   private mutex: Mutex;
@@ -61,6 +59,10 @@ export class TempFile {
       if (!fs.existsSync(dirPath)) {
         fs.mkdirSync(dirPath, { recursive: true });
       }
+      if (os.platform() === 'win32' && path.parse(this.tempFilePath).root != path.parse(newFilePath).root){
+        await this.copyFile(newFilePath)
+        return
+      }
       // Rename the temporary file to the new file path
       fs.renameSync(this.tempFilePath, newFilePath);
       // console.log(`Temporary file renamed to: ${newFilePath}`);
@@ -68,7 +70,6 @@ export class TempFile {
       // Update the file path
       this.tempFilePath = newFilePath;
     } catch (error) {
-      console.error('Error renaming the temporary file:', error);
       throw error; // Re-throw to indicate failure
     } finally {
       release(); // Release the mutex lock
@@ -133,4 +134,29 @@ export class TempFile {
     }
     return this.tempFilePath;
   }
+  /**
+   * Copies the temporary file to a new destination path.
+   * @param destinationPath - The path to copy the file to.
+   */
+  public async copyFile(destinationPath: string): Promise<void> {
+    const release = await this.mutex.acquire();
+    try {
+      if (!this.tempFilePath) {
+        throw new Error('Temporary file is not created.');
+      }
+      const dirPath = path.dirname(destinationPath);
+      // Ensure the directory exists
+      if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath, { recursive: true });
+      }
+      // Copy the file to the new destination
+      fs.copyFileSync(this.tempFilePath, destinationPath);
+    } catch (error) {
+      console.error('Error copying the file:', error);
+      throw error; // Re-throw to indicate failure
+    } finally {
+      release(); // Release the mutex lock
+    }
+  }
 }
+
