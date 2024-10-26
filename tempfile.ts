@@ -49,7 +49,6 @@ export class TempFile {
    */
   public async renameTempFile(newFilePath: string): Promise<void> {
     const release = await this.mutex.acquire();
-
     try {
       if (!this.tempFilePath) {
         throw new Error('Temporary file is not created.');
@@ -60,7 +59,7 @@ export class TempFile {
         fs.mkdirSync(dirPath, { recursive: true });
       }
       if (os.platform() === 'win32' && path.parse(this.tempFilePath).root != path.parse(newFilePath).root){
-        await this.copyFile(newFilePath)
+        await this.copyFileUnsafe(newFilePath)
       } else {
         // Rename the temporary file to the new file path
         fs.renameSync(this.tempFilePath, newFilePath);
@@ -156,6 +155,27 @@ export class TempFile {
     } finally {
       release(); // Release the mutex lock
     }
+  }
+  /**
+   * Copies the temporary file to a new destination path. No use of mutex to protect file.
+   * @param destinationPath - The path to copy the file to.
+   */
+  public async copyFileUnsafe(destinationPath: string): Promise<void> {
+    try {
+      if (!this.tempFilePath) {
+        throw new Error('Temporary file is not created.');
+      }
+      const dirPath = path.dirname(destinationPath);
+      // Ensure the directory exists
+      if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath, { recursive: true });
+      }
+      // Copy the file to the new destination
+      fs.copyFileSync(this.tempFilePath, destinationPath);
+    } catch (error) {
+      console.error('Error copying the file:', error);
+      throw error; // Re-throw to indicate failure
+    } 
   }
 }
 
