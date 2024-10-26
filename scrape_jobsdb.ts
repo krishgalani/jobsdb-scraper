@@ -51,7 +51,7 @@ function waitForPort(process: any): Promise<number>{
 }
 //Init cloudnodes
 function startServerProcess(name: string): any {
-  const serverProcess = spawn('ts-node', ['cloudnode']);
+  const serverProcess = spawn('node', ['build/cloudnode']);
   
   serverProcess.on('close', (code: number | null) => {
     if(code !== null){
