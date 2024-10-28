@@ -16,7 +16,7 @@ import { Mutex } from 'async-mutex';
 import { arePathsOnDifferentDrives, reverseString } from './utils';
 import { dir } from 'tmp';
 export class TempFile {
-  private tempFilePath: string | undefined;
+  private tempFilePath: string ;
   private mutex: Mutex;
   constructor(file: any) {
     this.tempFilePath = file.name
@@ -31,7 +31,7 @@ export class TempFile {
     const release = await this.mutex.acquire();
 
     try {
-      if (!this.tempFilePath) {
+      if (!fs.existsSync(this.tempFilePath)) {
         throw new Error('Temporary file is not created.');
       }
 
@@ -51,7 +51,7 @@ export class TempFile {
   public async renameTempFile(newFilePath: string): Promise<void> {
     const release = await this.mutex.acquire();
     try {
-      if (!this.tempFilePath) {
+      if (!fs.existsSync(this.tempFilePath)) {
         throw new Error('Temporary file is not created.');
       }
       const dirPath = path.dirname(newFilePath);
@@ -82,7 +82,7 @@ export class TempFile {
     const release = await this.mutex.acquire();
 
     try {
-      if (!this.tempFilePath) {
+      if (!fs.existsSync(this.tempFilePath)) {
         throw new Error('Temporary file is not created.');
       }
 
@@ -127,7 +127,7 @@ export class TempFile {
    * @returns The path to the temporary file.
    */
   public getFilePath(): string {
-    if (!this.tempFilePath) {
+    if (!fs.existsSync(this.tempFilePath)) {
       throw new Error('Temporary file is not created.');
     }
     return this.tempFilePath;
@@ -139,7 +139,7 @@ export class TempFile {
   public async copyFile(destinationPath: string): Promise<void> {
     const release = await this.mutex.acquire();
     try {
-      if (!this.tempFilePath) {
+      if (!fs.existsSync(this.tempFilePath)) {
         throw new Error('Temporary file is not created.');
       }
       const dirPath = path.dirname(destinationPath);
@@ -162,7 +162,7 @@ export class TempFile {
    */
   public async copyFileUnsafe(destinationPath: string): Promise<void> {
     try {
-      if (!this.tempFilePath) {
+      if (!fs.existsSync(this.tempFilePath)) {
         throw new Error('Temporary file is not created.');
       }
       const dirPath = path.dirname(destinationPath);
@@ -173,7 +173,7 @@ export class TempFile {
       // Copy the file to the new destination
       fs.copyFileSync(this.tempFilePath, destinationPath);
     } catch (error) {
-      console.error('Error copying the file:', error);
+      console.error(error);
       throw error; // Re-throw to indicate failure
     } 
   }
