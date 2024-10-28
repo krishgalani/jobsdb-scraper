@@ -17,7 +17,7 @@ A few cool highlights about this scraper:
 git clone https://github.com/krishgalani/jobsdb-scraper.git
 cd jobsdb-scraper
 npm install 
-npm build
+npm run build
 ```
 
 ## Usage

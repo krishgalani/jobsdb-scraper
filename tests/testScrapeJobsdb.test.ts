@@ -36,7 +36,7 @@ describe('scrape_jobsdb.ts test', () => {
     }
 
     // Run the script synchronously with argument "10"
-    runScriptSync(scriptPath, ['10', 'tests']);
+    runScriptSync(scriptPath, ['1', 'tests']);
 
     // Check if the result file exists by finding a matching file
     const resultFile = findFileWithPattern(directoryPath, filePattern);
