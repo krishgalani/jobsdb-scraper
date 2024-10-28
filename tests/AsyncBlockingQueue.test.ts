@@ -1,4 +1,4 @@
-import { AsyncBlockingQueue } from '../utils';
+import { AsyncBlockingQueue } from '../src/utils';
 
 describe('AsyncBlockingQueue', () => {
   let queue: AsyncBlockingQueue<number>;

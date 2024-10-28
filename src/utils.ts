@@ -11,8 +11,11 @@
 
 import Deque from 'double-ended-queue';
 import * as fs from 'fs';
+import he from 'he'; // You need to install this package
 import * as path from 'path';
 import { createReadStream, createWriteStream , existsSync} from 'fs';
+import {compile} from 'html-to-text'
+export const parseHtml = compile({}); // options passed here
 export async function arePathsOnDifferentDrives(path1 : string, path2 : string) {
   try {
     const stat1 = await fs.promises.stat(path1);

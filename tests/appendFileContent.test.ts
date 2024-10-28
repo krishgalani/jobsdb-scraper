@@ -1,4 +1,4 @@
-import { appendFileContent } from '../utils';
+import { appendFileContent } from '../src/utils';
 import { readFileSync, writeFileSync, unlinkSync, existsSync } from 'fs';
 
 describe('appendFileContent', () => {

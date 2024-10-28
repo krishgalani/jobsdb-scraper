@@ -1,4 +1,4 @@
-import { mergeFiles } from '../utils';
+import { mergeFiles } from '../src/utils';
 import { readFileSync, writeFileSync, unlinkSync } from 'fs';
 
 describe('mergeFiles', () => {

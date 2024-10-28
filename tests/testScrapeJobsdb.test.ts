@@ -27,7 +27,7 @@ describe('scrape_jobsdb.ts test', () => {
 
   // Increase timeout for long-running test
   test('should successfully execute the script and check for result file', () => {
-    const scriptPath = path.join(__dirname, '../scrape_jobsdb.ts');
+    const scriptPath = 'src/scrape_jobsdb.ts';
 
     // Find and delete existing matching file if it exists
     const existingFile = findFileWithPattern(directoryPath, filePattern);
@@ -41,5 +41,13 @@ describe('scrape_jobsdb.ts test', () => {
     // Check if the result file exists by finding a matching file
     const resultFile = findFileWithPattern(directoryPath, filePattern);
     expect(resultFile).not.toBeNull(); // Expect that a matching file was found
+  });
+
+  // Remove the file after all tests have completed
+  afterAll(() => {
+    const resultFile = findFileWithPattern(directoryPath, filePattern);
+    if (resultFile && fs.existsSync(resultFile)) {
+      fs.unlinkSync(resultFile);
+    }
   });
 });

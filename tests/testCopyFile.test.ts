@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { TempFile } from '../tempfile'; // Adjust the path if needed
+import { TempFile } from '../src/tempfile'; // Adjust the path if needed
 import {fileSync} from "tmp"
 describe('TempFile - copyFile', () => {
   let tempFile: TempFile;

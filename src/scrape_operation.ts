@@ -11,7 +11,7 @@
 
 import { ICookie } from '@ulixee/unblocked-specification/agent/net/ICookie';
 import Hero from '@ulixee/hero';
-import { AsyncBlockingQueue} from './utils';
+import { AsyncBlockingQueue, parseHtml} from './utils';
 import { v4 as uuidv4 } from 'uuid';
 import Semaphore from 'semaphore-async-await'
 
@@ -194,7 +194,7 @@ export class ScrapeOperation {
                         return [jobId, null, `Error Status ${await response.status} on job fetch for p${pageArgs.number}`];
                     }
                     const responseJson : any = await response.json()
-                    // await this.log(responseJson)
+                    responseJson.data.jobDetails.job.content = parseHtml(responseJson.data.jobDetails.job.content)
                     return [jobId, responseJson.data.jobDetails, null];
                 } catch (e: any) {
                     return [jobId, null, e.toString()];

@@ -53,7 +53,7 @@ function waitForPort(process: any): Promise<number>{
 }
 //Init cloudnodes
 function startServerProcess(name: string): any {
-  const serverProcess = spawn('node', ['build/cloudnode']);
+  const serverProcess = spawn('node', ['build/src/cloudnode']);
   
   serverProcess.on('close', (code: number | null) => {
     if(code !== null){
@@ -78,7 +78,7 @@ function startServerProcess(name: string): any {
 (async () => {
   let encountered_error = false;
   let totalPagesToScrape = 0
-  let resultsDir = ".";
+  let resultsDir = "./jobsdb_scrape_results";
   let numPages;
   try { 
     const args = process.argv.slice(2); // Get all the arguments passed after "node script.js"
@@ -110,7 +110,7 @@ function startServerProcess(name: string): any {
     }
     //Remove old logs (if they exist)
     if(enableLogging){
-      clean_dir('jobsdb_scrape_logs')
+      clean_dir('../jobsdb_scrape_logs')
     }
     //Start cloudnodes
     for (let i = 0; i < numCloudNodes; i++) {
@@ -128,7 +128,7 @@ function startServerProcess(name: string): any {
       tasks.push(scrapeOperations[i].__call__().catch((err) => {throw err}))
     }
     let scrapeOperationsDone = false
-    console.log(`Scraping the first ${totalPagesToScrape} pages of jobs, warning your computer may run slowly.`)
+    console.log(`Scraping the first ${totalPagesToScrape} pages of jobs.`)
     Promise.all(tasks)
     .catch(err => {
       throw err;
@@ -170,7 +170,7 @@ function startServerProcess(name: string): any {
       await mergedOutFile.writeToFile('}\n]')
       if(!encountered_error){
         const now = new Date();
-        const formattedDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}.${String(now.getMilliseconds()).padStart(3, '0')}`;
+        const formattedDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}-${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}.${String(now.getMilliseconds()).padStart(3, '0')}`;
         const resultPath = path.join(resultsDir,`jobsdb-${numPages}-${formattedDate}.json`)
         await mergedOutFile.renameTempFile(resultPath)
         console.log(`\nResult file saved to ${resultPath} in json format.`)
