@@ -9,10 +9,12 @@
  *  -------------------------------------------------
  */
 
-import {spawn} from 'child_process'
-import {ScrapeOperation, PageArgs, JobArgs} from './scrape_operation'
+import {spawn} from 'child_process';
+import {ScrapeOperation, PageArgs, JobArgs} from './scrape_operation';
+import * as path from 'path';
+import * as fs from 'fs';
 import {clean_dir ,appendFileContent} from './utils';
-import {setGracefulCleanup,fileSync, dirSync} from 'tmp';
+import {setGracefulCleanup,fileSync, dirSync, dir} from 'tmp';
 import { TempFile } from './tempfile';
 import { printProgressBar } from './utils';
 import { sleep } from './utils';
@@ -21,8 +23,8 @@ import { sleep } from './utils';
 setGracefulCleanup()
 const baseUrl = "https://hk.jobsdb.com/jobs"
 const cloudNodeProcesses: any[] = [];
-const numCloudNodes : number = 2; 
-let pageRanges = [[1,500],[501,1000]];
+let numCloudNodes : number = 0; 
+let pageRanges = [[0,0],[0,0]];
 const enableLogging = false
 const tmpDir = dirSync({unsafeCleanup: !enableLogging})
 const mergedOutFile = new TempFile(fileSync({dir : tmpDir.name}))
@@ -74,14 +76,38 @@ function startServerProcess(name: string): any {
 }
 //Main
 (async () => {
-  const args = process.argv.slice(2); // Get all the arguments passed after "node script.js"
-  if (args.length > 0) { 
-    const numPages = parseInt(args[0])
-    pageRanges = [[1,numPages/2],[numPages/2+1,numPages]]
-  }   
   let encountered_error = false;
   let totalPagesToScrape = 0
+  let resultsDir = ".";
+  let numPages;
   try { 
+    const args = process.argv.slice(2); // Get all the arguments passed after "node script.js"
+    if (args.length > 0 && !Number.isNaN(parseInt(args[0])) && parseInt(args[0]) >= 1 && parseInt(args[0]) <= 1000) { 
+      numPages = parseInt(args[0])
+      if (numPages > 10){
+        numCloudNodes = 2
+        pageRanges = [[1,Math.trunc(numPages/2)],[Math.trunc(numPages/2)+1,numPages]]
+      } else {
+        numCloudNodes = 1
+        pageRanges[0] = [1,numPages]
+      }
+      if(args.length > 1){
+        const dirPath = args[1];
+        // Ensure the directory exists
+        if (!fs.existsSync(dirPath) || !fs.statSync(dirPath).isDirectory()) {
+          console.log("The directory specified to save results file to is invalid")
+          encountered_error = true
+          return
+        } else {
+          fs.accessSync(dirPath, fs.constants.W_OK)
+          resultsDir = dirPath
+        }
+      }
+    } else {
+      encountered_error = true
+      console.error("Please enter a valid number of pages to scrape (1-1000)")
+      return
+    }
     //Remove old logs (if they exist)
     if(enableLogging){
       clean_dir('jobsdb_scrape_logs')
@@ -102,7 +128,7 @@ function startServerProcess(name: string): any {
       tasks.push(scrapeOperations[i].__call__().catch((err) => {throw err}))
     }
     let scrapeOperationsDone = false
-    console.log(`Scraping ${totalPagesToScrape} pages of jobs, warning your computer may run slowly and this will take ~10 minutes.`)
+    console.log(`Scraping the first ${totalPagesToScrape} pages of jobs, warning your computer may run slowly.`)
     Promise.all(tasks)
     .catch(err => {
       throw err;
@@ -118,27 +144,37 @@ function startServerProcess(name: string): any {
       printProgressBar(pagesScraped,totalPagesToScrape)
       await sleep(10000)
     }
-  } catch (error) {
+  } catch (error : any) {
     encountered_error = true
-    console.error('scrape.ts:', error);
+    if(error.code === 'EACCES'){
+      console.error("The specified result directory does not have write permissions.")
+    } else {
+      console.error('scrape.ts:', error);
+    }
+    
   } finally {
       //Cleanup results
       await mergedOutFile.writeToFile('[\n')
       for (let i = 0; i < numCloudNodes; i++) {
         if(enableLogging){
-          const logFileSavePath = `./jobsdb_scrape_logs/p${pageRanges[i][0]}-${pageRanges[i][1]}.log`
+          const logFileSavePath = `jobsdb_scrape_logs/p${pageRanges[i][0]}-${pageRanges[i][1]}.log`
           await logFiles[i].renameTempFile(logFileSavePath)
           console.log(`\nLogfile ${i+1} saved to ${logFileSavePath}`)
         }
         await appendFileContent(outFiles[i].getFilePath(),mergedOutFile.getFilePath())
-        cloudNodeProcesses[i].kill('SIGKILL')
+        if(cloudNodeProcesses.length){
+          cloudNodeProcesses[i].kill('SIGKILL')
+        }
       }
       await mergedOutFile.popLine()
       await mergedOutFile.writeToFile('}\n]')
       if(!encountered_error){
-        await mergedOutFile.renameTempFile('jobsdb_scrape_results.txt')
-        console.log(`\nResults saved to jobsdb_scrape_results.txt in json format.`)
+        const now = new Date();
+        const formattedDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}.${String(now.getMilliseconds()).padStart(3, '0')}`;
+        const resultPath = path.join(resultsDir,`jobsdb-${numPages}-${formattedDate}.json`)
+        await mergedOutFile.renameTempFile(resultPath)
+        console.log(`\nResult file saved to ${resultPath} in json format.`)
+        console.log(`Scrape finished in ${Math.floor(Date.now()/1000 - start_time)} seconds`)
       }
-      console.log(`Scrape finished in ${Math.floor(Date.now()/1000 - start_time)} seconds`)
   }
 })();

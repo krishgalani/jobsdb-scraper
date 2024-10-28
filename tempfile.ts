@@ -13,7 +13,8 @@ import * as fs from 'fs';
 import * as os from 'os';
 import * as path from 'path';
 import { Mutex } from 'async-mutex';
-import { reverseString } from './utils';
+import { arePathsOnDifferentDrives, reverseString } from './utils';
+import { dir } from 'tmp';
 export class TempFile {
   private tempFilePath: string | undefined;
   private mutex: Mutex;
@@ -58,10 +59,9 @@ export class TempFile {
       if (!fs.existsSync(dirPath)) {
         fs.mkdirSync(dirPath, { recursive: true });
       }
-      if (os.platform() === 'win32' && path.parse(this.tempFilePath).root != path.parse(newFilePath).root){
+      if (await arePathsOnDifferentDrives(path.resolve(this.tempFilePath), path.resolve(dirPath))){
         await this.copyFileUnsafe(newFilePath)
       } else {
-        // Rename the temporary file to the new file path
         fs.renameSync(this.tempFilePath, newFilePath);
       }
       // console.log(`Temporary file renamed to: ${newFilePath}`);

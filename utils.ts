@@ -13,6 +13,17 @@ import Deque from 'double-ended-queue';
 import * as fs from 'fs';
 import * as path from 'path';
 import { createReadStream, createWriteStream , existsSync} from 'fs';
+export async function arePathsOnDifferentDrives(path1 : string, path2 : string) {
+  try {
+    const stat1 = await fs.promises.stat(path1);
+    const stat2 = await fs.promises.stat(path2);
+
+    // Compare the device IDs (dev property)
+    return stat1.dev !== stat2.dev;
+  } catch (err) {
+    throw err
+  }
+}
 export function printProgressBar(completed : number, total : number, barLength = 40) {
   const progress = Math.min(completed / total, 1); // Ensure progress does not exceed 100%
   const filledLength = Math.round(progress * barLength);
@@ -140,7 +151,7 @@ export class AsyncBlockingQueue<T> {
   }
 
   // Utilities
-
+ 
   isEmpty(): boolean {
     // there are no values available
     return this.promises.isEmpty();

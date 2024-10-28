@@ -60,11 +60,10 @@ export class JobArgs {
         this.jobid = jobid;
     }
 }
-export class ScrapeOperation {
-    jobid_to_details: { [key: string]: string };  
-    page_to_jobids: { [key: number] : any };    
+export class ScrapeOperation {  
     baseUrl : string
     cookie_jar : AsyncBlockingQueue<Cookie>
+    pageQueue : AsyncBlockingQueue<number>
     cloudNodePort : number
     timeout : number
     pagesScraped : number
@@ -75,7 +74,7 @@ export class ScrapeOperation {
     timeoutPromise : any
     timeoutClear : any
     stopMiningCookies : boolean
-    constructor(baseUrl: string, pageRange: number[], cloudNodePort : number, outFile : any, logFile : any = null, timeout : number = 1500){
+    constructor(baseUrl: string, pageRange: number[], cloudNodePort : number, outFile : any, logFile : any = null, timeout : number = 3600){
         this.baseUrl = baseUrl
         this.pagesScraped = 0
         this.outFile = outFile
@@ -85,18 +84,9 @@ export class ScrapeOperation {
         const { promise: timeoutPromise, clear: timeoutClear } = this.createTimeoutPromise(timeout, 'Timeout');
         this.timeoutPromise = timeoutPromise;
         this.timeoutClear = timeoutClear;
-        if(pageRange[0] < 1){
-            throw new Error("First page in page range must be > 1")
-        }
-        if(!(this.num_pages > 0)){
-            throw new Error("Num of pages to scrape must be > 0")
-        } else if (this.num_pages > 10 && this.num_pages % 10 !== 0){
-            throw new Error("Number of pages must be a multiple of 10")
-        }
         this.pageRange = pageRange
-        this.jobid_to_details = {}
-        this.page_to_jobids = {}
         this.cookie_jar = new AsyncBlockingQueue<Cookie>()
+        this.pageQueue = new AsyncBlockingQueue<number>()
         this.stopMiningCookies = false
         this.cloudNodePort = cloudNodePort
     }
@@ -134,11 +124,7 @@ export class ScrapeOperation {
         return cookieDict
     }
     /*Scraping Logic*/
-    async scrape_page_range(pageRange : number[]){
-        const num_pages = (pageRange[1] - pageRange[0] + 1)
-        if (num_pages < 1){
-            throw new Error(`scrape_page_range_job_ids: no pages to scrape you supplied ${num_pages}.`)
-        }
+    async startWorker(){
         const hero = new Hero({
             sessionPersistence : false,
             blockedResourceTypes: [
@@ -249,9 +235,10 @@ export class ScrapeOperation {
             await writePageObject(jobs)
         }
         try {
-            for(let i=pageRange[0]; i<= pageRange[1]; i++){
+            while(!this.pageQueue.isEmpty()){
                 const jobIds : any = []
-                await hero.goto(this.get_page_url(i))
+                const pageNum = await this.pageQueue.dequeue()
+                await hero.goto(this.get_page_url(pageNum))
                 await hero.waitForLoad('DomContentLoaded')
                 const article_elems = await hero.querySelectorAll('article[data-job-id]').$detach();
                 for (let elem of article_elems) {
@@ -261,7 +248,7 @@ export class ScrapeOperation {
                     }
                 }
                 const cookie = new Cookie("",this.get_dict((await hero.activeTab.cookieStorage.getItems())))
-                const pageArgs = new PageArgs(i,cookie,jobIds)
+                const pageArgs = new PageArgs(pageNum,cookie,jobIds)
                 // await this.log(`Starting scrape page operation on ${pageArgs.number}`)
                 let ret : any 
                 do { 
@@ -282,12 +269,15 @@ export class ScrapeOperation {
     }
     /* Partitions the scraping operation into concurrent page ranges */
     async scrape_all_jobs(){
-        const page_range_step = Math.ceil((this.num_pages/10))
         const tasks : any = []
         try{
-            for(let start_page = this.pageRange[0]; start_page <= this.pageRange[1]; start_page+=page_range_step){
-                this.log(`Starting a page range scrape on p${start_page} - ${start_page+page_range_step-1}`)
-                tasks.push(this.scrape_page_range([start_page,start_page+page_range_step-1]))
+            await this.log(`Adding ${this.num_pages} pages to page queue`)
+            for(let i = this.pageRange[0]; i <= this.pageRange[1]; i++){
+                this.pageQueue.enqueue(i)
+            }
+            let heroInstances = Math.min(this.num_pages,10)
+            for(let i = 0; i<heroInstances; i++){
+                tasks.push(this.startWorker())
             }
             await Promise.all(tasks)
         } catch (err){
@@ -297,6 +287,7 @@ export class ScrapeOperation {
     /*Starts the scrape*/
     async __call__() : Promise<number> {
         try {
+            await this.log(`New scrape operation started on page range ${this.pageRange}`)
             await Promise.race([this.scrape_all_jobs(), this.timeoutPromise]);
         } catch (error) {
             throw error;
