@@ -59,11 +59,11 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 describe('scrape_jobsdb.js test', () => {
-  const expectedFilePath = path.join(__dirname, 'jobsdb_scrape_results.txt');
+  const expectedFilePath = 'tests/jobsdb_scrape_results.txt';
 
   // Helper function to run the Node.js script synchronously
   function runScriptSync(scriptPath: string, args: string[]): void {
-    const command = `node ${scriptPath} ${args.join(' ')}`;
+    const command = `ts-node ${scriptPath} ${args.join(' ')}`;
     try {
       // Run the command synchronously
       const output = execSync(command); // Inherit stdio to show output in the console
@@ -75,7 +75,7 @@ describe('scrape_jobsdb.js test', () => {
 
   // Increase timeout for long-running test
   test('should successfully execute the script and check for result file', () => {
-    const scriptPath = 'build/src/scrape_jobsdb.js';
+    const scriptPath = 'src/scrape_jobsdb';
 
     if (fs.existsSync(expectedFilePath)) {
         fs.unlinkSync(expectedFilePath);  // Remove the existing file
@@ -86,5 +86,5 @@ describe('scrape_jobsdb.js test', () => {
     // Check if the result file exists
     const fileExists = fs.existsSync(expectedFilePath);
     expect(fileExists).toBe(true);
-  }, 10 * 60 * 1000); // 10-minute timeout
+  }); // 10-minute timeout
 });
