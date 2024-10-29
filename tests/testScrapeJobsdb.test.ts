@@ -49,5 +49,5 @@ describe('scrape_jobsdb.ts test', () => {
     if (resultFile && fs.existsSync(resultFile)) {
       fs.unlinkSync(resultFile);
     }
-  });
+  },60000*10);
 });
