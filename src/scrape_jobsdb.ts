@@ -171,8 +171,8 @@ function startServerProcess(name: string): any {
       if(!encountered_error){
         const now = new Date();
         const formattedDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}-${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}.${String(now.getMilliseconds()).padStart(3, '0')}`;
-        // const resultFileName = `jobsdb-${numPages}-${formattedDate}.json`
-        const resultFileName = 'jobsdb_scrape_results.txt'
+        const resultFileName = `jobsdb-${numPages}-${formattedDate}.json`
+        // const resultFileName = 'jobsdb_scrape_results.txt'
         const resultPath = path.join(resultsDir,resultFileName)
         await mergedOutFile.renameTempFile(resultPath)
         console.log(`\nResult file saved to ${resultPath} in json format.`)
