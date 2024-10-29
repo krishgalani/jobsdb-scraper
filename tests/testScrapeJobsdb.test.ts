@@ -83,5 +83,5 @@ describe('scrape_jobsdb.js test', () => {
     // Check if the result file exists
     const fileExists = fs.existsSync(expectedFilePath);
     expect(fileExists).toBe(true);
-  }, 10 * 60 * 1000); // 10-minute timeout
+  }); // 10-minute timeout
 });
