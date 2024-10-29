@@ -12,6 +12,7 @@ A few cool highlights about this scraper:
 ### Requirements
 
 - **Node.js** version **18** or higher. If not installed, [go here](https://nodejs.org/en/download/) to download it.
+- **git** required. If not installed, [go here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to download it.
 
 ```shell script
 git clone https://github.com/krishgalani/jobsdb-scraper.git
