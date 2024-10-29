@@ -139,19 +139,7 @@ export class TempFile {
   public async copyFile(destinationPath: string): Promise<void> {
     const release = await this.mutex.acquire();
     try {
-      if (!fs.existsSync(this.tempFilePath)) {
-        throw new Error('Temporary file is not created.');
-      }
-      const dirPath = path.dirname(destinationPath);
-      // Ensure the directory exists
-      if (!fs.existsSync(dirPath)) {
-        fs.mkdirSync(dirPath, { recursive: true });
-      }
-      // Copy the file to the new destination
-      fs.copyFileSync(this.tempFilePath, destinationPath);
-    } catch (error) {
-      console.error('Error copying the file:', error);
-      throw error; // Re-throw to indicate failure
+      this.copyFileUnsafe(destinationPath)
     } finally {
       release(); // Release the mutex lock
     }
