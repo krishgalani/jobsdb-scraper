@@ -1,0 +1,2394 @@
+[
+{
+  "page": {
+    "number": 1,
+    "jobs": [
+      {
+        "jobId": "78102996",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "78102996",
+            "title": "Software Engineer III, Equities Prime Finance Technology Java Developer",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-08-14T12:00:00.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [],
+            "isVerified": false,
+            "abstract": "As a Software Engineer III at JPMorgan Chase within the Corporate and Investment Banking (CIB) Technology, Equities Prime Finance Technology Securi...",
+            "content": "We have an exciting and rewarding opportunity for you to take your software\nengineering career to the next level. \n\nAs a Software Engineer III at JPMorgan Chase within the Corporate and Investment\nBanking (CIB) Technology, Equities Prime Finance Technology Securities\nLending team, you serve as a seasoned member of an agile team to design and\ndeliver trusted market-leading technology products in a secure, stable, and\nscalable way. You are responsible for carrying out critical technology solutions\nacross multiple technical areas within various business functions in support of\nthe firm’s business objectives.\n\nJob responsibilities\n\n * Executes software solutions, design, development, and technical\n   troubleshooting with ability to think beyond routine or conventional\n   approaches to build solutions or break down technical problems\n * Creates secure and high-quality production code and maintains algorithms that\n   run synchronously with appropriate systems\n * Produces architecture and design artifacts for complex applications while\n   being accountable for ensuring design constraints are met by software code\n   development\n * Gathers, analyzes, synthesizes, and develops visualizations and reporting\n   from large, diverse data sets in service of continuous improvement of\n   software applications and systems\n * Proactively identifies hidden problems and patterns in data and uses these\n   insights to drive improvements to coding hygiene and system architecture\n * Contributes to software engineering communities of practice and events that\n   explore new and emerging technologies\n * Adds to team culture of diversity, equity, inclusion, and respect\n\nRequired qualifications, capabilities, and skills\n\n * Formal training and/or certification on system development concepts with 3+\n   years applied experience\n * Bachelor's Degree in Computer Science or equivalent\n * Proficient in core Java/Spring framework\n * Familiar with Linux shell and shell scripting \n * Experience in application and data design disciplines with an emphasis on\n   real-time processing and delivery \n * Hands-on practical experience in system design, application development,\n   testing, and operational stability\n * Experience in developing, debugging, and maintaining code in a large\n   corporate environment with one or more modern programming languages and\n   database querying languages\n * Overall knowledge of the Software Development Life Cycle\n * Solid understanding of agile methodologies such as CI/CD, Application\n   Resiliency, and Security\n\nPreferred qualifications, capabilities, and skills\n\n * Familiarity with modern front-end technologies\n * Exposure to cloud technologies\n * Proficient in KDB+/q including experience in building and performance tuning\n   of real time subscriber, tickerplant, HDB preferred\n * Experience in UI Development in C#, React JS is preferable\n * Experience and knowledge in Kafka, AMPS, FIX protocol is plus",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-08-14T12:00:00.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/78102996?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61304558",
+              "name": "JPMorgan Chase Bank, N.A.",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2010-01-22T11:26:54.207Z"
+              }
+            },
+            "location": {
+              "label": "Hong Kong SAR"
+            },
+            "classifications": [
+              {
+                "label": "Engineering - Software (Information & Communication Technology)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/JP-Morgan-Chase-&-Co-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "77229165",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "77229165",
+            "title": "行政助理",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-07-11T12:00:00.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [
+              {
+                "type": "Email",
+                "value": "recruit@midland.com.hk"
+              },
+              {
+                "type": "Email",
+                "value": "enquiry@labour.gov.hk"
+              },
+              {
+                "type": "Phone",
+                "value": "2717 1771"
+              },
+              {
+                "type": "Phone",
+                "value": "2969 0888"
+              }
+            ],
+            "isVerified": false,
+            "abstract": "職責 : 處理日常行政及採購工作; 負責安排文儀用品之保養及維修安排; 協助集團員工活動及會議安排\n資歷 : 專上教育：文憑/證書; 良好粵語; 一般普通話; 良好英語; 懂讀寫中文; 懂讀寫英文; 懂Microsoft Office; 懂中文打字; 有責任感及良好溝通技巧\n待遇 : 每月$1...",
+            "content": "編號 : 22-24-0029564 MA\n\n日期 : 11/07/2024\n\n職位 : 行政助理\n\n公司/僱主名稱 : 美聯物業(策略)有限公司\n\n地區 : 荔枝角\n\n行業 : 地產業\n\n職責 : 處理日常行政及採購工作; 負責安排文儀用品之保養及維修安排; 協助集團員工活動及會議安排\n\n資歷 : 專上教育：文憑/證書; 良好粵語; 一般普通話; 良好英語; 懂讀寫中文; 懂讀寫英文; 懂Microsoft Office; 懂中文打字;\n有責任感及良好溝通技巧\n\n待遇 : 每月$16,000 - $18,000, 有年假14天, 銀行假期, 生日假1天, 酌情性花紅, 醫療福利及進修津貼, 星期一至五:\n上午9時半至下午6時, 每週工作5天, 每天工作 8.5 小時, 無需超時工作\n\n申請須知 : 求職者可電郵(recruit@midland.com.hk)履歷表給美聯物業(策略)有限公司。如要索取收集個人資料聲明,\n請與余小姐(Email)聯絡。\n\n備註 : -\n\n如何應徵？\n\n\n空缺咭上有僱主的聯絡資料（如電話號碼、傳真號碼或電郵地址等）：\n請直接聯絡僱主求職\n\n空缺咭上沒有僱主的聯絡資料：\n\n\n 1. 請記下空缺編號\n\n 2. 已登記的求職人士請\n    (a) 致電電話就業服務中心熱線 2969 0888 安排轉介，\n    或\n    (b)\n    親身到勞工處就業中心取籌安排轉介，取籌先到先得，籌號派完即止。星期一至五上午時段的籌號及下午時段的籌號分別於下午12時35分及下午6時正停止派發。\n    （就業中心於午膳時間下午1時正至2時正不會提供就業轉介服務）\n\n 3. 如求職人士尚未登記，請於網上登記或親身到就業中心登記，然後使用轉介服務\n\n請按\n\n求職資訊\n參閱在求職及面試時須注意的事項。如須撰寫求職信及履歷表，可參考\n求職信及履歷表範本\n\n\n\n在接受聘用前，你應清楚知道僱主的身份，詳情可參閱「保存僱傭紀錄---僱員參考手冊」。\n\n求職人士請注意：\n\n * 空缺咭展示的職位空缺資料，包括職位名稱、職責內容、工作時間、薪金等，均是由僱主提供。如果求職人士在面試時，僱主提出不合理的要求，或所提供的僱傭條件與本處登記的資料不符，請盡快通知本處。為免墮入求職陷阱，在面試時應注意聘用條件（包括計薪方法、工資期、休息日安排等），了解職位的工作範圍及入職要求，並留意工作環境。此外，請特別留意工作性質及內容會否抵觸現行法例，切勿因急於求職而接受聘用從事非法工作。\n * 僱主及職業介紹所向本處遞交職位招聘表時，已承諾會按照《最低工資條例》的規定，就任何工資期，支付不少於法定最低工資水平的工資予受聘有關職位並受《最低工資條例》涵蓋的人士\n   。\n * 如你有合理懷疑僱主未有遵守《僱傭條例》、《僱員補償條例》、《最低工資條例》，可致電熱線2717\n   1771（由1823接聽）或電郵至enquiry@labour.gov.hk\n   查詢。至於涉及《性別歧視條例》、《殘疾歧視條例》、《家庭崗位歧視條例》或《種族歧視條例》的查詢，請聯絡平等機會委員會。\n * 根據《最低工資條例》的規定，僱主須就任何工資期，確保支付僱員不少於按下列方法計算的最低工資：\n   \n   最低工資=僱員於工資期的總工作時數 x 法定最低工資水平（即每小時40元1）\n   1由2023年5月1日起，法定最低工資水平已調升至每小時40元。\n   \n   * 如就工資期須支付予僱員的工資少於最低工資，僱員有權就該工資期獲付這差額（即「額外報酬」）。該僱員的僱傭合約須視為他有權就該工資期獲得額外報酬，而該額外報酬亦適用於計算根據其他相關法例所應獲得的款項。\n   * 有關法定最低工資的定義及計算詳情，請瀏覽 《法定最低工資：僱主及僱員參考指引》或致電 24 小時查詢熱線 2717 1771（由「1823」接聽）。\n\n\n為配合新高中學制，空缺展示的高中教育程度要求（若適用）如下：\n中四至中六： 指新舊學制皆適用或同等學歷；\n中七： 指舊學制中七程度或同等學歷。\n有關新學制詳情，請瀏覽 334.edb.hkedcity.net 或 www.edb.gov.hk\n\n空缺資料中的部份內容可能經由本處提供中文翻譯，有關翻譯只應作參考之用。需要求職人士有閱讀英文能力的職位空缺內容或會以英文顯示。如有疑問，或欲以中文了解上述空缺資料的全部內容，請聯絡本處就業中心。已登記求職人士亦可致電電話就業服務中心熱線\n2969 0888尋求協助。如空缺咭上有僱主的聯絡方法，你更可直接聯絡僱主查詢。\n\n\n\n惡劣天氣下就業中心的開放安排\n\n\n\n提防求職陷阱 如你於申請職位空缺時，遇到任何可疑的情況，請即與本處職員聯絡。有關提防求職陷阱的資訊，可瀏覽此網頁。",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-07-11T12:00:00.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/77229165?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "美聯物業(策略)有限公司",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "Stonecutters Island, Sham Shui Po District"
+            },
+            "classifications": [
+              {
+                "label": "Administrative Assistants (Administration & Office Support)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61941100",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79152910",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79152910",
+            "title": "Network Admin - TEMS circuit provisioner",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-27T03:38:18.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [],
+            "isVerified": false,
+            "abstract": "Transport Management team is a sub function under Enterprise Network Service (ENS) which responsible for managing Telecomm Expense Management Syste...",
+            "content": "Network Admin - TEMS circuit provisioner\nPosition Description:\nTransport Management team is a sub function under Enterprise Network Service\n(ENS) which responsible for managing Telecomm Expense Management System (TEMS)\nfor voice and data network service.\nTransport Management team is looking for team member to provide day to day\nsupport and oversee the circuit life cycle, provide end to end service in the\nregion.\n\nResponsibilities include, but are not limited to:\n·Ability to manage end to end, circuit life cycle as part of the transport\nmanagement team in the region\n·Effective manage and communicate to client internally and externally for\ndelivering request for business enablement\n·Liaison to ENS Operation teams, Business management, Sourcing team internally\n·Effective manage interactions and relationship with 3rd party Managed Service\nProvider and Telecom Circuits Provider\n·Be involved in the process of producing 3rd party Service Provider’s Master\nService Agreement (MSA), in collaboration with Sourcing Team and ENS Operation\nTeam\n·Ability to drive resolution effectively with Circuit Provider when problem\narisen during service provisioning or billing matters\n\nSkills Required\n·Excellent English communication skills and the ability to interact with highly\nskilled technology professionals\n·Monitoring service requests thru email and ticketing system daily, collect\nrequirement, take appropriate action by following standard processes and respond\npromptly\n·Ability to drive and execute require circuit order, deliver on time and within\nbudget\n·Duty including obtain circuit price for benchmarking, preparing price\ncomparison sheet and reports to management team and requestor for best\nresolution, accountable for cost and inventory controls which support\noperational and business needs while delivering transparency and best in class\npricing to the Firm\n·Manage and review quote including preparation of internal approval document for\ndesign approval, financial sign off and telecom contract review\n·Review quote and contract align with SLA, protecting the Firm interests to\nensure SLA is met for every services\n·Manage 3rd party vendor billing system with duties but not limited to, voice\nand data circuit provisioning, invoice processing, expense management, metrics,\nand reporting\n·Manage monthly vendor service meeting, ensure vendor provide monthly reports,\nmeeting minutes and follow up actions in timely manner\n·Effectively co-ordinate escalation management for both internal and external\nwhen necessary\n\nQualification/ Experience\n\n * Ability to manage multiple demands and changing priorities\n\n·Self-starter, team worker, excellent problem resolving ability, be flexible and\nstrong sense of personal responsibility and integrity\n·Experience in MS Excel and some metric soft skills\n * Excellent oral and written communication skills in English and Chinese\n   (Mandarin)\n\n·Experience in Telecom vendor management techniques\n·Multinational Financial industry, preferably tier 1 Investment banking\nexperience\n * Formal project/task management training desirable",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-09-28T03:38:18.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79152910?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "EIRE Systems",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "Tsim Sha Tsui, Yau Tsim Mong District"
+            },
+            "classifications": [
+              {
+                "label": "Networks & Systems Administration (Information & Communication Technology)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61941100",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79359300",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79359300",
+            "title": "Mortgage Referral Executive  (5-day work)",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-07T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "This position provides candidate with opportunities in developing career / professional in mortgage and financial services field.\n",
+            "content": "Centaline Mortgage Broker Limited (CMB), established in 1997, is a member of The\nCentaline Group (中原集團).\n\nWith the aim of providing high-quality mortgage referral service for\nyears. CMB provides courteous mortgage referral services to our clients for\nFREE. We are able to arrange property valuation, mortgage pre-approval and\nexpress mortgage approval service for FREE to our clients. We strive to\nintroduce the most favorable mortgage plans to our clients as per their\ndifferent needs or investment strategies.\n\n \n\nJoin us and be a part of our exciting growth!\n \n\n \n\nJob Responsibilities:\n\n * Handle mortgage / loan referral applications and enquiries;\n * Facilitate coordination with banking partners, customers and property agents\n   for business acquisition opportunities;\n * Advise customers of the most suitable mortgage plans as per their needs;\n * Participate in tactical promotion activities.\n\n \nJob Requirements:\n\n * DSE Graduate / F.7 or above;\n * 1 year working experience in banking or mortgage referral industry is\n   preferred; \n * Sales / Customer Service experience in mortgage/ loan service is preferable;\n * Self-motivated, independent and service centric;\n * Good interpersonal & communications skills;\n * Proficiency in Chinese, English and Putonghua\n * Candidates with less experience will be considered as Assistant Mortgage\n   Referral Executive.\n\n \n\n \n\nWe offer excellent career opportunities and competitive remuneration package to\nthe right candidates.  Please promptly send your CV with current and\nexpected salary by clicking “APPLY\".",
+            "status": "Active",
+            "listedAt": {
+              "label": "21d ago",
+              "dateTimeUtc": "2024-10-08T04:55:11.092Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79359300?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "60158781",
+              "name": "Centaline Mortgage Broker Limited",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2017-04-11T10:01:46.240Z"
+              }
+            },
+            "location": {
+              "label": "Tsim Sha Tsui, Yau Tsim Mong District"
+            },
+            "classifications": [
+              {
+                "label": "Mortgages (Banking & Financial Services)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "263df895-b49d-4a37-82a6-862ed79aae9b.1",
+                "cover": {
+                  "url": "https://image-service-cdn.seek.com.au/7f271849e7e0b152b5904db900d62f8793b7eccd/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "thumbnailCover": {
+                  "url": "https://image-service-cdn.seek.com.au/7f271849e7e0b152b5904db900d62f8793b7eccd/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/bf3ff6de2bd43a6488fd9279b0cdcfc436c4b78f/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": [
+                "Member of The Centaline Group Mortgage / Loan / Financial Services",
+                "Application Referral & Enquiries / Facilitate Business Acquisition Opportunities",
+                "Basic Salary with Commission / Monthly Bonus / Friendly & Vibrant Environment"
+              ],
+              "questionnaire": {
+                "questions": [
+                  "Which of the following statements best describes your right to work in Hong Kong?",
+                  "What's your expected monthly basic salary?"
+                ]
+              },
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/Centaline-Mortgage-Broker-Limited-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "77522974",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "77522974",
+            "title": "中型貨車司機",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-07-23T12:00:00.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [
+              {
+                "type": "Email",
+                "value": "enquiry@labour.gov.hk"
+              },
+              {
+                "type": "Phone",
+                "value": "2717 1771"
+              },
+              {
+                "type": "Phone",
+                "value": "2969 0888"
+              }
+            ],
+            "isVerified": false,
+            "abstract": "職責 : 一般中型貨車司機工作, 柴灣取車 (有3年或以上貨車司機經驗優先)\n資歷 : 中五程度; 3年經驗; 良好粵語; 持有平安咭; 持有中型貨車駕駛執照; 持有輕型貨車駕駛執照; 持有私家車駕駛執照; 熟悉各區街道, 良好駕駛態度, 有責任心, 待人有禮, 工作認真\n待遇 : 每月$21...",
+            "content": "編號 : 12-24-0016503 DR\n\n日期 : 23/07/2024\n\n職位 : 中型貨車司機**\n\n公司/僱主名稱 : 通力建築工程有限公司\n\n地區 : 柴灣\n\n行業 : 建造業\n\n職責 : 一般中型貨車司機工作, 柴灣取車 (有3年或以上貨車司機經驗優先)\n\n資歷 : 中五程度; 3年經驗; 良好粵語; 持有平安咭; 持有中型貨車駕駛執照; 持有輕型貨車駕駛執照; 持有私家車駕駛執照; 熟悉各區街道, 良好駕駛態度,\n有責任心, 待人有禮, 工作認真\n\n待遇 : 每月$21,700 - $30,800, 有在職培訓 及表現獎金, 星期一至六: 上午8時至下午6時, 每週工作6天, 每天工作 10 小時\n\n如何應徵？\n\n\n空缺咭上有僱主的聯絡資料（如電話號碼、傳真號碼或電郵地址等）：\n請直接聯絡僱主求職\n\n空缺咭上沒有僱主的聯絡資料：\n\n\n 1. 請記下空缺編號\n\n 2. 已登記的求職人士請\n    (a) 致電電話就業服務中心熱線 2969 0888 安排轉介，\n    或\n    (b)\n    親身到勞工處就業中心取籌安排轉介，取籌先到先得，籌號派完即止。星期一至五上午時段的籌號及下午時段的籌號分別於下午12時35分及下午6時正停止派發。\n    （就業中心於午膳時間下午1時正至2時正不會提供就業轉介服務）\n\n 3. 如求職人士尚未登記，請於網上登記或親身到就業中心登記，然後使用轉介服務\n\n請按\n\n求職資訊\n參閱在求職及面試時須注意的事項。如須撰寫求職信及履歷表，可參考\n求職信及履歷表範本\n\n\n\n在接受聘用前，你應清楚知道僱主的身份，詳情可參閱「保存僱傭紀錄---僱員參考手冊」。\n\n求職人士請注意：\n\n * 空缺咭展示的職位空缺資料，包括職位名稱、職責內容、工作時間、薪金等，均是由僱主提供。如果求職人士在面試時，僱主提出不合理的要求，或所提供的僱傭條件與本處登記的資料不符，請盡快通知本處。為免墮入求職陷阱，在面試時應注意聘用條件（包括計薪方法、工資期、休息日安排等），了解職位的工作範圍及入職要求，並留意工作環境。此外，請特別留意工作性質及內容會否抵觸現行法例，切勿因急於求職而接受聘用從事非法工作。\n * 僱主及職業介紹所向本處遞交職位招聘表時，已承諾會按照《最低工資條例》的規定，就任何工資期，支付不少於法定最低工資水平的工資予受聘有關職位並受《最低工資條例》涵蓋的人士\n   。\n * 如你有合理懷疑僱主未有遵守《僱傭條例》、《僱員補償條例》、《最低工資條例》，可致電熱線2717\n   1771（由1823接聽）或電郵至enquiry@labour.gov.hk\n   查詢。至於涉及《性別歧視條例》、《殘疾歧視條例》、《家庭崗位歧視條例》或《種族歧視條例》的查詢，請聯絡平等機會委員會。\n * 根據《最低工資條例》的規定，僱主須就任何工資期，確保支付僱員不少於按下列方法計算的最低工資：\n   \n   最低工資=僱員於工資期的總工作時數 x 法定最低工資水平（即每小時40元1）\n   1由2023年5月1日起，法定最低工資水平已調升至每小時40元。\n   \n   * 如就工資期須支付予僱員的工資少於最低工資，僱員有權就該工資期獲付這差額（即「額外報酬」）。該僱員的僱傭合約須視為他有權就該工資期獲得額外報酬，而該額外報酬亦適用於計算根據其他相關法例所應獲得的款項。\n   * 有關法定最低工資的定義及計算詳情，請瀏覽 《法定最低工資：僱主及僱員參考指引》或致電 24 小時查詢熱線 2717 1771（由「1823」接聽）。\n\n\n為配合新高中學制，空缺展示的高中教育程度要求（若適用）如下：\n中四至中六： 指新舊學制皆適用或同等學歷；\n中七： 指舊學制中七程度或同等學歷。\n有關新學制詳情，請瀏覽 334.edb.hkedcity.net 或 www.edb.gov.hk\n\n空缺資料中的部份內容可能經由本處提供中文翻譯，有關翻譯只應作參考之用。需要求職人士有閱讀英文能力的職位空缺內容或會以英文顯示。如有疑問，或欲以中文了解上述空缺資料的全部內容，請聯絡本處就業中心。已登記求職人士亦可致電電話就業服務中心熱線\n2969 0888尋求協助。如空缺咭上有僱主的聯絡方法，你更可直接聯絡僱主查詢。\n\n\n\n惡劣天氣下就業中心的開放安排\n\n\n\n提防求職陷阱 如你於申請職位空缺時，遇到任何可疑的情況，請即與本處職員聯絡。有關提防求職陷阱的資訊，可瀏覽此網頁。",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-07-23T12:00:00.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/77522974?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "通力建築工程有限公司",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "Chai Wan, Eastern District"
+            },
+            "classifications": [
+              {
+                "label": "Administrative Assistants (Administration & Office Support)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61941100",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "76798027",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "76798027",
+            "title": "銷售部助理 / 銷售部文員",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-06-24T12:00:00.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [],
+            "isVerified": false,
+            "abstract": "職位 : 銷售部助理 / 銷售部文員**\n公司/僱主名稱 : 亞細亞建材(香港)有限公司\n地區 : 灣仔\n行業 : 商用服務業\n職責 : 為項目銷售團隊提供全面支援，包括準備報價、發票和交貨單,與項目銷售團隊協調項目進展，並跟進項目文件,協助準備貨物樣板、樣板標籤和交付樣板給客戶\n資歷 : 專...",
+            "content": "公司/僱主名稱 : 亞細亞建材(香港)有限公司\n\n地區 : 灣仔\n\n行業 : 商用服務業\n\n職責 : 為項目銷售團隊提供全面支援，包括準備報價、發票和交貨單,與項目銷售團隊協調項目進展，並跟進項目文件,協助準備貨物樣板、樣板標籤和交付樣板給客戶\n\n資歷 : 專上教育：文憑/證書; 1年經驗; 良好粵語; 一般普通話; 一般英語; 懂讀寫中文; 略懂讀寫英文; 懂Microsoft Office;\n具有一般互聯網知識; 懂英文打字; 懂中英文電腦操作; 懂中文打字\n\n待遇 : 每月$17,000 - $18,000, 有年假10天, 銀行假期, 牙科福利, 醫療保險, 營業獎金 及年終獎金, 星期一至五:\n上午9時半至下午6時半, 每週工作5天, 每天工作 9 小時, 間中需要超時工作",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-06-24T12:00:00.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/76798027?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "Company Confidential",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "Wan Chai, Wan Chai District"
+            },
+            "classifications": [
+              {
+                "label": "Administrative Assistants (Administration & Office Support)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61941100",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79746889",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79746889",
+            "title": "SmartPLAY Ambassador 康體通推廣大使",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-24T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "Assist in SmartPLAY development. ",
+            "content": "Job duties:\n\n * Assist in SmartPLAY execution and coordination \n * Assist in SmartPLAY development and refinement \n * Handle external enquiries and complaints\n * General office administrative duties\n\nJob requirements (*must fulfil all the requirements*):\n\n * Holder of a Bachelor's degree\n * 4 years of working experience in IT or administrative fields\n * Level 3 or above in HKDSE Chinese and English OR Level C or above in HKCEE\n   Chinese and English OR level 2 in CRE Chinese and English",
+            "status": "Active",
+            "listedAt": {
+              "label": "4d ago",
+              "dateTimeUtc": "2024-10-25T03:30:07.244Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79746889?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Contract/Temp"
+            },
+            "advertiser": {
+              "id": "61330356",
+              "name": "WilliamSELECT",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2015-06-26T09:05:42.477Z"
+              }
+            },
+            "location": {
+              "label": "Mong Kok, Yau Tsim Mong District"
+            },
+            "classifications": [
+              {
+                "label": "Administrative Assistants (Administration & Office Support)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "30ce957f-ded1-4551-b1e7-249e5679785e.1",
+                "cover": {
+                  "url": "https://image-service-cdn.seek.com.au/3c8b41a895bc52feca65db40688aa740eb6d0df1/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "thumbnailCover": {
+                  "url": "https://image-service-cdn.seek.com.au/3c8b41a895bc52feca65db40688aa740eb6d0df1/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/c6518671653a3ddee6922f9c440ef0ee2caf5d29/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/WilliamSELECT-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "78251251",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "78251251",
+            "title": "清潔員",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-08-20T12:00:00.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [
+              {
+                "type": "Email",
+                "value": "enquiry@labour.gov.hk"
+              },
+              {
+                "type": "Phone",
+                "value": "2717 1771"
+              },
+              {
+                "type": "Phone",
+                "value": "2969 0888"
+              }
+            ],
+            "isVerified": false,
+            "abstract": "公司/僱主名稱 : C & L COMPANY\n地區 : 南區\n行業 : 進出口貿易\n職責 : 在南區各社區中心/會堂做一般清潔, 收垃圾, 洗廁所, 掃地, 拖地\n資歷 : 沒有學歷要求; 一般粵語; 懂閱讀中文\n待遇 : 每小時$80.00, 星期一至六: 上午8時至中午12時, 下午2時...",
+            "content": "編號 : 12-24-0019684 CL 兼職\n\n日期 : 20/08/2024\n\n職位 : 清潔員**\n\n公司/僱主名稱 : C & L COMPANY\n\n地區 : 南區\n\n行業 : 進出口貿易\n\n職責 : 在南區各社區中心/會堂做一般清潔, 收垃圾, 洗廁所, 掃地, 拖地\n\n資歷 : 沒有學歷要求; 一般粵語; 懂閱讀中文\n\n待遇 : 每小時$80.00, 星期一至六: 上午8時至中午12時, 下午2時至下午5時, 每週工作1天至3天, 每天工作 3-4 小時\n\n如何應徵？\n\n\n空缺咭上有僱主的聯絡資料（如電話號碼、傳真號碼或電郵地址等）：\n請直接聯絡僱主求職\n\n空缺咭上沒有僱主的聯絡資料：\n\n\n 1. 請記下空缺編號\n\n 2. 已登記的求職人士請\n    (a) 致電電話就業服務中心熱線 2969 0888 安排轉介，\n    或\n    (b)\n    親身到勞工處就業中心取籌安排轉介，取籌先到先得，籌號派完即止。星期一至五上午時段的籌號及下午時段的籌號分別於下午12時35分及下午6時正停止派發。\n    （就業中心於午膳時間下午1時正至2時正不會提供就業轉介服務）\n\n 3. 如求職人士尚未登記，請於網上登記或親身到就業中心登記，然後使用轉介服務\n\n請按\n\n求職資訊\n參閱在求職及面試時須注意的事項。如須撰寫求職信及履歷表，可參考\n求職信及履歷表範本\n\n\n\n在接受聘用前，你應清楚知道僱主的身份，詳情可參閱「保存僱傭紀錄---僱員參考手冊」。\n\n求職人士請注意：\n\n * 空缺咭展示的職位空缺資料，包括職位名稱、職責內容、工作時間、薪金等，均是由僱主提供。如果求職人士在面試時，僱主提出不合理的要求，或所提供的僱傭條件與本處登記的資料不符，請盡快通知本處。為免墮入求職陷阱，在面試時應注意聘用條件（包括計薪方法、工資期、休息日安排等），了解職位的工作範圍及入職要求，並留意工作環境。此外，請特別留意工作性質及內容會否抵觸現行法例，切勿因急於求職而接受聘用從事非法工作。\n * 僱主及職業介紹所向本處遞交職位招聘表時，已承諾會按照《最低工資條例》的規定，就任何工資期，支付不少於法定最低工資水平的工資予受聘有關職位並受《最低工資條例》涵蓋的人士\n   。\n * 如你有合理懷疑僱主未有遵守《僱傭條例》、《僱員補償條例》、《最低工資條例》，可致電熱線2717\n   1771（由1823接聽）或電郵至enquiry@labour.gov.hk\n   查詢。至於涉及《性別歧視條例》、《殘疾歧視條例》、《家庭崗位歧視條例》或《種族歧視條例》的查詢，請聯絡平等機會委員會。\n * 根據《最低工資條例》的規定，僱主須就任何工資期，確保支付僱員不少於按下列方法計算的最低工資：\n   \n   最低工資=僱員於工資期的總工作時數 x 法定最低工資水平（即每小時40元1）\n   1由2023年5月1日起，法定最低工資水平已調升至每小時40元。\n   \n   * 如就工資期須支付予僱員的工資少於最低工資，僱員有權就該工資期獲付這差額（即「額外報酬」）。該僱員的僱傭合約須視為他有權就該工資期獲得額外報酬，而該額外報酬亦適用於計算根據其他相關法例所應獲得的款項。\n   * 有關法定最低工資的定義及計算詳情，請瀏覽 《法定最低工資：僱主及僱員參考指引》或致電 24 小時查詢熱線 2717 1771（由「1823」接聽）。\n\n\n為配合新高中學制，空缺展示的高中教育程度要求（若適用）如下：\n中四至中六： 指新舊學制皆適用或同等學歷；\n中七： 指舊學制中七程度或同等學歷。\n有關新學制詳情，請瀏覽 334.edb.hkedcity.net 或 www.edb.gov.hk\n\n空缺資料中的部份內容可能經由本處提供中文翻譯，有關翻譯只應作參考之用。需要求職人士有閱讀英文能力的職位空缺內容或會以英文顯示。如有疑問，或欲以中文了解上述空缺資料的全部內容，請聯絡本處就業中心。已登記求職人士亦可致電電話就業服務中心熱線\n2969 0888尋求協助。如空缺咭上有僱主的聯絡方法，你更可直接聯絡僱主查詢。\n\n\n\n惡劣天氣下就業中心的開放安排\n\n\n\n提防求職陷阱 如你於申請職位空缺時，遇到任何可疑的情況，請即與本處職員聯絡。有關提防求職陷阱的資訊，可瀏覽此網頁。",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-08-20T12:00:00.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/78251251?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "C & L Company",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "Southern District"
+            },
+            "classifications": [
+              {
+                "label": "Administrative Assistants (Administration & Office Support)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61941100",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79835713",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79835713",
+            "title": "Designer",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-28T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "We are looking for an industrial designer to be responsible for product design, need to be software proficient, innovative and well paid.",
+            "content": " \n\nAre you a creative and talented industrial designer? Mingyu Technology Co., Ltd.\nis looking forward to your joining us!\n\nJob Responsibilities:\n\n• Responsible for the appearance design and structure design of the company's\nhardware products.\n\n• Conduct market research to understand industry trends and user needs.\n\n• Collaborate with the team to transform design concepts into actual products.\n\n• Participate in the whole process of product development to ensure that the\ndesign can be realized.\n\nRequirements:\n\n•  Proficient in industrial design related software, such as Rhino, ProE, etc..\n\n• Proficient in industrial design software, such as Rhino, ProE, etc. Have\nin-depth understanding of materials and processes, and possess innovative\nthinking.\n\n•  Good aesthetic ability and hand-drawing foundation.\n\n•  Team player, able to communicate effectively with different departments.\n\nWe offer:\n\n• Competitive salary and benefits.\n\n• Competitive salary and benefits.\n\n•  Participate in innovative projects to enhance professional ability.\n\n•  Excellent team atmosphere and working environment.\n\nMingyu Technology Co., Ltd, waiting for you to create wonderful!",
+            "status": "Active",
+            "listedAt": {
+              "label": "10h ago",
+              "dateTimeUtc": "2024-10-29T09:01:06.236Z"
+            },
+            "salary": {
+              "currencyLabel": null,
+              "label": "$20,000 – $30,000 per month"
+            },
+            "shareLink": "https://hk.jobsdb.com/job/79835713?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "62741375",
+              "name": "明宇科技有限公司 BRIVERSE TECHNOLOGY LIMITED",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2024-10-28T05:35:40.515Z"
+              }
+            },
+            "location": {
+              "label": "Wan Chai District"
+            },
+            "classifications": [
+              {
+                "label": "Graphic Design (Design & Architecture)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "49efe0b6-70f0-45bc-87a5-b593a026e8ac.1",
+                "cover": null,
+                "thumbnailCover": null,
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/dce3a609189b27ab10b5407e87f081b93fd54fbd/f3c5292cec0e05e4272d9bf9146f390d366481d0"
+                }
+              },
+              "bullets": [
+                "Participate in cutting-edge technology product design.",
+                "Play creativity, realize the design concept.",
+                "Excellent salary and good team atmosphere."
+              ],
+              "questionnaire": {
+                "questions": [
+                  "Which of the following statements best describes your right to work in Hong Kong?",
+                  "What's your expected monthly basic salary?",
+                  "How many years' experience do you have as an Industrial Designer?",
+                  "How many years' experience do you have in market research?",
+                  "How many years of industrial design experience do you have?"
+                ]
+              },
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=62741375",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79399844",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79399844",
+            "title": "Data Engineer - ETL - good working environment",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-08T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "Our client is seeking for a Senior Programmer/ Data engineer with solid experience in .NET and ETL to join their team.",
+            "content": "Our client is a public corporation focusing on technology development in Hong\nKong, they are seeking for a Senior Programmer/ Data engineer with solid\nexperience in .NET and ETL to join their team.\n\n \n\nResponsibilities\n\n * Design and develop web-based user portal to support system integration;\n * Perform data preparation, cleansing and visualization by Azure OpenAI and\n   PowerBI;\n * Discover and evaluate new technologies to support business needs and strategy\n * Work closely with product managers, designers, and developers to build highly\n   scalable and available products;\n * Follow the priority of project managers in the entire agile SDLC to ensure\n   the project objectives are achieved timely;\n * Perform unit and system integration tests with happy and exceptional cases;\n * Perform other jobs as assigned;\n\n\nExperience\n\n * Min. 3 years of experience preferably in application development;\n * Solid experiences in .Net, node.js, Javascript, python and SQL programming;\n * Knowledge of ETL, data pipeline and data model implementation is a must;\n * Hands-on cloud and data platform (Preferably in Azure, Databricks and\n   PowerBI) is a plus;\n * Experience in AI, prompt engineering and Web3 is a plus;\n * Detailed-minded and committed to success;\n * Strong sense of responsibility and eager to learn;\n * Good command of written and spoken Chinese and English;\n * Candidates with less experience will be considered as Programmer;\n\n \n\nEducation\n\n * Bachelor’s degree preferably in Computer Science / Information Technology /\n   Software Engineering / Data Science or related disciplines;\n\n \n\nInterested parties, please click to\nhttps://www.adecco.com.hk/information-technology-i-t--jobs/data-engineer-senior-program/3631335\n\nPlease note that only short listed candidates will be notified. All information\ngathered will be treated in strict confidence and solely used for recruitment\npurposes",
+            "status": "Active",
+            "listedAt": {
+              "label": "20d ago",
+              "dateTimeUtc": "2024-10-09T10:54:38.346Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79399844?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "62209704",
+              "name": "ADECCO Personnel Limited",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2023-12-19T15:47:24.893Z"
+              }
+            },
+            "location": {
+              "label": "Sha Tin, Sha Tin District"
+            },
+            "classifications": [
+              {
+                "label": "Engineering - Software (Information & Communication Technology)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "85712223-411b-43ed-9ad3-50d092f83423.1",
+                "cover": {
+                  "url": "https://image-service-cdn.seek.com.au/e3206ae888883d215cf57479ab3682ae21982637/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "thumbnailCover": {
+                  "url": "https://image-service-cdn.seek.com.au/e3206ae888883d215cf57479ab3682ae21982637/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/5d0ddd8746713e59f485c627a9c84ef12c6cd0cf/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": [
+                "Solid experience in .NET, node.js, JavaScript, Python, SQL, ETL, data pipeline",
+                "Exposure in Cloud, Data and AI",
+                "Excellent working environment and culture"
+              ],
+              "questionnaire": {
+                "questions": [
+                  "How many years' experience do you have as a data engineer?",
+                  "Which of the following statements best describes your right to work in Hong Kong?",
+                  "What's your expected monthly basic salary?"
+                ]
+              },
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/Adecco-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79482413",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79482413",
+            "title": "HR & Admin Assistant Officer",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-13T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "HR and Admin",
+            "content": "Job Responsibilities:\n\n * Support the team to provide all round HR & Administration services \n * Responsible for office administration; maintain supplies & bookkeeping\n * Coordinate travel arrangements with designated travel agents\n * Handle APEC card application and follow-up\n * Handle petty cash and record expenses\n * Provide backup for front desk receptionist as needed\n * Assist in General Insurance renewal\n * Maintain HRIS Attendance, Leave Management & Employee Benefits enrolment\n * Manage the database incl. set up access card\n * Manage the onboarding of new employees\n * Support in recruitment, training and engagement activities\n * Assist in ad hoc projects and tasks when necessary\n\n \n\nJob Requirements:\n\n * Diploma or above in Human Resources, Business Administration, or a related\n   field\n * Excellent communication, organization, and problem-solving skills\n * At least 1 year of Human Resource or Admin hands on experience preferred\n * Proficiency in Excel and MS Office applications\n * Fluent in English and Cantonese\n * Immediate available is preferred",
+            "status": "Active",
+            "listedAt": {
+              "label": "15d ago",
+              "dateTimeUtc": "2024-10-14T04:02:51.393Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79482413?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "60168799",
+              "name": "Win Hanverky Holdings Limited",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2010-01-22T11:26:54.207Z"
+              }
+            },
+            "location": {
+              "label": "Lai Chi Kok, Sham Shui Po District"
+            },
+            "classifications": [
+              {
+                "label": "Administrative Assistants (Administration & Office Support)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "c82a6b13-a1e7-449a-a318-5771b758bb10.1",
+                "cover": {
+                  "url": "https://image-service-cdn.seek.com.au/bfb7d9b5db7195c7a622f461b8fbbc6f7ca3eacf/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "thumbnailCover": {
+                  "url": "https://image-service-cdn.seek.com.au/bfb7d9b5db7195c7a622f461b8fbbc6f7ca3eacf/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/d18709d766fc4e89c71db4b51a4fa47a8df7b2df/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": [
+                "5-Day work, Public Holidays",
+                "Guaranteed 13th month Bonus",
+                "Group Medical and Life"
+              ],
+              "questionnaire": {
+                "questions": [
+                  "Do you have experience in administration?"
+                ]
+              },
+              "video": null
+            }
+          },
+          "companyProfile": {
+            "id": "171088662480573",
+            "name": "Win Hanverky Holdings Limited",
+            "companyNameSlug": "win-hanverky-holdings-limited-171088662480573",
+            "shouldDisplayReviews": true,
+            "branding": {
+              "logo": "https://image-service-cdn.seek.com.au/d18709d766fc4e89c71db4b51a4fa47a8df7b2df/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+            },
+            "overview": {
+              "description": {
+                "paragraphs": [
+                  "Win Hanverky is listed on the Main Board of the Hong Kong Stock Exchange with",
+                  "stock code 3322. We are an integrated manufacturer and retailer for various top-tier international sports, fashion and outdoor brands. Headquartered in Hong Kong and with production facilities across Asia, Win Hanverky is engaged in the manufacturing",
+                  "and selling of garment products, including sportswear, high-end functional outerwear, high-end fashion apparel and related accessories catering for markets across Europe, the United States, Mainland China, Hong Kong and other countries. Visit us and explore",
+                  "more job opportunities at http://www.winhanverky.com.",
+                  "Placing great value on our workforce, the talent and passion of our staff is what spurs our drive for excellence. We provide our staff with an exciting environment to develop a challenging",
+                  "yet rewarding career. To cope with our expansions, we are now inviting applications for the following position."
+                ]
+              },
+              "industry": "Textiles, Clothing & Accessories",
+              "size": {
+                "description": "51-100 employees"
+              },
+              "website": {
+                "url": "http://www.winhanverky.com"
+              }
+            },
+            "reviewsSummary": null,
+            "perksAndBenefits": []
+          },
+          "companySearchUrl": "https://hk.jobsdb.com/Win-Hanverky-Holdings-Limited-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "76137612",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "76137612",
+            "title": "市區/口岸站務員",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-05-24T12:00:00.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [
+              {
+                "type": "Email",
+                "value": "enquiry@labour.gov.hk"
+              },
+              {
+                "type": "Phone",
+                "value": "2717 1771"
+              },
+              {
+                "type": "Phone",
+                "value": "2969 0888"
+              },
+              {
+                "type": "Phone",
+                "value": "36020325"
+              }
+            ],
+            "isVerified": false,
+            "abstract": "資歷 : 沒有學歷要求; 1年經驗; 良好粵語; 一般普通話; 一般英語; 懂讀寫中文; 略懂讀寫英文; 具有基本電腦操作知識\n待遇 : 每月$15,000, 有佣金, 醫療保險 及其他津貼/福利, 上午8時至下午5時或上午10時至下午8時, 每週工作6天,輪班,輪休\n申請須知 : 求職者可致...",
+            "content": "編號 : 12-24-0010341 CS\n\n日期 : 24/05/2024\n\n職位 : 市區/口岸站務員\n\n公司/僱主名稱 : 香港中旅汽車服務有限公司\n\n地區 : 灣仔,太子,深圳灣口岸(港方口岸區)\n\n行業 : 運輸業\n\n職責 : 負責售票、客戶查詢、掃描車票、安排乘客上車等工作\n\n資歷 : 沒有學歷要求; 1年經驗; 良好粵語; 一般普通話; 一般英語; 懂讀寫中文; 略懂讀寫英文; 具有基本電腦操作知識\n\n待遇 : 每月$15,000, 有佣金, 醫療保險 及其他津貼/福利, 上午8時至下午5時或上午10時至下午8時, 每週工作6天,輪班,輪休\n\n申請須知 : 求職者可致電36020325與香港中旅汽車服務有限公司徐小姐聯絡。\n\n備註 : -\n\n如何應徵？\n\n\n空缺咭上有僱主的聯絡資料（如電話號碼、傳真號碼或電郵地址等）：\n請直接聯絡僱主求職\n\n空缺咭上沒有僱主的聯絡資料：\n\n\n 1. 請記下空缺編號\n\n 2. 已登記的求職人士請\n    (a) 致電電話就業服務中心熱線 2969 0888 安排轉介，\n    或\n    (b)\n    親身到勞工處就業中心取籌安排轉介，取籌先到先得，籌號派完即止。星期一至五上午時段的籌號及下午時段的籌號分別於下午12時35分及下午6時正停止派發。\n    （就業中心於午膳時間下午1時正至2時正不會提供就業轉介服務）\n\n 3. 如求職人士尚未登記，請於網上登記或親身到就業中心登記，然後使用轉介服務\n\n請按\n\n求職資訊\n參閱在求職及面試時須注意的事項。如須撰寫求職信及履歷表，可參考\n求職信及履歷表範本\n\n\n\n在接受聘用前，你應清楚知道僱主的身份，詳情可參閱「保存僱傭紀錄---僱員參考手冊」。\n\n求職人士請注意：\n\n * 空缺咭展示的職位空缺資料，包括職位名稱、職責內容、工作時間、薪金等，均是由僱主提供。如果求職人士在面試時，僱主提出不合理的要求，或所提供的僱傭條件與本處登記的資料不符，請盡快通知本處。為免墮入求職陷阱，在面試時應注意聘用條件（包括計薪方法、工資期、休息日安排等），了解職位的工作範圍及入職要求，並留意工作環境。此外，請特別留意工作性質及內容會否抵觸現行法例，切勿因急於求職而接受聘用從事非法工作。\n * 僱主及職業介紹所向本處遞交職位招聘表時，已承諾會按照《最低工資條例》的規定，就任何工資期，支付不少於法定最低工資水平的工資予受聘有關職位並受《最低工資條例》涵蓋的人士\n   。\n * 如你有合理懷疑僱主未有遵守《僱傭條例》、《僱員補償條例》、《最低工資條例》，可致電熱線2717\n   1771（由1823接聽）或電郵至enquiry@labour.gov.hk\n   查詢。至於涉及《性別歧視條例》、《殘疾歧視條例》、《家庭崗位歧視條例》或《種族歧視條例》的查詢，請聯絡平等機會委員會。\n * 根據《最低工資條例》的規定，僱主須就任何工資期，確保支付僱員不少於按下列方法計算的最低工資：\n   \n   最低工資=僱員於工資期的總工作時數 x 法定最低工資水平（即每小時40元1）\n   1由2023年5月1日起，法定最低工資水平已調升至每小時40元。\n   \n   * 如就工資期須支付予僱員的工資少於最低工資，僱員有權就該工資期獲付這差額（即「額外報酬」）。該僱員的僱傭合約須視為他有權就該工資期獲得額外報酬，而該額外報酬亦適用於計算根據其他相關法例所應獲得的款項。\n   * 有關法定最低工資的定義及計算詳情，請瀏覽 《法定最低工資：僱主及僱員參考指引》或致電 24 小時查詢熱線 2717 1771（由「1823」接聽）。\n\n\n為配合新高中學制，空缺展示的高中教育程度要求（若適用）如下：\n中四至中六： 指新舊學制皆適用或同等學歷；\n中七： 指舊學制中七程度或同等學歷。\n有關新學制詳情，請瀏覽 334.edb.hkedcity.net 或 www.edb.gov.hk\n\n空缺資料中的部份內容可能經由本處提供中文翻譯，有關翻譯只應作參考之用。需要求職人士有閱讀英文能力的職位空缺內容或會以英文顯示。如有疑問，或欲以中文了解上述空缺資料的全部內容，請聯絡本處就業中心。已登記求職人士亦可致電電話就業服務中心熱線\n2969 0888尋求協助。如空缺咭上有僱主的聯絡方法，你更可直接聯絡僱主查詢。\n\n\n\n惡劣天氣下就業中心的開放安排\n\n\n\n提防求職陷阱 如你於申請職位空缺時，遇到任何可疑的情況，請即與本處職員聯絡。有關提防求職陷阱的資訊，可瀏覽此網頁。",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-05-24T12:00:00.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/76137612?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "香港中旅汽車服務有限公司",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "Wan Chai, Wan Chai District"
+            },
+            "classifications": [
+              {
+                "label": "Supervisors/Team Leaders (Call Centre & Customer Service)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61941100",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79734426",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79734426",
+            "title": "Customer Service Assistant (Double Pay)",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-23T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "海盛食品有限公司是香港專業的急凍海產品進口商，擁有超過二十年的專業經驗。我們致力於引進世界各地優質海產，具備豐富的進口經驗和優秀的品質管理機制。我們的供應商遍布全球，信譽卓越。\n\n",
+            "content": "Responsibilities: \n\n * 提供一般客戶查詢及接聽客戶來電\n * 系統資料輸入及簡單文件處理\n\nRequirements:\n\n * 中五或以上程度，具備相關工作經驗優先考慮 \n * 守時、勤奮、工作有效率、積極上進、具良好溝通及協調技巧、願意學習\n * 包括：英語、中文和國語口語和書面表達能力\n * 熟練使用 MS Office 應用程序，包括 Excel、Outlook、Word 和中英文打字 (速成/倉頡)\n\nBenefits:\n\n * 良好福利，雙糧，花紅，勤工獎\n * 週一至週五：上午8:30 - 下午5:30，週六：上午8:30 - 下午1:00\n * 每週工作5.5天\n * 工作地點：柴灣\n\n感興趣求職者請按 ‘Apply Now 投遞簡歷。我們期待你的加入！\n\n ",
+            "status": "Active",
+            "listedAt": {
+              "label": "5d ago",
+              "dateTimeUtc": "2024-10-24T11:52:51.670Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79734426?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "60302795",
+              "name": "Ocean Harvest Frozen Food Limited",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2013-01-23T11:48:21.017Z"
+              }
+            },
+            "location": {
+              "label": "Chai Wan, Eastern District"
+            },
+            "classifications": [
+              {
+                "label": "Customer Service - Customer Facing (Call Centre & Customer Service)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "a6248e87-3e83-44ba-a940-8971a90bbffb.1",
+                "cover": {
+                  "url": "https://image-service-cdn.seek.com.au/2bb55319f884cce7b5526dde5ee1b8256b710d90/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "thumbnailCover": {
+                  "url": "https://image-service-cdn.seek.com.au/2bb55319f884cce7b5526dde5ee1b8256b710d90/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/c977a49320b6fb4603e72eb1184fa283f4ac1bbb/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": [
+                "不用跑數工作穩定",
+                "良好福利，雙糧",
+                "東區"
+              ],
+              "questionnaire": {
+                "questions": [
+                  "How many years' experience do you have as a customer service assistant?",
+                  "How many years' experience do you have as a customer service clerk?",
+                  "Which of the following statements best describes your right to work in Hong Kong?",
+                  "What's your expected monthly basic salary?",
+                  "Which of the following Microsoft Office products are you experienced with?",
+                  "Which of the following languages are you fluent in?"
+                ]
+              },
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/Ocean-Harvest-Frozen-Food-Limited-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "78043384",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "78043384",
+            "title": "(工程) 項目統籌員",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-08-12T12:00:00.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [],
+            "isVerified": false,
+            "abstract": "職位 : (工程) 項目統籌員\n公司/僱主名稱 : 創基工程有限公司\n地區 : 港九新界\n行業 : 建造業\n職責 : 執行項目協調工作, 包括更新施工圖紙、項目文件和提交; 監控現場施工進度, 確保遵守項目進度計劃; 協調並聯繫各方, 確保文件提交、材料採購和現場工作的順利進行; 協助執行臨時...",
+            "content": "公司/僱主名稱 : 創基工程有限公司\n\n地區 : 港九新界\n\n行業 : 建造業\n\n職責 : 執行項目協調工作, 包括更新施工圖紙、項目文件和提交; 監控現場施工進度, 確保遵守項目進度計劃; 協調並聯繫各方,\n確保文件提交、材料採購和現場工作的順利進行; 協助執行臨時任務; 需要在地盤工作 (工作地點視乎工程項目需要而定) (及交通津貼, 配偶及子女醫療保險)\n\n資歷 : 專上教育：文憑/證書; 3年經驗; 良好粵語; 良好普通話; 良好英語; 懂讀寫中文; 懂讀寫英文; 懂電腦文書處理; 懂Microsoft\nOffice; 持有平安咭; 持有建造業工人註冊證; 懂AutoCAD; 須熟練使用 AutoCAD 繪製圖面和施工文件; 具有BIM或Revit經驗優先\n\n待遇 : 每月$25,000 - $35,000 (視乎經驗而定), 有年假12天, 銀行假期, 生日假, 醫療福利, 其他津貼 / 福利, 表現獎金,\n星期一至五: 上午8時半至下午5時半及星期六: 上午8時半至中午12時半, 每週工作5天至5天半",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-08-12T12:00:00.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/78043384?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "創基工程有限公司",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "New Territories"
+            },
+            "classifications": [
+              {
+                "label": "Administrative Assistants (Administration & Office Support)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61941100",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79474631",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79474631",
+            "title": "Accounting Officer",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-08-29T03:34:46.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [],
+            "isVerified": false,
+            "abstract": "Responsible to perform daily accounting operations, including data entry, issue invoices & cheques, support operations and handle audit enquiries.\n...",
+            "content": "Accounting Officer\n\nResponsible to perform daily accounting operations, including data entry, issue\ninvoices & cheques, support operations and handle audit enquiries.\n\n * Responsible to perform daily accounting operations, including data entry,\n   issue invoices & cheques, support operations and handle audit enquiries.\n * Ensure all invoices with appropriate documentation attached and approvals\n   prior to processing\n * Reconcile the supplier statements with corresponding records and follow up on\n   any discrepancies\n * Assist in other ad hoc assignments as assigned\n\n‍\n\n * Degree / Diploma holder in Accounting or related discipline\n * Minimum 1 year of relevant experience will be an advantage\n * Proficiency in MS Office applications\n * Experience in MYOB/ QUICKBOOK online will be an advantage\n * Good command of spoken and written English and Chinese\n * Immediately available is preferred\n * Fresh graduates are welcomed\n\n‍\n\n * Performance bonus\n * Medical benefits\n * 5-day Work Week\n * 14 days Annual Leave\n\n‍",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-08-29T03:34:46.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79474631?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "Jumppoint",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "Kwun Tong, Kwun Tong District"
+            },
+            "classifications": [
+              {
+                "label": "Administrative Assistants (Administration & Office Support)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/Jumppoint-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79638346",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79638346",
+            "title": "ASSISTANT PROPERTY OFFICER (Residential, Lam Tin)",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-12-20T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "Working Location: Lam Tin",
+            "content": "Harriman Property Management Limited (PMC Licence Number: C-761006), a\nwholly-owned subsidiary of Wheelock Properties, is a leading property management\ncompany in Hong Kong. With a history spanning over 55 years, our commitment to\nquality service has been recognized through numerous industry accolades, awards\nand ISO certifications. As part of the Wheelock Properties’ family, Harriman is\ncurrently managing across 35 diverse projects, ranging from residential\nproperties to a variety of contemporary offices.\n\nResponsibilities:\n\n * Act as the second-in-charge to oversee the day-to-day management of a newly\n   developed residential estate\n * Duties include budget planning, enforcement of DMC, liaison with owners /\n   tenants, complaints handling, supervision of site staff and monitoring of\n   contractors’ performance, etc\n\nRequirements: \n \n\n * Diploma or above in Property / Housing Management or related disciplines \n * Holder of PMP License (Tier2) is preferred\n * Mature, independent and able to work under pressure\n * Possess good PC skills and knowledge in Chinese Word Processing\n * Proficiency in both written and spoken English and Chinese is required",
+            "status": "Active",
+            "listedAt": {
+              "label": "4d ago",
+              "dateTimeUtc": "2024-10-25T00:48:50.607Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79638346?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61300489",
+              "name": "Harriman Property Management Limited",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2010-01-22T11:26:54.207Z"
+              }
+            },
+            "location": {
+              "label": "Lam Tin, Kwun Tong District"
+            },
+            "classifications": [
+              {
+                "label": "Administration (Real Estate & Property)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "c4dd4757-37a4-4447-9889-f7a2e2cec416.1",
+                "cover": {
+                  "url": "https://image-service-cdn.seek.com.au/37ac2734096dc97867c8a6fd376390e0d82f9640/c8ba1f7dc1d8022b92439a55b7015c382b84b7a0"
+                },
+                "thumbnailCover": {
+                  "url": "https://image-service-cdn.seek.com.au/37ac2734096dc97867c8a6fd376390e0d82f9640/2949f06d391b6bec95d9ea0c420525adb2b84492"
+                },
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/0fdc8682ede958c0facaf0cd93a60b825818cf4b/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": [
+                "A wholly-owned subsidiary of the Wheelock Group",
+                "Competitive remuneration package",
+                "Career development opportunities"
+              ],
+              "questionnaire": {
+                "questions": [
+                  "Which of the following statements best describes your right to work in Hong Kong?",
+                  "What's your expected monthly basic salary?",
+                  "How many years' experience do you have as an Assistant Property Officer?"
+                ]
+              },
+              "video": null
+            }
+          },
+          "companyProfile": {
+            "id": "171088833619578",
+            "name": "Harriman Property Management Limited",
+            "companyNameSlug": "harriman-property-management-limited-171088833619578",
+            "shouldDisplayReviews": true,
+            "branding": {
+              "logo": "https://image-service-cdn.seek.com.au/790938b8d538d384324efe03e61eead5abfc258d/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+            },
+            "overview": {
+              "description": {
+                "paragraphs": [
+                  "Harriman Property Management Limited (PMC Licence Number: C-761006), a wholly-owned subsidiary of Wheelock Properties, is a leading property management company in Hong Kong. With a history spanning over 55 years, our commitment to quality service has been recognized through numerous industry accolades, awards and ISO certifications. As part of the Wheelock Properties’ family, Harriman is currently managing across 35 diverse projects, ranging from residential properties to a variety of contemporary offices."
+                ]
+              },
+              "industry": "Real Estate & Property",
+              "size": {
+                "description": "101-1,000 employees"
+              },
+              "website": {
+                "url": "https://www.harriman.com.hk/"
+              }
+            },
+            "reviewsSummary": null,
+            "perksAndBenefits": []
+          },
+          "companySearchUrl": "https://hk.jobsdb.com/Harriman-Property-Management-Limited-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "76206964",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "76206964",
+            "title": "廠房清潔員",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-05-28T12:00:00.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [],
+            "isVerified": false,
+            "abstract": "職責 : 負責拖地, 掃地, 清潔洗手間, 抹牆身, 清潔地渠及去水位, 清潔風扇, 清倒垃圾及需體力勞動處理大垃圾桶等工作\n資歷 : 小六程度; 1年經驗; 一般粵語; 懂閱讀中文\n待遇 : 每月$16,000 - $17,000, 上午7時半至下午4時半, 每週工作6天, 輪休, 每天工作...",
+            "content": "公司/僱主名稱 : 盛華服務有限公司\n\n地區 : 深井/青龍頭\n\n行業 : 其他社區及社會服務業\n\n \n\n職責 : 負責拖地, 掃地, 清潔洗手間, 抹牆身, 清潔地渠及去水位, 清潔風扇, 清倒垃圾及需體力勞動處理大垃圾桶等工作\n\n資歷 : 小六程度; 1年經驗; 一般粵語; 懂閱讀中文\n\n待遇 : 每月$16,000 - $17,000, 上午7時半至下午4時半, 每週工作6天, 輪休, 每天工作 8 小時",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-05-28T12:00:00.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/76206964?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "Company Confidential",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "Tsing Lung Tau, Tsuen Wan District"
+            },
+            "classifications": [
+              {
+                "label": "Supervisors/Team Leaders (Call Centre & Customer Service)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61941100",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "76753683",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "76753683",
+            "title": "全職包餅生產助理",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-06-21T12:00:00.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [],
+            "isVerified": false,
+            "abstract": "職責 : 負責協助於冷氣廠房生產線製作西式包餅食物, 如: 麵包、曲奇、薄餅等; 在製成品進行加工, 如: 掃蛋漿、唧忌廉等\n資歷 : 沒有學歷要求; 一般粵語; 懂閱讀中文\n待遇 : 每月$12,500 - $14,000, 有超時工作津貼, 勤工獎金, 在職培訓及膳食津貼, 上午8時至下午...",
+            "content": "公司/僱主名稱 : 麥菲有限公司\n\n地區 : 葵興\n\n行業 : 其他製造業\n\n \n\n職責 : 負責協助於冷氣廠房生產線製作西式包餅食物, 如: 麵包、曲奇、薄餅等; 在製成品進行加工, 如: 掃蛋漿、唧忌廉等\n\n資歷 : 沒有學歷要求; 一般粵語; 懂閱讀中文\n\n待遇 : 每月$12,500 - $14,000, 有超時工作津貼, 勤工獎金, 在職培訓及膳食津貼, 上午8時至下午5時, 每週工作6天, 輪休, 每天工作\n9 小時",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-06-21T12:00:00.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/76753683?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "Company Confidential",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "Kwai Tsing District"
+            },
+            "classifications": [
+              {
+                "label": "Supervisors/Team Leaders (Call Centre & Customer Service)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61941100",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "76093765",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "76093765",
+            "title": "Assistant / Treasury Marketing Manager",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-05-23T07:39:13.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [],
+            "isVerified": false,
+            "abstract": "Responsible for the sales and marketing, trading business for BOCHK’s Chinese or local financial institutions clients to proactively drive performa...",
+            "content": "Responsibilities:\n\n * Responsible for the sales and marketing, trading business for BOCHK’s Chinese\n   or local financial institutions clients to proactively drive performance;\n   keeping abreast of changes in market and clients’ demand, giving professional\n   advice on sales strategy adjustment.\n * Maintaining high quality day to day contact with clients, pitching and\n   closing of deals, and proper follow up of post deal tasks.\n * Maintain mutually beneficial relationship with Traders and other product\n   manager of Global Markets. Work closely within own team to maximize business\n   revenue and backup other team members.\n * Work closely with other business units e.g. Institutional Banking, Custody to\n   cross-sell and maximize synergy for the bank and cooperating with frontline\n   departments to attend important meetings and sales events. \n * Coordinate internal departments negotiate and sign legal documents with\n   Chinese or local financial institutions clients, like ISDA/CSA/CDEA and\n   relative legal documents. \n\nRequirements:\n\n * Bachelor's degree , with at least 1-3 years’ experience in financial services\n   industry, including 1-3 years’ experience in institutions clients marketing\n   is a plus.\n * Experience with derivatives or other investment related products.\n * Excellent analytical and marketing skills and basic data statistics. \n * A strong sense of responsibility and willingness to learn regarding the\n   innovation and application of financial products.\n * Adhere to professional conduct with good personal qualities.\n * Licensed for dealing in securities (Type 1) and advising on securities (Type\n   4) ;other necessary professional qualification licenses for treasury\n   marketing\n * Excellent command of both spoken and written English and Chinese including\n   Mandarin.",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-05-23T07:39:13.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/76093765?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61288135",
+              "name": "Bank of China (Hong Kong) Limited",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2010-01-22T11:26:54.207Z"
+              }
+            },
+            "location": {
+              "label": "Hong Kong SAR"
+            },
+            "classifications": [
+              {
+                "label": "Corporate Finance & Investment Banking (Banking & Financial Services)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61288135",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "77827237",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "77827237",
+            "title": "全職校工",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-08-02T12:00:00.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [
+              {
+                "type": "Email",
+                "value": "enquiry@labour.gov.hk"
+              },
+              {
+                "type": "Phone",
+                "value": "2717 1771"
+              },
+              {
+                "type": "Phone",
+                "value": "2969 0888"
+              }
+            ],
+            "isVerified": false,
+            "abstract": "資歷 : 小六程度; 2年經驗; 良好粵語; 一般普通話; 懂讀寫中文; 有禮勤奮；懂得與他人合作及團隊精神。持有電工 A 牌優先\n待遇 : 每月$14,000, 星期一至五: 上午7時15分至下午4時45分/上午9時至下午6時半,星期六: 上午8時至下午1時, 每週工作5天至5天半,輪班, ...",
+            "content": "編號 : 22-24-0032784 LA\n\n日期 : 02/08/2024\n\n職位 : 全職校工**\n\n公司/僱主名稱 : 百卉九江書院\n\n地區 : 石硤尾\n\n行業 : 教育服務業\n\n職責 : 負責清潔學校設施，班房，教室及用具，一般體力勞動職務，搬運傢具雜物，外勤及其他指派工作。\n\n資歷 : 小六程度; 2年經驗; 良好粵語; 一般普通話; 懂讀寫中文; 有禮勤奮；懂得與他人合作及團隊精神。持有電工 A 牌優先\n\n待遇 : 每月$14,000, 星期一至五: 上午7時15分至下午4時45分/上午9時至下午6時半,星期六: 上午8時至下午1時, 每週工作5天至5天半,輪班,\n每天工作 9.5 小時, 1小時午飯時間, 每月一個星期六休息\n\n如何應徵？\n\n\n空缺咭上有僱主的聯絡資料（如電話號碼、傳真號碼或電郵地址等）：\n請直接聯絡僱主求職\n\n空缺咭上沒有僱主的聯絡資料：\n\n\n 1. 請記下空缺編號\n\n 2. 已登記的求職人士請\n    (a) 致電電話就業服務中心熱線 2969 0888 安排轉介，\n    或\n    (b)\n    親身到勞工處就業中心取籌安排轉介，取籌先到先得，籌號派完即止。星期一至五上午時段的籌號及下午時段的籌號分別於下午12時35分及下午6時正停止派發。\n    （就業中心於午膳時間下午1時正至2時正不會提供就業轉介服務）\n\n 3. 如求職人士尚未登記，請於網上登記或親身到就業中心登記，然後使用轉介服務\n\n請按\n\n求職資訊\n參閱在求職及面試時須注意的事項。如須撰寫求職信及履歷表，可參考\n求職信及履歷表範本\n\n\n\n在接受聘用前，你應清楚知道僱主的身份，詳情可參閱「保存僱傭紀錄---僱員參考手冊」。\n\n求職人士請注意：\n\n * 空缺咭展示的職位空缺資料，包括職位名稱、職責內容、工作時間、薪金等，均是由僱主提供。如果求職人士在面試時，僱主提出不合理的要求，或所提供的僱傭條件與本處登記的資料不符，請盡快通知本處。為免墮入求職陷阱，在面試時應注意聘用條件（包括計薪方法、工資期、休息日安排等），了解職位的工作範圍及入職要求，並留意工作環境。此外，請特別留意工作性質及內容會否抵觸現行法例，切勿因急於求職而接受聘用從事非法工作。\n * 僱主及職業介紹所向本處遞交職位招聘表時，已承諾會按照《最低工資條例》的規定，就任何工資期，支付不少於法定最低工資水平的工資予受聘有關職位並受《最低工資條例》涵蓋的人士\n   。\n * 如你有合理懷疑僱主未有遵守《僱傭條例》、《僱員補償條例》、《最低工資條例》，可致電熱線2717\n   1771（由1823接聽）或電郵至enquiry@labour.gov.hk\n   查詢。至於涉及《性別歧視條例》、《殘疾歧視條例》、《家庭崗位歧視條例》或《種族歧視條例》的查詢，請聯絡平等機會委員會。\n * 根據《最低工資條例》的規定，僱主須就任何工資期，確保支付僱員不少於按下列方法計算的最低工資：\n   \n   最低工資=僱員於工資期的總工作時數 x 法定最低工資水平（即每小時40元1）\n   1由2023年5月1日起，法定最低工資水平已調升至每小時40元。\n   \n   * 如就工資期須支付予僱員的工資少於最低工資，僱員有權就該工資期獲付這差額（即「額外報酬」）。該僱員的僱傭合約須視為他有權就該工資期獲得額外報酬，而該額外報酬亦適用於計算根據其他相關法例所應獲得的款項。\n   * 有關法定最低工資的定義及計算詳情，請瀏覽 《法定最低工資：僱主及僱員參考指引》或致電 24 小時查詢熱線 2717 1771（由「1823」接聽）。\n\n\n為配合新高中學制，空缺展示的高中教育程度要求（若適用）如下：\n中四至中六： 指新舊學制皆適用或同等學歷；\n中七： 指舊學制中七程度或同等學歷。\n有關新學制詳情，請瀏覽 334.edb.hkedcity.net 或 www.edb.gov.hk\n\n空缺資料中的部份內容可能經由本處提供中文翻譯，有關翻譯只應作參考之用。需要求職人士有閱讀英文能力的職位空缺內容或會以英文顯示。如有疑問，或欲以中文了解上述空缺資料的全部內容，請聯絡本處就業中心。已登記求職人士亦可致電電話就業服務中心熱線\n2969 0888尋求協助。如空缺咭上有僱主的聯絡方法，你更可直接聯絡僱主查詢。\n\n\n\n惡劣天氣下就業中心的開放安排\n\n\n\n提防求職陷阱 如你於申請職位空缺時，遇到任何可疑的情況，請即與本處職員聯絡。有關提防求職陷阱的資訊，可瀏覽此網頁。",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-08-02T12:00:00.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/77827237?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "百卉九江書院",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "Shek Kip Mei, Sham Shui Po District"
+            },
+            "classifications": [
+              {
+                "label": "Administrative Assistants (Administration & Office Support)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61941100",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79755055",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79755055",
+            "title": "SENIOR PROPERTY OFFICER / PROPERTY OFFICER",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-24T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "\r\nSavills has a network of over 700 offices and associates throughout the Americas, Europe, Asia Pacific, Africa and the Middle East. We require a...",
+            "content": "Savills has a network of over 700 offices and associates throughout the\nAmericas, Europe, Asia Pacific, Africa and the Middle East. We require a high\ncalibre individual to join us for the following position:- \n\n \n\n\nSENIOR PROPERTY OFFICER 1 PROPERTY OFFICER\n\n \n\n * Responsible for assisting the property manager to look after a residential\n   property in Tsing Yi District\n * Relevant professional qualifications in property management. PMP\n   Licence/M.H.K.l.S./M.C.l.H. an advantage\n * At least 1 year of working experience in related field and in similar\n   capacity\n * Strong interpersonal skill is required\n * Good command of written and spoken English and Chinese\n * Mature and able to work independently\n\n \n\nWe offer attractive remuneration and excellent prospects for the right candidate\nPlease apply in writing with full resume and salary expected to below address or\nclick “APPLY NOW”\n\n \n\n Human Resources Director\nSavills Property Management Limited\nSuites 805-13, 8/F, 1111 King's Road, Taikoo Shing, Hong Kong\nhttp://savills.com\nEA Co. Licence: C-002955 / PMC Licence: C-297623\n\nApplications will be treated in strict confidence. Personal data collected will\nbe used for recruitment purpose only.\nApplicants not hearing from us within 2 months from the date of application\nsubmitted may consider their application unsuccessful.",
+            "status": "Active",
+            "listedAt": {
+              "label": "4d ago",
+              "dateTimeUtc": "2024-10-25T06:55:18.468Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79755055?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61310052",
+              "name": "第一太平戴維斯物業管理有限公司",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2014-05-29T03:11:35.027Z"
+              }
+            },
+            "location": {
+              "label": "Tsing Yi, Kwai Tsing District"
+            },
+            "classifications": [
+              {
+                "label": "Residential Leasing & Property Management (Real Estate & Property)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "d4e05ff1-aab9-4553-a31a-ddf3a30382e1.1",
+                "cover": null,
+                "thumbnailCover": null,
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/4f3edc8e87b65c6006553bae82eb9ea3da7de319/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": {
+            "id": "171089924371620",
+            "name": "Savills Property Management",
+            "companyNameSlug": "savills-property-management-171089924371620",
+            "shouldDisplayReviews": true,
+            "branding": {
+              "logo": "https://image-service-cdn.seek.com.au/1c8d448d2c676021c5440813aca98efa419c78a3/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+            },
+            "overview": {
+              "description": {
+                "paragraphs": [
+                  "PMC license number : C-297623",
+                  "Savills plc is a global real estate services provider listed on the London Stock Exchange. We have an international network of more than 700 offices and associates throughout the Americas, the UK, continental Europe, Asia Pacific, Africa and the Middle East,",
+                  "offering a broad range of specialist advisory, management and transactional services to clients all over the world.",
+                  "Our people combine entrepreneurial spirit and a deep understanding of specialist property sectors with the highest standards",
+                  "of client care."
+                ]
+              },
+              "industry": "Real Estate & Property",
+              "size": {
+                "description": "101-1,000 employees"
+              },
+              "website": {
+                "url": "http://www.savills.com.hk"
+              }
+            },
+            "reviewsSummary": null,
+            "perksAndBenefits": []
+          },
+          "companySearchUrl": "https://hk.jobsdb.com/Savills-Property-Management-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79265194",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79265194",
+            "title": "Administrative Assistant (Temporary Appointment)",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-02T12:59:59.999Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "The appointee will be required to provide administrative and operational support to the daily operation of the general office.",
+            "content": "DEPARTMENT OF CHINESE HISTORY AND CULTURE\n\nAdministrative Assistant (Temporary Appointment) (Ref. 241003009)\n\n[Appointment period: twelve months] \n\nDuties \n\nThe appointee will be required to: \n\n(a) provide administrative and operational support to the daily operation of the\ngeneral office;\n\n(b) perform counter duties and to handle enquiries and phone calls;\n\n(c) provide support in organising seminars, workshops and promotional events;\n\n(d) assist in handling financial matters of the Department;\n\n(e) provide support in filing and report compilation; and\n\n(f) perform any other duties as assigned by the Head of Department or his/her\ndelegates. \n\nQualifications\n\nApplicants should: \n\n(a) have five passes in HKCEE including English Language (at least Grade C if\nSyllabus A; Level 2 if results are obtained from 2007 onwards), Chinese Language\n(Level 2 if results are obtained from 2007 onwards) and Mathematics; or a\ncombination of results in five HKDSE subjects of Level 2 in New Senior Secondary\nsubjects / “Attained” in Applied Learning subjects / Grade E in Other Language\nsubjects, and the five subjects must include English Language, Chinese Language\nand Mathematics;\n\n(b) have some relevant administrative experience, preferably gained from\neducation sector;\n\n(c) be able to communicate in both written and spoken English and Chinese,\npreferably with fluency in Putonghua;\n\n(d) have good computer literacy, including MS Word, Excel and Chinese word\nprocessing; and\n\n(e) have multi-tasking skills and good interpersonal skills.\n\nConditions of Service \n\nA highly competitive remuneration package will be offered.  \n\nApplication \n\nPlease submit an application through PolyU’s career website\n(https://jobs.polyu.edu.hk/general).  Consideration of applications will\ncommence on 17 October 2024 until the position is filled. The University’s\nPersonal Information Collection Statement for recruitment can be found at\nhttps://www.polyu.edu.hk/hro/careers/pics_for_recruitment/.\n\nPolyU is an equal opportunity employer committed to diversity and inclusivity. \nAll qualified applicants will receive consideration for employment without\nregard to gender, ethnicity, nationality, family status or physical or mental\ndisabilities. ",
+            "status": "Active",
+            "listedAt": {
+              "label": "26d ago",
+              "dateTimeUtc": "2024-10-03T09:36:55.176Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79265194?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "60313154",
+              "name": "The Hong Kong Polytechnic University",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2010-01-22T11:26:54.207Z"
+              }
+            },
+            "location": {
+              "label": "Hung Hom, Kowloon City District"
+            },
+            "classifications": [
+              {
+                "label": "Administrative Assistants (Administration & Office Support)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "8cac9987-e02d-41ae-8842-6db6cffc971f.2",
+                "cover": null,
+                "thumbnailCover": null,
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/150b43651dada4acfc8ab9eb885556a031c8b52c/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/Hong-Kong-Polytechnic-University-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79276466",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79276466",
+            "title": "Analyst Programmer - (REF. NO.: HKEC241010)",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-03T12:59:59.999Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [
+              {
+                "type": "Phone",
+                "value": "2595 6967"
+              }
+            ],
+            "isVerified": true,
+            "abstract": "Pay: HK$41,484 to HK$63,338 (HGPS Point 17 to 26) per month including Monthly Allowance \nUp to 15% of total basic salary as end-of-contract gratuity",
+            "content": "Department / Cluster: Information Technology Division / Hong Kong East Cluster\nPay:    HK$41,484 to HK$63,338 (HGPS Point 17 to 26) per month including Monthly\nAllowance \nUp to 15% of total basic salary (after deducting the contribution of Mandatory\nProvident Fund by Hospital Authority) as end-of-contract gratuity may be offered\nto contract staff upon completion of the contract subject to satisfactory\nperformance.\n\nKey Responsibilities:\n1.   Conduct detail system analysis, problem diagnosis, propose, develop and\nimplement IT solutions.\n2.   Assist in provision of consultancy based on information technology and\nindustry expertise in areas of responsibility.\n3.   Prepare requirement specifications of IT solutions in areas of\nresponsibility.\n4.   Monitor service provision of IT solutions in areas of responsibility.\n5.   Provide competent level of user support.\n6.   Prepare cases for testing IT solutions in areas of responsibility.\n7.   Maintain system documentations and reports of IT solutions in areas of\nresponsibility.\n8.   Prepare user guide and conduct user training.\n9.   Provide proficient configuration, testing, technical operational or user\nsupport on system hardware, software or services in the areas of responsibility.\n10. Monitor systems connectivity, performance and security control in the areas\nof responsibility.\n11. Implement technical infrastructure enhancements such as network, computer\nplatform, desktop computer and data centre, etc.\n12. Quality assurance and accept work deliverables from IT staff.\n13. Provide after office hours system support and carry 24-hour mobile phone for\nsupport duty.\n14. Perform any other duties as assigned by supervisors.\n\nEntry Requirements:\n1.  Degree in Computer Science or relevant disciplines; or equivalent.\n2.  4 years' post qualification Information Technology (IT) related experience.*\n*Relevant experience gained in HA may be considered as equivalent to\npost-qualification experience.\n\nPreferred Attributes:\n1.   Experience in PC, mobile device, server and network infrastructure support.\n2.   Experience in technical operation support.\n3.   Good knowledge of IT service management and project implementation.\n4.   Good command of both spoken and written English and Cantonese.\n5.   Self-initiated, self-motivated and able to work independently.\n6.   Good interpersonal, communication and supervisory skills.\n\nRemarks:\n1.  Please refer to https://www.ha.org.hk/haho/ho/hrd_jv/NotestoApplicants.pdf\nfor “Notes to Applicants”.\n2.   One of the posts is a time-limited post. The selected candidate will be\noffered contract or fixed-term appointment for up to 3 years.\nPlease submit on-line application on or before 15 October 2024. \nFor enquiries, please telephone 2595 6967.",
+            "status": "Active",
+            "listedAt": {
+              "label": "25d ago",
+              "dateTimeUtc": "2024-10-04T00:59:56.714Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79276466?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61299102",
+              "name": "Hospital Authority (Hong Kong East Cluster)",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2012-05-23T09:08:01.063Z"
+              }
+            },
+            "location": {
+              "label": "Eastern District"
+            },
+            "classifications": [
+              {
+                "label": "Developers/Programmers (Information & Communication Technology)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "0a762d0f-1d12-419a-9e3c-f9a2fd382914.2",
+                "cover": null,
+                "thumbnailCover": null,
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/93d55d0f5e4dbc7c3ecadc121be3a1f796a6feff/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": {
+            "id": "171088918136356",
+            "name": "Hong Kong Hospital Authority",
+            "companyNameSlug": "hong-kong-hospital-authority-171088918136356",
+            "shouldDisplayReviews": true,
+            "branding": {
+              "logo": "https://image-service-cdn.seek.com.au/667ac23b00eb1824c8ac86002a71ab0c8f0a9d99/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+            },
+            "overview": {
+              "description": {
+                "paragraphs": [
+                  "The Hospital Authority (HA) is a statutory body established under the Hospital Authority Ordinance in 1990. We have been responsible for managing Hong Kong's public hospitals services since December 1991. We are accountable to the Hong Kong Special Administrative Region Government through the Secretary for Health, who formulates overall health policies for Hong Kong and oversees the works of HA"
+                ]
+              },
+              "industry": "Healthcare & Medical",
+              "size": {
+                "description": "101-1,000 employees"
+              },
+              "website": {
+                "url": "https://www.ha.org.hk/visitor/ha_index.asp?Lang=CHIB5"
+              }
+            },
+            "reviewsSummary": null,
+            "perksAndBenefits": []
+          },
+          "companySearchUrl": "https://hk.jobsdb.com/Hong-Kong-Hospital-Authority-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79629353",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79629353",
+            "title": "Engineer / Assistant Engineer - Electrical",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-20T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "We are currently seeking a highly motivated individual to join our team. \n",
+            "content": "Job responsibilities:\n\n * Coordinate and monitor the installation site work \n * Work handover to clients, architects and consultants \n * Prepare and submit project documents and shop drawings\n * Support ad hoc projects as required\n\n \n\nRequirements:\n\n * High-Diploma or Bachelor's Degree in Building Services Engineering,\n   Electrical Engineering or relevant disciplines\n * Work in construction site\n * At least 2 years relevant experience\n * Proficient in MS Office and AutoCAD \n * Good command of spoken Chinese and written English \n * Immediate available is highly preferred \n\n \n\nWhat we offer:\n\n * Double pay         \n * Performance bonus\n * Gratuity\n * Public Holidays\n * Paid annual leave\n * On-the-job training\n\n \n\nWe offer attractive remuneration package to the successful candidates.\nInterested parties please click 'Quick Apply' with your full resume, expected\nsalary and date of availability.\n\n(Personal data collected will be used for recruitment purpose only) ",
+            "status": "Active",
+            "listedAt": {
+              "label": "8d ago",
+              "dateTimeUtc": "2024-10-21T02:20:17.735Z"
+            },
+            "salary": {
+              "currencyLabel": null,
+              "label": "$25,000 – $35,000 per month"
+            },
+            "shareLink": "https://hk.jobsdb.com/job/79629353?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61394827",
+              "name": "Effort Engineering Limited",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2011-06-03T07:43:52.500Z"
+              }
+            },
+            "location": {
+              "label": "Hong Kong SAR"
+            },
+            "classifications": [
+              {
+                "label": "Electrical/Electronic Engineering (Engineering)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "5b7d8e1b-da08-462d-80be-5f5513ca0179.1",
+                "cover": null,
+                "thumbnailCover": null,
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/f7ca5753d1e92c8c4ea541ca8d232bc699c640c2/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": [
+                "Assistant Engineer/ Engineer",
+                "Bachelor's Degree  in Building Services/ Electrical Engineering",
+                "Performance bonus/ Double pay"
+              ],
+              "questionnaire": {
+                "questions": [
+                  "How many years' experience do you have as an Electrical Engineer?",
+                  "Which of the following CAD software do you have experience with?",
+                  "What's your expected monthly basic salary?"
+                ]
+              },
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/Effort-Engineering-Limited-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79606299",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79606299",
+            "title": "銀行文員, 20K（撰寫客戶回復）",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-17T12:59:59.999Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "Customer experience enhancement team is looking for administrative assistant, mainly for meeting scheduling, preparing correspondence and PowerPoint.",
+            "content": "我們的客戶是一家中資銀行，目前招聘一名文員加入客戶體驗團隊。\n\n工作内容：\n\n * 協調公司各部門會議的排程，並於會後製作會議記錄及追蹤處理決議事項，和安排主管行程\n * 準備會議資料、簡報和數據分析表\n * 撰寫客戶回復\n * 執行與協調辦公室行政活動、行政事務流程之規劃、整合及溝通\n\n工作要求：\n\n * 4年以上文職經驗（銀行經驗優先考慮）\n * 良好中、英文書寫能力\n * 熟悉Microsoft Office Suites\n * 能即時上班優先",
+            "status": "Active",
+            "listedAt": {
+              "label": "11d ago",
+              "dateTimeUtc": "2024-10-18T09:49:02.281Z"
+            },
+            "salary": {
+              "currencyLabel": null,
+              "label": "$19,000 – $20,000 per month"
+            },
+            "shareLink": "https://hk.jobsdb.com/job/79606299?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Contract/Temp"
+            },
+            "advertiser": {
+              "id": "60187177",
+              "name": "Adecco Personnel Limited",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2010-01-22T11:26:54.207Z"
+              }
+            },
+            "location": {
+              "label": "Wan Chai, Wan Chai District"
+            },
+            "classifications": [
+              {
+                "label": "Client Services (Banking & Financial Services)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "ad8cb240-806c-4c3a-b76e-32d497dcb55c.1",
+                "cover": null,
+                "thumbnailCover": null,
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/bf2afeef740a352de703b4fc036d9ba55695ade3/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": [
+                "秘書行政工作",
+                "中資銀行 鄰近地鐵站",
+                "五天工作"
+              ],
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/Adecco-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79510766",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79510766",
+            "title": "Business Development Manager, APAC",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-15T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "We are currently expanding our business in the Indonesian community and we have been building a financial product for the Indonesian sector. ",
+            "content": "Sirius Capital Holdings Limited is a Hong Kong limited company, which aims to\nprovide a wide range of investment products for our customers.\n\n \n\nResponsibilities:\n\nWe are currently expanding our business in the Indonesian community and we have\nbeen building a financial product for the Indonesian sector. We are looking for\nhigh calibrate candidate with deep understanding of Indonesian culture and\npeople to join our team who possesses the following attributes:\n\n \n\n * Responsible for developing, implementing, and executing marketing strategies\n   and campaigns for Hong Kong and APAC\n * Analyse customer insights and trends, market analysis and conditions to build\n   successful strategies\n * Execute marketing plans, campaigns, and strategies to meet objectives for all\n   marketing related activities\n * Manage marketing budget to achieve effective marketing activities\n * Report and communicate with top management about marketing programs,\n   strategies, and budgets\n * Drive sales to increase company’s revenue\n * Good presentation, communication, and customer servicing skills\n * Fluent in English and Bahasa\n * Immediately available\n\n \n\nSkills which will be of value:\n\n \n\n * Proven success in developing marketing plans and campaigns\n * Experience of Marketing and Client Relations\n * Strong project management, multitasking, and decision-making skills",
+            "status": "Active",
+            "listedAt": {
+              "label": "13d ago",
+              "dateTimeUtc": "2024-10-16T04:51:03.590Z"
+            },
+            "salary": {
+              "currencyLabel": null,
+              "label": "$28,000 – $30,000 per month"
+            },
+            "shareLink": "https://hk.jobsdb.com/job/79510766?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "62719306",
+              "name": "Sirius Capital Holdings Limited",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2024-10-15T04:22:59.442Z"
+              }
+            },
+            "location": {
+              "label": "Kowloon Bay, Kwun Tong District"
+            },
+            "classifications": [
+              {
+                "label": "New Business Development (Sales)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "b4029a71-083f-4cfc-a5dd-b861c3e3ebee.1",
+                "cover": null,
+                "thumbnailCover": null,
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/1d9454ae305105829028bb6c63ed3ec5e1498d5d/f3c5292cec0e05e4272d9bf9146f390d366481d0"
+                }
+              },
+              "bullets": [
+                "Five-day work week",
+                "Medical insurance",
+                "Dental insurance"
+              ],
+              "questionnaire": {
+                "questions": [
+                  "Which of the following statements best describes your right to work in Hong Kong?",
+                  "What's your expected monthly basic salary?",
+                  "How many years' experience do you have as a business development manager?",
+                  "How many years of project management experience do you have?",
+                  "Do you have experience in a role which requires relationship management experience?",
+                  "Which of the following languages are you fluent in?"
+                ]
+              },
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=62719306",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79517276",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79517276",
+            "title": "AIGC Engineer",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-14T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "The ideal candidate will be responsible for designing, developing, and optimizing large-scale language models to enhance our AI capabilities.",
+            "content": "We are a cutting-edge technology innovation company dedicated to exploring the\nendless possibilities of artificial intelligence and digital entertainment. By\nintegrating the latest AI technology with creative content production, we are\nshaping a new form of future entertainment experience. Currently, we are looking\nfor a talented AIGC Engineer specializing in digital human technology to embark\non a new chapter of interactive content creation for the next generation.\n\nResponsibilities:\n\n * Technical Leadership and Innovation: In-depth research and application of the\n   latest AIGC technology, especially 2D and 3D model generation technology, to\n   design and implement highly realistic and interactive digital humans.\n * Model Optimization and Implementation: Optimize existing 2D/3D models to\n   enhance rendering efficiency and visual effects, ensuring smooth performance\n   of digital humans across different platforms.\n * Cross-Disciplinary Integration: Explore new boundaries of digital humans in\n   sound interaction and emotional expression by combining sound processing and\n   music production technologies to enhance the realism of user experience.\n * Project Collaboration: Collaborate closely with product, design, and audio\n   teams to drive the entire process of digital human projects from concept to\n   finished product, ensuring timely and high-quality project completion.\n * Technical Innovation and Sharing: Stay updated on industry trends,\n   continuously learn new technologies, regularly share research findings, and\n   drive the continuous improvement of the team's technical capabilities.\n\nRequirements:\n\n * Bachelor's degree or higher in Computer Science, Software Engineering, or\n   related fields, with a solid foundation in computer graphics and artificial\n   intelligence.\n * At least 3 years of relevant work experience, with priority given to those\n   who have successfully participated in 2D/3D model development projects in the\n   digital human, gaming, or film industries.\n * Proficiency in at least one mainstream 3D modeling and animation software\n   (such as Maya, 3ds Max, Blender, etc.), familiarity with game engines like\n   Unity or Unreal Engine.\n * Some understanding of sound processing technology, with experience in audio\n   synthesis and sound design being a plus.\n * Familiarity with programming languages like Python, C++, and experience using\n   deep learning frameworks like TensorFlow, PyTorch.\n * Excellent teamwork spirit, good communication skills, and the ability to\n   quickly learn new technologies.",
+            "status": "Active",
+            "listedAt": {
+              "label": "14d ago",
+              "dateTimeUtc": "2024-10-15T08:21:06.438Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79517276?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61282635",
+              "name": "Brightoil Petroleum (Holdings) Limited",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2010-01-22T11:26:54.207Z"
+              }
+            },
+            "location": {
+              "label": "Hong Kong SAR"
+            },
+            "classifications": [
+              {
+                "label": "Mathematics, Statistics & Information Sciences (Science & Technology)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "3b0ef37f-15ef-409e-b5d0-ad8395ca3dcb.1",
+                "cover": {
+                  "url": "https://image-service-cdn.seek.com.au/e0b8804d42922425b99784609eacb5299654f47b/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "thumbnailCover": {
+                  "url": "https://image-service-cdn.seek.com.au/e0b8804d42922425b99784609eacb5299654f47b/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/e10bd2f85c9c0db61d8e58f3b698de4b138e86ed/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": [
+                "Design and optimize large language models",
+                "Degree or higher in Computer Science, Artificial Intelligence, Mathematics",
+                "Proven experience in developing and deploying large language models"
+              ],
+              "questionnaire": {
+                "questions": [
+                  "Which of the following statements best describes your right to work in Hong Kong?",
+                  "What's your expected monthly basic salary?"
+                ]
+              },
+              "video": null
+            }
+          },
+          "companyProfile": {
+            "id": "171088809623500",
+            "name": "Brightoil Petroleum",
+            "companyNameSlug": "brightoil-petroleum-171088809623500",
+            "shouldDisplayReviews": true,
+            "branding": {
+              "logo": "https://image-service-cdn.seek.com.au/e10bd2f85c9c0db61d8e58f3b698de4b138e86ed/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+            },
+            "overview": {
+              "description": {
+                "paragraphs": [
+                  "Our group is a leading player in the oil and gas industry. As one of the earliest private petroleum enterprises in China, we have consistently been ranked among the top",
+                  "500 enterprises in the country. Our aim is to integrate traditional energy with intelligent technology, ensuring efficient supply, high-quality products, and cost savings for our customers."
+                ]
+              },
+              "industry": "Oil & Gas Extraction & Refinement",
+              "size": {
+                "description": "101-1,000 employees"
+              },
+              "website": null
+            },
+            "reviewsSummary": null,
+            "perksAndBenefits": []
+          },
+          "companySearchUrl": "https://hk.jobsdb.com/Brightoil-Petroleum-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79831559",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79831559",
+            "title": "鎖業門市店務員兼外勤技術員",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-10-29T04:10:54.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [],
+            "isVerified": false,
+            "abstract": "入職要求: 中五或以上程度; 良好粵語，能閱讀英文...",
+            "content": "入職要求:\n\n * 中五或以上程度;\n * 良好粵語，能閱讀英文 (如英文說明書及電路圖);\n * 誠實可靠、待人有禮及有責任感;\n * 對鎖具有興趣、對工作有熱誠及有團隊精神;\n * 具有基本電腦知識及操作能力優先考慮\n\n職責: \n\n * 負責銷售門鎖有關產品;\n * 檢查及處理鎖品品質及保險櫃相關工作;\n * 提供専業服務，接聽顧客來電;\n * 有安裝門鎖及利用工具移動夾萬經驗優先考慮;\n * 間中需外勤工作\n\n上班時間:\n\n星期一至六，上午九時至下午六時\n\n\n待遇: \n\n月薪$18,000 元起，有在職培訓及年尾雙糧\n\n申請方法:",
+            "status": "Active",
+            "listedAt": {
+              "label": "15h ago",
+              "dateTimeUtc": "2024-10-29T04:10:54.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79831559?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "萬通安全有限公司",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "Hong Kong SAR"
+            },
+            "classifications": [
+              {
+                "label": "Mechanical Engineering (Engineering)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61941100",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79490217",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79490217",
+            "title": "Application Developer I FinTech I 35,000 HKD",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-13T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "Join a leading fintech firm as an Application Developer! Work on mission-critical systems, enjoy competitive salary, and growth opportunities.",
+            "content": "Our client, a leading financial technology firm, is seeking an Application\nDeveloper. This company is dedicated to enhancing the trading experience through\nadvanced technology and data-driven insights. With a strong commitment to\nexcellence and a focus on customer satisfaction, they are at the forefront of\nthe fintech industry, delivering mission-critical systems that empower traders\nand investors.\n\n \n\nKey Responsibilities\n\n * Work in a fast-paced environment to deliver mission critical trading systems;\n * Participate in development, testing and implementation of finance\n   applications;\n * Depends on experience and skills, candidates will be assigned to projects\n   including but not limited to server-side development, front-end (web, desktop\n   and mobile Apps) development;\n * Prepare test scripts and data, and participate in system tests;\n * To investigate, troubleshoot and resolve production issues; and\n * Prepare documentations, e.g. system specifications and test cases.\n\nRequired Experience/Skills\n\n * Bachelor's Degree holder in Computer Science or a related discipline.\n * Minimum of 2 years of experience as a software developer.\n * Experience with the following technologies:\n   Must-Have: Java or ReactJS\n   Preferred: Spring, React Native, Next.js, SQL\n * Understanding of OOP: Knowledge of object-oriented programming and\n   multi-threaded application design is a plus.\n * Proficient in Cantonese, conversational English and Mandarin\n\nWhat We Offer\n\n * A competitive Salary Package: Ca. 35,000 HKD\n * Health Insurances\n * Innovative Environment\n * Professional Development\n * Growth opportunities",
+            "status": "Active",
+            "listedAt": {
+              "label": "15d ago",
+              "dateTimeUtc": "2024-10-14T08:29:04.682Z"
+            },
+            "salary": {
+              "currencyLabel": null,
+              "label": "$30,000 – $35,000 per month"
+            },
+            "shareLink": "https://hk.jobsdb.com/job/79490217?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "62575300",
+              "name": "VX Recruitment",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2024-07-22T03:09:53.765Z"
+              }
+            },
+            "location": {
+              "label": "Hong Kong Island"
+            },
+            "classifications": [
+              {
+                "label": "Developers/Programmers (Information & Communication Technology)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "6bd8d158-1fad-4d5d-9df5-6135fb03a753.1",
+                "cover": {
+                  "url": "https://image-service-cdn.seek.com.au/a6f9db43bc09a49c187a50f24d1ab599d4994dd8/1c056a984962480605a20a31bcae496022b57b25"
+                },
+                "thumbnailCover": {
+                  "url": "https://image-service-cdn.seek.com.au/a6f9db43bc09a49c187a50f24d1ab599d4994dd8/bd499d1d33b3bf829bd62e526c1b7492dcec6cda"
+                },
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/17742746dca6a2254c1abfc0ddce56a909b5b8ad/f3c5292cec0e05e4272d9bf9146f390d366481d0"
+                }
+              },
+              "bullets": [
+                "A competitive Salary Package: Ca. 35,000 HKD",
+                "Health Insurances",
+                "Professional Development"
+              ],
+              "questionnaire": {
+                "questions": [
+                  "Which of the following statements best describes your right to work in Hong Kong?",
+                  "What's your expected monthly basic salary?",
+                  "How many years' experience do you have as an applications developer?",
+                  "Which of the following programming languages are you experienced in?",
+                  "Which of the following front end development libraries and frameworks are you proficient in?",
+                  "How many years' experience do you have using SQL queries?"
+                ]
+              },
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=62575300",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79178249",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79178249",
+            "title": "AI Concept Specialist",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-10-30T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "\nDuties: \n\n Responsible for game graphic design including characters(男性向二次元), items, user interface and effects\n Participation in concept...",
+            "content": "RESPONSIBILITIES \n\n * Responsible for game characters creation(男性向二次元), from conceptual design to\n   final deliverables\n * Create visual assets including environments, objects and effects etc.\n * Using AI tools such as Stable Diffusion and MidJourney to generate and refine\n   concepts efficiently\n * Work closely with art, game design and development department to ensure a\n   smooth process in production\n * Stay updated with industry trends and incorporate new techniques and\n   technologies into your workflow\n\nRequirements\n\n * Strong sense of game character design\n * With great passion and knowledge in ACG & mobile game culture is a must\n * Proficient in Photoshop\n * Experienced on using generative artificial intelligence model such as Stable\n   Diffusion、MidJourney、Photoshop Firefly\n * Good team player with mature working attitude\n * Candidates with less experience will be considered as AI Concept Assistant\n   are also welcome\n\nBenefits\n\n * 5-day work\n * Paid birthday leave\n * Birthday pocket money\n * Performance bonus\n * Medical insurance\n * Dental subsidy\n * Free snack and beverage\n * Friendly working environment\n\nInterested parties please apply with the following details:\n\n * Resume\n * Current Salary\n * Expected Salary\n * Earliest Availability\n * Portfolio\n\nPlease ensure ALL of the information above are true and up-to-date. All\ninformation collected will be used for recruitment purposes only.",
+            "status": "Active",
+            "listedAt": {
+              "label": "29d ago",
+              "dateTimeUtc": "2024-09-30T07:57:20.198Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79178249?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "60302527",
+              "name": "Qookia Limited",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2015-06-18T08:17:51.407Z"
+              }
+            },
+            "location": {
+              "label": "Kwai Fong, Kwai Tsing District"
+            },
+            "classifications": [
+              {
+                "label": "Engineering - Software (Information & Communication Technology)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "d1c4fd1d-daaa-4019-8d50-27791a0ebeea.1",
+                "cover": {
+                  "url": "https://image-service-cdn.seek.com.au/2c896ab1a17060d580326562fe75bd09b8815458/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "thumbnailCover": {
+                  "url": "https://image-service-cdn.seek.com.au/2c896ab1a17060d580326562fe75bd09b8815458/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/e53b4d664a52ec927d6751e2a91f2032c1a0e3fa/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": [
+                "5 days work, Birthday leave, Dental benefit",
+                "Flexibile working hours, near MTR station",
+                "Friendly and Open minded organisation culture"
+              ],
+              "questionnaire": {
+                "questions": [
+                  "Which of the following statements best describes your right to work in Hong Kong?",
+                  "What's your expected monthly basic salary?"
+                ]
+              },
+              "video": null
+            }
+          },
+          "companyProfile": {
+            "id": "171089907365091",
+            "name": "Qookia Limited",
+            "companyNameSlug": "qookia-limited-171089907365091",
+            "shouldDisplayReviews": true,
+            "branding": {
+              "logo": "https://image-service-cdn.seek.com.au/99e123a773a12dee89708ad19b14f3b8a5cf5961/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+            },
+            "overview": {
+              "description": {
+                "paragraphs": [
+                  "We believe the power of games can change the world! We are a Hong Kong based mobile game developer formed by a group of passionate, enthusiastic and innovative youngsters. Our team focus in creating fun and high quality mobile games for global users.",
+                  "We offer company stock option! If you are highly motivated and enthusiastic in gaming industry, we sincerely invite you to join our fun and growing team!"
+                ]
+              },
+              "industry": "Information & Communication Technology",
+              "size": {
+                "description": "11-50 employees"
+              },
+              "website": {
+                "url": "http://www.qookia.com"
+              }
+            },
+            "reviewsSummary": null,
+            "perksAndBenefits": []
+          },
+          "companySearchUrl": "https://hk.jobsdb.com/Qookia-Limited-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "79337802",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "79337802",
+            "title": "International Industry Research",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2024-11-06T12:59:59.999Z"
+            },
+            "isLinkOut": false,
+            "contactMatches": [],
+            "isVerified": true,
+            "abstract": "A great opportunity to build a world-class information service and technology innovation company！",
+            "content": "China Mobile (Hong Kong) Innovation Research Institute Company Limited was\nestablished in 2024. It is a group-level research and development institution\nthat undertakes three major functions: inward, outward, and international\nintegration. The Hong Kong Innovation Institute will leverage Hong Kong's role\nas a bridge, strengthen the coordination among Guangdong, Hong Kong, and Macau,\nstart from Hong Kong, strategically position itself, actively integrate into the\nglobal innovation system, promote the company's core capabilities and products\nto \"go global,\" gather top global innovative talents, carry out high-quality\ninternational scientific and technological cooperation, enhance the company's\ninternational scientific and technological innovation influence, and contribute\nto building a world-class information service and technology innovation company.\n\nResponsibilities:\n\n1. Responsible for the collection, investigation, tracking, analysis and\nresearch of international technological developments such as mobile information\nand AI, and completed the writing and release of relevant white papers and\nindustry research reports;\n2. Responsible for obtaining relevant hot information, mining scientific and\ntechnological cooperation opportunities, technology and industry analysis and\njudgment in key regions such as Hong Kong, Asia-Pacific and the Belt and Road,\nforming relevant technology and industry insight reports, and putting forward\nstrategic suggestions for the company's technology development;\n3. Responsible for organizing and promoting international innovation cooperation\nprojects, and promoting extensive exchanges and sharing of international\ncutting-edge technologies;\n4. Complete other tasks assigned by leaders.\n\nRequirements:\n\n1. Bachelor degree or above, professional direction or working background in\nmobile communication, AI, cloud computing, computing chip and other fields is\npreferred;\n2. Have a deep understanding of international cutting-edge technology and\nindustrial development trends, master market and industry investigation and\nanalysis methods, and have the ability to systematically formulate cooperation\nand expansion strategies and put forward development suggestions;\n3. Skilled in external contact, communication, negotiation and other skills,\nwith international operators, industries, cross-industry cooperation and\ndevelopment capabilities;\n4. Fluent in English listening, speaking, reading and writing, able to\ncommunicate effectively with partners in English.",
+            "status": "Active",
+            "listedAt": {
+              "label": "22d ago",
+              "dateTimeUtc": "2024-10-07T11:21:43.756Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/79337802?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "60247287",
+              "name": "China Mobile International Limited",
+              "isVerified": true,
+              "registrationDate": {
+                "dateTimeUtc": "2011-11-02T03:34:19.230Z"
+              }
+            },
+            "location": {
+              "label": "Kwai Hing, Kwai Tsing District"
+            },
+            "classifications": [
+              {
+                "label": "Telecommunications (Information & Communication Technology)"
+              }
+            ],
+            "products": {
+              "branding": {
+                "id": "732dd3b2-62f6-4d05-9b7e-4b8a61744bce.1",
+                "cover": {
+                  "url": "https://image-service-cdn.seek.com.au/7173ee9416911277ffc20d1ed5627c27c593a3b0/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "thumbnailCover": {
+                  "url": "https://image-service-cdn.seek.com.au/7173ee9416911277ffc20d1ed5627c27c593a3b0/a868bcb8fbb284f4e8301904535744d488ea93c1"
+                },
+                "logo": {
+                  "url": "https://image-service-cdn.seek.com.au/2b49328f7433c32a67b0974f090ff4fd24d136cf/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"
+                }
+              },
+              "bullets": [
+                "Group-level research and development institution",
+                "Integrate into the global innovation system",
+                "Building a world-class information service and technology innovation company"
+              ],
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/China-Mobile-International-jobs/at-this-company",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      },
+      {
+        "jobId": "76014347",
+        "jobDetails": {
+          "job": {
+            "sourceZone": "asia-1",
+            "id": "76014347",
+            "title": "駐場清潔員",
+            "phoneNumber": null,
+            "isExpired": false,
+            "expiresAt": {
+              "dateTimeUtc": "2025-05-20T12:00:00.000Z"
+            },
+            "isLinkOut": true,
+            "contactMatches": [],
+            "isVerified": false,
+            "abstract": "資歷 : 沒有學歷要求; 一般粵語; 懂閱讀中文; 懂閱讀英文\n待遇 : 每月$12,500, 有每月勤工獎金$300, 上午7時半至下午4時半, 每週工作6天,輪休, 每天工作 9 小時\n申請須知 : 求職者可致電25631399與惠安苑業主立案法團林先生聯絡。\n備註 : ** 僱主可就此職...",
+            "content": "公司/僱主名稱 : 惠安苑業主立案法團\n\n地區 : 鰂魚涌\n\n行業 : 其他社區及社會服務業\n\n職責 : 負責屋苑一般清潔工作，清潔大堂、樓層及屋苑公眾地方，不需清倒垃圾\n\n資歷 : 沒有學歷要求; 一般粵語; 懂閱讀中文; 懂閱讀英文\n\n待遇 : 每月$12,500, 有每月勤工獎金$300, 上午7時半至下午4時半, 每週工作6天,輪休, 每天工作 9 小時",
+            "status": "Active",
+            "listedAt": {
+              "label": "30d+ ago",
+              "dateTimeUtc": "2024-05-20T12:00:00.000Z"
+            },
+            "salary": null,
+            "shareLink": "https://hk.jobsdb.com/job/76014347?tracking=SHR-WEB-SharedJob-asia-1",
+            "workTypes": {
+              "label": "Full time"
+            },
+            "advertiser": {
+              "id": "61941100",
+              "name": "Company Confidential",
+              "isVerified": null,
+              "registrationDate": {
+                "dateTimeUtc": "2023-08-09T03:42:01.207Z"
+              }
+            },
+            "location": {
+              "label": "Quarry Bay, Eastern District"
+            },
+            "classifications": [
+              {
+                "label": "Supervisors/Team Leaders (Call Centre & Customer Service)"
+              }
+            ],
+            "products": {
+              "branding": null,
+              "bullets": null,
+              "questionnaire": null,
+              "video": null
+            }
+          },
+          "companyProfile": null,
+          "companySearchUrl": "https://hk.jobsdb.com/jobs?advertiserid=61941100",
+          "companyTags": [],
+          "restrictedApplication": {
+            "label": null
+          }
+        }
+      }
+    ]
+  }
+}
+]

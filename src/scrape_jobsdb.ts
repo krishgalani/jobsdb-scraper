@@ -125,7 +125,7 @@ function startServerProcess(name: string): any {
       totalPagesToScrape += pageRanges[i][1] - pageRanges[i][0] +1
       ports.push(await waitForPort(cloudNodeProcesses[i]))
       scrapeOperations.push(new ScrapeOperation(baseUrl,pageRanges[i],ports[i],outFiles[i],logFiles[i]))
-      tasks.push(scrapeOperations[i].__call__().catch((err) => {throw err}))
+      tasks.push(scrapeOperations[i].__call__())
     }
     let scrapeOperationsDone = false
     console.log(`Scraping the first ${totalPagesToScrape} pages of jobs.`)
@@ -171,7 +171,9 @@ function startServerProcess(name: string): any {
       if(!encountered_error){
         const now = new Date();
         const formattedDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}-${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}.${String(now.getMilliseconds()).padStart(3, '0')}`;
-        const resultPath = path.join(resultsDir,`jobsdb-${numPages}-${formattedDate}.json`)
+        // const resultFileName = `jobsdb-${numPages}-${formattedDate}.json`
+        const resultFileName = 'jobsdb_scrape_results.txt'
+        const resultPath = path.join(resultsDir,resultFileName)
         await mergedOutFile.renameTempFile(resultPath)
         console.log(`\nResult file saved to ${resultPath} in json format.`)
         console.log(`Scrape finished in ${Math.floor(Date.now()/1000 - start_time)} seconds`)
