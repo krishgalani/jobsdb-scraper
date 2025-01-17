@@ -13,15 +13,17 @@ export function waitForPort(process: any): Promise<number>{
     });
   }
 //Init cloudnodes
-export function startServerProcess(name: string): any {
-    const serverProcess = spawn('node', ['build/src/cloudnode']);
-
+export function startServerProcess(name: string, testMode? : boolean): any {
+    let args = ['build/src/cloudnode']
+    if(testMode){
+      args.push('--enableTestMode')
+    }
+    const serverProcess = spawn('node', args);
     serverProcess.on('close', (code: number | null) => {
         if(code !== null){
         console.log(`Cloud node exited abrutly`)
         }
     });
-
     serverProcess.stderr.on('data', (error: Buffer) => {
         const errorMessage = error.toString();
         if (errorMessage.includes('Warning')) {
