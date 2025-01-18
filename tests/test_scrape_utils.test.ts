@@ -3,17 +3,19 @@ import HeroCore from '@ulixee/hero-core';
 import { TransportBridge } from '@ulixee/net';
 import { ConnectionToHeroCore } from '@ulixee/hero';
 import Hero from '@ulixee/hero';
-
+import { CoreNoBrowserSandboxPlugin } from './NoBrowserSandboxPlugin';
 describe('Find last page', () => {
     let heroes : Hero[];
     let heroCore : HeroCore;
     // Set up Hero instances and core connections
     beforeAll(() => {
+        HeroCore.use(CoreNoBrowserSandboxPlugin)
         const bridge1 = new TransportBridge();
         const bridge2 = new TransportBridge();
         const connectionToCore1 = new ConnectionToHeroCore(bridge1.transportToCore);
         const connectionToCore2 = new ConnectionToHeroCore(bridge2.transportToCore);
         heroCore = new HeroCore();
+
         heroCore.addConnection(bridge1.transportToClient);
         heroCore.addConnection(bridge2.transportToClient);
         heroes = [

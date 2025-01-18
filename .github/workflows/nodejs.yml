@@ -31,5 +31,11 @@ jobs:
       - name: Compile TypeScript
         run: npm run build
 
+      - name: Fix Chrome sandbox ownership (Ubuntu only)
+        if: runner.os == 'Linux'
+        run: |
+          sudo chown root /home/runner/.cache/ulixee/chrome/128.0.6613.137/chrome-sandbox
+          sudo chmod 4755 /home/runner/.cache/ulixee/chrome/128.0.6613.137/chrome-sandbox
+
       - name: Run tests
         run: npm test -- --detectOpenHandles
