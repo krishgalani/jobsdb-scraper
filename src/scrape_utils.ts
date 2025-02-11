@@ -30,6 +30,7 @@ export async function isZeroResults(hero: Hero, page: number, region: string){
     const match = scriptText.match(/window\.SEEK_REDUX_DATA\s*=\s*(\{.*?\});/s);
     
     if (!match) {
+        console.log("no match, but not null")
         throw new Error('Could not find window.SEEK_REDUX_DATA in the script content.');
     }
     const reduxJsonString = match[1];
