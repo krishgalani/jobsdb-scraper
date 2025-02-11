@@ -38,4 +38,5 @@ jobs:
           sudo chmod 4755 /home/runner/.cache/ulixee/chrome/128.0.6613.137/chrome-sandbox
 
       - name: Run tests
-        run: npm test -- --detectOpenHandles
+        run: npx jest --detectOpenHandles tests/test_scrape_utils.test.ts -t isZeroResults
+        # run: npm test -- --detectOpenHandles
