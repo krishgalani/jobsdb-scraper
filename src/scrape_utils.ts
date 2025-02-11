@@ -3,6 +3,7 @@ import HeroCore from '@ulixee/hero-core';
 import { TransportBridge } from '@ulixee/net';
 import { ConnectionToHeroCore } from '@ulixee/hero';
 import Hero from '@ulixee/hero';
+import { sleep } from './utils';
 export const parseHtml = compile({}); // options passed here
 export function get_page_url(page: number, region : string): string {
     return `https://${region}.jobsdb.com/jobs?page=${page}`;
@@ -12,17 +13,21 @@ export function get_base_url(region : string): string {
 }
 export async function isZeroResults(hero: Hero, page: number, region: string){
     const {activeTab, document} = hero
+    console.log(`${page},${region}`)
     await activeTab.goto(get_page_url(page,region))
-    const elem = document.querySelector('script[data-automation="server-state"]')
-    const scriptElement = await activeTab.waitForElement(elem,{timeoutMs: 600000})
-    if(scriptElement === null){
+    let elem = document.querySelector('script[data-automation="server-state"]')
+    console.log("querying")
+    await activeTab.waitForElement(elem)
+    if(elem === null){
         throw new Error("Cannot parse script tag when finding isZeroResults")
     }
-    const scriptText = await scriptElement.textContent
+    console.log('awaiting')
+    const scriptText = await elem.textContent
     if(scriptText === null){
         throw new Error("Cannot parse script tag when finding isZeroResults")
     }
     const match = scriptText.match(/window\.SEEK_REDUX_DATA\s*=\s*(\{.*?\});/s);
+    
     if (!match) {
         throw new Error('Could not find window.SEEK_REDUX_DATA in the script content.');
     }
