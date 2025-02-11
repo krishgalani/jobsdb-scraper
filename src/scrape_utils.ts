@@ -15,14 +15,8 @@ export async function isZeroResults(hero: Hero, page: number, region: string){
     const {activeTab, document} = hero
     console.log(`${page},${region}`)
     await activeTab.goto(get_page_url(page,region))
-    await activeTab.waitForLoad('AllContentLoaded')
-    let elem = document.querySelector('script[data-automation="server-state"]')
-    // console.log("querying")
-    // await activeTab.waitForElement(elem)
-    // if(elem === null){
-    //     throw new Error("Cannot parse script tag when finding isZeroResults")
-    // }
-    console.log('awaiting')
+    let elem = activeTab.querySelector('script[data-automation="server-state"]')
+    await activeTab.waitForElement(elem)
     const scriptText = await elem.textContent
     if(scriptText === null){
         throw new Error("Cannot parse script tag when finding isZeroResults")
@@ -30,7 +24,6 @@ export async function isZeroResults(hero: Hero, page: number, region: string){
     const match = scriptText.match(/window\.SEEK_REDUX_DATA\s*=\s*(\{.*?\});/s);
     
     if (!match) {
-        console.log("no match, but not null")
         throw new Error('Could not find window.SEEK_REDUX_DATA in the script content.');
     }
     const reduxJsonString = match[1];
