@@ -15,7 +15,7 @@ export async function isZeroResults(hero: Hero, page: number, region: string){
     const {activeTab, document} = hero
     console.log(`${page},${region}`)
     await activeTab.goto(get_page_url(page,region))
-    let elem = document.querySelector('script[data-automation="server-state"]')
+    let elem = activeTab.querySelector('script[data-automation="server-state"]')
     // console.log("querying")
     // await activeTab.waitForElement(elem)
     // if(elem === null){
