@@ -15,12 +15,19 @@ export async function isZeroResults(hero: Hero, page: number, region: string){
     const {activeTab, document} = hero
     console.log(`${page},${region}`)
     await activeTab.goto(get_page_url(page,region))
-    let scriptText
-    do{
+    let scriptText = null
+    const maxLoops = 10
+    let loops = 0
+    while(true){
         let elem = document.querySelector('script[data-automation="server-state"]')
         await sleep(5000)
-        scriptText = await elem.textContent
-    } while(scriptText == null)
+        if(elem != null){
+            scriptText = await elem.textContent
+        }
+        if(elem != null && scriptText != null) break
+        if(loops >= maxLoops) throw new Error(`Cannot find the script element to find whether this page isZeroResults ${page},${region}`)
+        loops++
+    } 
     if(scriptText === null){
         throw new Error("Cannot parse script tag when finding isZeroResults")
     }
