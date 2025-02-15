@@ -20,7 +20,7 @@ export async function isZeroResults(hero: Hero, page: number, region: string){
     let loops = 0
     while(true){
         let elem = document.querySelector('script[data-automation="server-state"]')
-        await sleep(5000)
+        await sleep(10000)
         if(await elem.$exists && (scriptText = await elem.textContent)  != null) break
         if(loops >= maxLoops) throw new Error(`Cannot find the script element to find whether this page isZeroResults ${page},${region}`)
         loops++
