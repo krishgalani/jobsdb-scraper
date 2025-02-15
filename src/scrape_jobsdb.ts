@@ -17,6 +17,7 @@ setGracefulCleanup()
 const cloudNodeProcesses: any[] = [];
 let numCloudNodes : number = 0; 
 let pageRanges = [[0,0],[0,0]];
+let testMode = false
 const enableLogging = false
 const tmpDir = dirSync({unsafeCleanup: !enableLogging})
 const mergedOutFile = new TempFile(fileSync({dir : tmpDir.name}))
@@ -50,7 +51,7 @@ async function main(options : any){
     }
     //Start cloudnodes
     for (let i = 0; i < numCloudNodes; i++) {
-      const serverProcess = startServerProcess(i.toString());
+      const serverProcess = startServerProcess(i.toString(),true);
       cloudNodeProcesses.push(serverProcess);
     }
     //Receive portnums
@@ -129,11 +130,15 @@ program
   .command('scrape', { isDefault: true })
   .description('Scrape job listings')
   .requiredOption('-r, --region <two_letters>', 'hk (Hong Kong) or th (Thailand) (required)', parseRegion)
-  .option('-n, --numPages <number>', 'Number of pages to scrape',(option) => {return option},'all')
+  .option('-n, --numPages <number>', 'Number of pages to scrape','all')
   // .requiredOption('-f, --format <file_format>', 'csv or json', parseFormat)
   .option('-s, --saveDir <pathToDir>', 'Directory to store results file (optional)', parseSaveDir, './jobsdb_scrape_results')
+  .option('--enableTestMode', 'Enable test mode')
   .action(async (cmdObj) => {
     try {
+      if(cmdObj.enableTestMode){
+        testMode = true
+      }
       cmdObj.numPages = await parseNumPages(cmdObj.numPages, cmdObj.region);
       await main(cmdObj)
     } catch (error) {

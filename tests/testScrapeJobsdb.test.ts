@@ -30,8 +30,8 @@ describe('scrape_jobsdb.ts test', () => {
   test('should successfully execute the script for region=hk and check for result file', () => {
     const scriptPath = 'src/scrape_jobsdb.ts';
 
-    // Run the script synchronously with argument "10"
-    runScriptSync(scriptPath, ['-n 1', '-s tests','-r hk']);
+    // Run the script synchronously 
+    runScriptSync(scriptPath, ['-n 1', '-s tests','-r hk','--enableTestMode']);
 
     // Check if the result file exists by finding a matching file
     const resultFile = findFileWithPattern(directoryPath, filePatternHK);
@@ -41,7 +41,7 @@ describe('scrape_jobsdb.ts test', () => {
     const scriptPath = 'src/scrape_jobsdb.ts';
 
     // Run the script synchronously with argument "10"
-    runScriptSync(scriptPath, ['-n 1', '-s tests','-r th']);
+    runScriptSync(scriptPath, ['-n 1', '-s tests','-r th', '--enableTestMode']);
 
     // Check if the result file exists by finding a matching file
     const resultFile = findFileWithPattern(directoryPath, filePatternTH);
