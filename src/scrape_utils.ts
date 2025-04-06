@@ -13,7 +13,7 @@ export function get_base_url(region : string): string {
 export async function isZeroResults(hero: Hero, page: number, region: string) {
     const { activeTab, document } = hero;
     await activeTab.goto(get_page_url(page, region));
-    await activeTab.waitForLoad('AllContentLoaded');
+    await activeTab.waitForLoad('DomContentLoaded');
     const elem = document.getElementById('searchResultSummary')
     const hasResults = await elem.$exists;
     return hasResults === false
