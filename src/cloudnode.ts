@@ -1,5 +1,4 @@
 import { CloudNode } from '@ulixee/cloud';
-
 (async () => {
   const cloudNode = new CloudNode({
     shouldShutdownOnSignals : true

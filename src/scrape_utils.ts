@@ -44,6 +44,7 @@ async function positionFromLastPage(heroes : Hero[] , page : number, region : st
 //Perform a binary search
 //Perform a binary search
 export async function findLastPage(region : string, heroes? : Hero[]){
+    console.log(`Finding the pages available to scrape for ${get_base_url(region)}...`)
     let heroCore;
     let selfInit = false
     if(heroes === undefined){

@@ -1,4 +1,5 @@
 import {spawn} from 'child_process';
+
 //Wait for port number to be returned from cloudnode in order to pass to scraping Hero instances
 export function waitForPort(process: any): Promise<number>{
     return new Promise((resolve, reject) => {
