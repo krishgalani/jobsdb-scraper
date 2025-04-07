@@ -36,11 +36,11 @@ npm run build
 
 To find the maxPages available to scrape for a region (hk or th):
 ```shell script
-node --no-warnings build/src/scrape_jobsdb maxPages <region>
+node build/src/scrape_jobsdb maxPages <region>
 ```
 To run the scraper (can take up to ~10m):
 ```shell script
-node --no-warnings build/src/scrape_jobsdb [options]
+node build/src/scrape_jobsdb [options]
 Options:
   -r, --region <two_letters>  hk (Hong Kong) or th (Thailand) (required)
   -n, --numPages <number>     Number of pages to scrape (default: "all")
@@ -49,11 +49,11 @@ Options:
 ## Examples
 Find maxPages available to scrape for Hong Kong
 ```shell script
-node --no-warnings build/src/scrape_jobsdb maxPages hk
+node build/src/scrape_jobsdb maxPages hk
 ```
 Scrape all pages in thailand
 ```shell script
-node --no-warnings build/src/scrape_jobsdb -r th
+node build/src/scrape_jobsdb -r th
 ```
 The name format of the result file is jobsdb-\<region>-\<pages>-\<date>.json and saved in a folder called jobsdb_scrape_results by default.
 

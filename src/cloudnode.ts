@@ -1,9 +1,11 @@
 import { CloudNode } from '@ulixee/cloud';
+import NoSandboxPlugin from './NoSandboxPlugin';
 
 (async () => {
   const cloudNode = new CloudNode({
-    shouldShutdownOnSignals : true
+    shouldShutdownOnSignals : true,
   });
+  cloudNode.heroCore.use(NoSandboxPlugin)
   await cloudNode.listen();
   console.log(await cloudNode.port);
   return cloudNode;

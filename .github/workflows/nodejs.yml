@@ -32,4 +32,5 @@ jobs:
         run: npm run build
 
       - name: Run tests
-        run: npm test -- --detectOpenHandles
+        run: npm run test -- --detectOpenHandles
+
