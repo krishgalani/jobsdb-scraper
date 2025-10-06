@@ -149,7 +149,7 @@ program
       .default('all')
   )
   .addOption(
-    new Option('-f, --format <file_format>', 'file format to use')
+    new Option('-f, --format <file_format>', 'File format to use, csv files fields are completely flattened (including arrays), and date/time fields are normalized to SQL DateTime.')
       .default('ndjson')
       .choices(['ndjson', 'csv'])
       .argParser(parseFormat)

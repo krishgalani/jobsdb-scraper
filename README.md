@@ -38,30 +38,30 @@ To find the maxPages available to scrape for a region (hk or th):
 ```shell script
 node build/src/scrape_jobsdb maxPages <region>
 ```
-To run the scraper (can take up to ~10m):
+For instructions on how to run the scraper (can take up to ~10m):
 ```shell script
-node build/src/scrape_jobsdb [options]
-Options:
-  -r, --region <two_letters>  hk (Hong Kong) or th (Thailand) (required)
-  -n, --numPages <number>     Number of pages to scrape (default: "all")
-  -s, --saveDir <pathToDir>   Directory to store results file  (default: "./jobsdb_scrape_results")
+node build/src/scrape_jobsdb scrape -h 
 ```
 ## Examples
 Find maxPages available to scrape for Hong Kong
 ```shell script
 node build/src/scrape_jobsdb maxPages hk
 ```
-Scrape all pages in thailand
+Scrape 50 pages in thailand and return results in csv format
 ```shell script
-node build/src/scrape_jobsdb -r th
+node build/src/scrape_jobsdb -r th -n 50 -f csv
 ```
-The name format of the result file is jobsdb-\<region>-\<pages>-\<date>.json and saved in a folder called jobsdb_scrape_results by default.
+Scrape all pages in hong kong and return results in ndjson format
+```shell script
+node build/src/scrape_jobsdb -r hk -f ndjson
+```
+The name format of the result file is jobsdb-\<region>-\<pages>-\<date>.\<format> and saved in a folder called jobsdb_scrape_results by default.
 
 ## How it works
 
 The server part of the program is represented by a maximum of two @ulixee/cloud locally hosted server nodes as the engines behind page navigation and fetches, both hosting a browser with many browsing environments. The decision to use two cloud nodes at most was made after testing for the most amount of parralel nodes that can be run before run-time is impacted (tests run on an M1 Macbook Air).
 
-The client program uses the ulixee framework (github.com/ulixee), where each worker (a @ulixee/hero instance) is connected to a respective @ulixee/cloud server node and has a browser environment. It pops a page to scrape from the shared queue of requested pages,  makes GETS and POST fetches to the jobsdb HTTP/GraphQL web server for the relevant data. For each page, first the jobIds are parsed from the returned HTML response. Then for each jobId a fetch to the backend GraphQL DB is initiated for job details. The results are received in real time and written to a JSON file locally.
+The client program uses the ulixee framework (github.com/ulixee), where each worker (a @ulixee/hero instance) is connected to a respective @ulixee/cloud server node and has a browser environment. It pops a page to scrape from the shared queue of requested pages,  makes GETS and POST fetches to the jobsdb HTTP/GraphQL web server for the relevant data. For each page, first the jobIds are parsed from the returned HTML response. Then for each jobId a fetch to the backend GraphQL DB is initiated for job details. The results are received in real time and written to a file locally. 
 
 ## License
 

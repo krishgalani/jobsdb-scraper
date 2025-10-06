@@ -1,4 +1,7 @@
 export function printProgressBar(completed : number, total : number, barLength = 40) {
+  if(completed === total){
+    return
+  }
   const progress = Math.min(completed / total, 1); // Ensure progress does not exceed 100%
   const filledLength = Math.round(progress * barLength);
   const bar = '█'.repeat(filledLength) + '-'.repeat(barLength - filledLength);
