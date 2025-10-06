@@ -4,6 +4,7 @@ import { TransportBridge } from '@ulixee/net';
 import { ConnectionToHeroCore } from '@ulixee/hero';
 import Hero from '@ulixee/hero';
 import NoSandboxPlugin from '../src/NoSandboxPlugin'
+import { describe, beforeAll,afterAll, it, expect } from 'vitest';
 
 describe('Find last page', () => {
     let heroes : Hero[];

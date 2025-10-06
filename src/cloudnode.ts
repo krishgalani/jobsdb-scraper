@@ -26,7 +26,7 @@ async function startCloudNode() {
       console.log('CloudNode shut down gracefully...');
       process.exit(0);
     } catch (err) {
-      console.error('Error during CloudNode shutdown', err);
+      console.error(`Error during CloudNode shutdown + ${err}`);
       logger.error('Error during CloudNode shutdown\n' + err);
       process.exit(1);
     }

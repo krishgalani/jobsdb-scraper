@@ -23,9 +23,9 @@ export function parseSaveDir(dirPath : string){
   return dirPath
 }
 export function parseFormat(fmt : string){
-  const formats = new Set(['csv','json'])
-  if(!formats.has(fmt)){
-    throw new InvalidArgumentError('File format must be csv or json')  
+  const formats = ['ndjson','csv']
+  if(!formats.includes(fmt)){
+    throw new InvalidArgumentError(`File format must be one of the following: ${formats}`)  
   }
   return fmt
 }
