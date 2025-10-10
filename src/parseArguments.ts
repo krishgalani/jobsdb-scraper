@@ -23,7 +23,7 @@ export async function parseSearchUrl(url: string) {
       url = 'https://' + url;
     }
     parsedUrl = new URL(url);
-    // Validate protocol, hostname, and pathname
+    // Validate hostname
     if (
       !SUPPORTED_HOSTNAMES.includes(parsedUrl.hostname) 
     ) {
