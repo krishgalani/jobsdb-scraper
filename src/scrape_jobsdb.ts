@@ -6,13 +6,14 @@ import {createLogger} from './logger';
 import type {Logger} from 'pino';
 import {waitForPort} from './server';
 import { clean_dir,getWriteStream, getWriteQueue, closeStream, drainQueue, createDir, convertNdjsonToCsv} from './file_io_utils';
-import {parseNumPages, parseRegion, parseFormat, parseSaveDir} from './parseArguments';
+import {parseNumPages, parseSearchUrl, parseFormat, parseSaveDir} from './parseArguments';
 import { printProgressBar } from './utils';
 import { sleep } from './utils';
-import {InvalidArgumentError, program, Option} from 'commander';
-import { findLastPage, get_base_url } from './scrape_utils';
+import {InvalidArgumentError, program, Option, Argument} from 'commander';
+import { findLastPage } from './scrape_utils';
 import type { QueueObject } from 'async';
 import { createWriteStream } from 'fs';
+import { DateTime } from 'luxon';
 import { WriteStream,unlinkSync } from 'fs';
 
 
@@ -38,14 +39,14 @@ const start_time = Date.now()/1000;
 
 async function main(options : any){
   let encountered_error = false;
-  const resultsDir = options.saveDir;
+  const resultsDir = options.saveDir
   const maxPages = options.maxPages
-  const region = options.region
+  const searchResultsUrl : URL = options.searchResultsUrl
+  
   const numPages = options.numPages
-  const now = new Date();
-  const baseUrl = get_base_url(region)
-  const formattedDateNow = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}-${String(now.getHours()).padStart(2, '0')}_${String(now.getMinutes()).padStart(2, '0')}_${String(now.getSeconds()).padStart(2, '0')}.${String(now.getMilliseconds()).padStart(3, '0')}`;
-  const resultFileName = `jobsdb-${region}-${numPages}-${formattedDateNow}.ndjson`
+  //in UTC timezone
+  const datetime = DateTime.utc().toFormat('yyyy-MM-dd HH:mm:ss');
+  const resultFileName = `jobsdb-${searchResultsUrl.hostname.substring(0,2)}-${numPages}-${datetime}.ndjson`
   const resultPath = path.join(resultsDir,resultFileName)
 
   for (let i = 1; i <= numPages; i++) {
@@ -80,13 +81,13 @@ async function main(options : any){
     }
     //Start scraping
     for (let i = 0; i < numCloudNodes; i++) {
-      scrapeOperations.push(new ScrapeOperation(i,baseUrl,ports[i],outQueue,region,logger.child({module: `scrapeOp${i+1}`}),pageQueue))
+      scrapeOperations.push(new ScrapeOperation(i,new URL(searchResultsUrl.href),ports[i],outQueue,logger.child({module: `scrapeOp${i+1}`}),pageQueue))
       tasks.push(scrapeOperations[i].__call__())
       logger.info(`Scrape operation ${i+1} initialized`);
     }
     let scrapeOperationsDone = false
-    console.log(`Scraping ${numPages}/${maxPages} available pages of jobs on ${get_base_url(region)}.`)
-    logger.info(`Scraping ${numPages}/${maxPages} available pages of jobs on ${get_base_url(region)}.`);
+    console.log(`Scraping ${numPages}/${maxPages} available pages of jobs on ${searchResultsUrl.href}.`)
+    logger.info(`Scraping ${numPages}/${maxPages} available pages of jobs on ${searchResultsUrl.href}.`);
     Promise.all(tasks)
     .finally(() => {
       scrapeOperationsDone = true;
@@ -135,14 +136,24 @@ async function main(options : any){
       }
   }
 }
+
+program
+  .command('maxPages')
+  .description('Find maximum number of pages available to scrape for a given search results url')
+  .addArgument(
+    new Argument('[searchResultsUrl]','The job listing results url (e.g. https://hk.jobsdb.com/jobs)')
+  )
+  .action(async (searchResultsUrlString) => {
+
+    const searchResultsUrl = await parseSearchUrl(searchResultsUrlString)
+    const lastPage = await findLastPage(searchResultsUrl)
+    console.log(`Found ${lastPage} pages available to scrape on ${searchResultsUrlString}`)
+  });
 program
   .command('scrape', { isDefault: true })
   .description('Scrape job listings')
-  .addOption(
-    new Option('-r, --region <two_letters>','which jobsdb region')
-      .choices(['hk','th'])
-      .makeOptionMandatory()
-      .argParser(parseRegion)
+  .addArgument(
+    new Argument('[searchResultsUrl]','The job listing results url (e.g. https://hk.jobsdb.com/jobs)')
   )
   .addOption(
     new Option('-n, --numPages <number>', 'Number of pages to scrape')
@@ -159,10 +170,12 @@ program
       .default('./jobsdb_scrape_results')
       .argParser(parseSaveDir)
   )
-  .action(async (cmdObj) => {
-    const [numPages, maxPages] = await parseNumPages(cmdObj.numPages, cmdObj.region);
+  .action(async (searchResultsUrlString, cmdObj) => {
+    const searchResultsUrl = await parseSearchUrl(searchResultsUrlString);
+    const [numPages, maxPages] = await parseNumPages(cmdObj.numPages, searchResultsUrl);
     cmdObj.numPages = numPages;
     cmdObj.maxPages = maxPages;
+    cmdObj.searchResultsUrl = searchResultsUrl
     await main(cmdObj);
   });
 //program start

@@ -4,25 +4,22 @@ import { TransportBridge } from '@ulixee/net';
 import { ConnectionToHeroCore } from '@ulixee/hero';
 import Hero from '@ulixee/hero';
 export const parseHtml = compile({}); // options passed here
-export function get_page_url(page: number, region : string): string {
-    return `https://${region}.jobsdb.com/jobs?page=${page}`;
-}
-export function get_base_url(region : string): string {
-    return `https://${region}.jobsdb.com/jobs`;
-}
-export async function isZeroResults(hero: Hero, page: number, region: string) {
+
+export async function isZeroResults(hero: Hero, url : string) {
     const { activeTab, document } = hero;
-    await activeTab.goto(get_page_url(page, region));
+    await activeTab.goto(url);
     await activeTab.waitForLoad('DomContentLoaded');
     const elem = document.querySelector('[data-testid="job-card"')
     const hasResults = await elem.$exists;
     return hasResults === false
 }
 //Binary search the last page
-async function positionFromLastPage(heroes : Hero[] , page : number, region : string) {
-    let tasks = []
+async function positionFromLastPage(heroes : Hero[] , page : number, url : URL) {
+    let url_deep_copy = new URL(url.href)
+    let tasks = []  
     for(let i = 0; i < 2;i++){
-        tasks.push(isZeroResults(heroes[i],page+i,region))
+        url_deep_copy.searchParams.set('page',String(page + i))
+        tasks.push(isZeroResults(heroes[i],url_deep_copy.href))
     }
     let results = await Promise.all(tasks)
     for (let result of results){
@@ -43,7 +40,7 @@ async function positionFromLastPage(heroes : Hero[] , page : number, region : st
 }
 //Perform a binary search
 //Perform a binary search
-export async function findLastPage(region : string, heroes? : Hero[]){
+export async function findLastPage(searchResultsUrl : URL, heroes? : Hero[]){
     let heroCore;
     let selfInit = false
     if(heroes === undefined){
@@ -73,7 +70,7 @@ export async function findLastPage(region : string, heroes? : Hero[]){
     let ret = -1
     while(start <= end){
         let mid = Math.trunc((start + end) / 2)
-        let pos = await positionFromLastPage(heroes,mid,region)
+        let pos = await positionFromLastPage(heroes,mid,searchResultsUrl)
         if(pos === 'before'){
             start = mid + 1
         } else if(pos === 'on'){

@@ -42,19 +42,19 @@ describe('Find last page', () => {
 
     it('isZeroResults', async () => {
         await Promise.all([
-            expect(isZeroResults(heroes[0], 1, 'hk')).resolves.toBe(false),
-            expect(isZeroResults(heroes[1], 10000, 'hk')).resolves.toBe(true),
-            expect(isZeroResults(heroes[2],1,'th')).resolves.toBe(false),
-            expect(isZeroResults(heroes[3],10000,'th')).resolves.toBe(true)
+            expect(isZeroResults(heroes[0], 'https://hk.jobsdb.com/jobs?page=1')).resolves.toBe(false),
+            expect(isZeroResults(heroes[1], 'https://hk.jobsdb.com/jobs?page=10000')).resolves.toBe(true),
+            expect(isZeroResults(heroes[2],'https://th.jobsdb.com/jobs?page=1')).resolves.toBe(false),
+            expect(isZeroResults(heroes[3],'https://th.jobsdb.com/jobs?page=10000')).resolves.toBe(true)
         ]);
     })
     it('Returns a page value for hk > 1', async () => {
-        const lastPage = await findLastPage('hk')
+        const lastPage = await findLastPage(new URL('https://hk.jobsdb.com/jobs'))
         expect(lastPage).toBeGreaterThan(1);
 
     });
     it('Returns a page value for th > 1', async () => {
-        const lastPage = await findLastPage('th')
+        const lastPage = await findLastPage(new URL('https://th.jobsdb.com/jobs'))
         expect(lastPage).toBeGreaterThan(1);
     });
 });

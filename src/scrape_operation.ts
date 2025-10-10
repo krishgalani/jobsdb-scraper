@@ -2,7 +2,7 @@ import { ICookie } from '@ulixee/unblocked-specification/agent/net/ICookie';
 import type { Logger } from 'pino';
 import Hero from '@ulixee/hero';
 import Queue from 'queue-fifo';
-import { get_page_url, parseHtml } from './scrape_utils';
+import { parseHtml } from './scrape_utils';
 import { v4 as uuidv4 } from 'uuid';
 import Semaphore from 'semaphore-async-await'
 
@@ -18,11 +18,11 @@ export class Cookie {
 }
 
 export class PageArgs {
-    number: number;
     jobIds: string[];
+    url: URL;
     cookie: Cookie;
-    constructor(number: number, cookie: Cookie = new Cookie(), jobIds: string[] = []) {
-        this.number = number;
+    constructor(url: URL, cookie: Cookie = new Cookie(), jobIds: string[] = []) {
+        this.url = url;
         this.jobIds = jobIds;
         this.cookie = cookie;
     }
@@ -37,20 +37,18 @@ export class JobArgs {
 }
 export class ScrapeOperation {  
     id : number
-    baseUrl : string
+    searchResultsUrl : URL
     cloudNodePort : number
-    region : string
     pageQueue : Queue<number>
     timeout : number
     logger : Logger
     outQueue : QueueObject<Object>
     timeoutPromise : any
     timeoutClear : any
-    constructor(id : number, baseUrl: string, cloudNodePort : number, outQueue : QueueObject<Object>, region : string, logger: Logger, pageQueue : Queue<number>, timeout : number = 3600) {
+    constructor(id : number, searchResultsUrl: URL, cloudNodePort : number, outQueue : QueueObject<Object>, logger: Logger, pageQueue : Queue<number>, timeout : number = 3600) {
         this.id = id
-        this.baseUrl = baseUrl
+        this.searchResultsUrl = searchResultsUrl
         this.outQueue = outQueue
-        this.region = region
         this.logger = logger
         this.pageQueue = pageQueue
         this.timeout = timeout
@@ -90,7 +88,7 @@ export class ScrapeOperation {
             'Connection': 'keep-alive',
             'Cookie' : this.assemble_cookie(pageArgs.cookie),
             'priority': 'u=1, i',
-            'referer': `https://hk.jobsdb.com/jobs?jobId=${jobId}&type=standard`,
+            'referer': pageArgs.url.href,
             // Uncomment if needed:
             // 'sec-ch-ua': '"Chromium";v="128", "Not;A=Brand";v="24", "Google Chrome";v="128"',
             // 'sec-ch-ua-mobile': '?0',
@@ -126,12 +124,12 @@ export class ScrapeOperation {
                     {
                         method : 'POST',
                         headers: headers,
-                        body : JSON.stringify(jsonData)
+                        body : JSON.stringify(jsonData),
                     }
                 );
                 if (await response.status !== 200) {
-                    this.logger.error(`Hero ${this.id}.${workerId} encountered error status ${await response.status} on job fetch for p${pageArgs.number}`)
-                    throw new Error(`Hero ${this.id}.${workerId} encountered error status ${await response.status} on job fetch for p${pageArgs.number}`);
+                    this.logger.error(`Hero ${this.id}.${workerId} encountered error status ${await response.status} on job fetch for p${pageArgs.url.searchParams.get('page')}`)
+                    throw new Error(`Hero ${this.id}.${workerId} encountered error status ${await response.status} on job fetch for p${pageArgs.url.searchParams.get('page')}`);
                 } 
                 const responseJson : any = await response.json()
                 const job = responseJson.data.jobDetails.job
@@ -146,13 +144,13 @@ export class ScrapeOperation {
                 success = true
                 nAttempts++
             } catch (e: any) {
-                this.logger.error(`Hero ${this.id}.${workerId} failed to scrape job ${jobId} on page ${pageArgs.number} on attempt #${nAttempts}: ${e.toString()}`)  
+                this.logger.error(`Hero ${this.id}.${workerId} failed to scrape job ${jobId} on page ${pageArgs.url.searchParams.get('page')} on attempt #${nAttempts}: ${e.toString()}`)  
             } 
         }
         semaphore.release()
         if(nAttempts == maxAttempts){
-            this.logger.error(`Hero ${this.id}.${workerId} failed to scrape job ${jobId} on page ${pageArgs.number}`)
-            throw new Error(`Hero ${this.id}.${workerId} failed to scrape job ${jobId} on page ${pageArgs.number}`)
+            this.logger.error(`Hero ${this.id}.${workerId} failed to scrape job ${jobId} on page ${pageArgs.url.searchParams.get('page')}`)
+            throw new Error(`Hero ${this.id}.${workerId} failed to scrape job ${jobId} on page ${pageArgs.url.searchParams.get('page')}`)
         }
     }
     
@@ -175,6 +173,7 @@ export class ScrapeOperation {
             }
         }); 
         let workerPagesScraped = 0
+        let workerJobsScraped = 0
         const userAgent = (await hero.meta).userAgentString
         this.logger.info(`Hero instance ${this.id}.${workerId} started`);
         const concurrency_lim : number = 8
@@ -183,8 +182,9 @@ export class ScrapeOperation {
             while(!this.pageQueue.isEmpty()){
                 let jobIds : any = []
                 const pageNum = this.pageQueue.dequeue() as number
+                this.searchResultsUrl.searchParams.set('page', String(pageNum))
                 this.logger.info(`Hero ${this.id}.${workerId} dequeued page ${pageNum}`)
-                await hero.goto(get_page_url(pageNum,this.region))
+                await hero.goto(this.searchResultsUrl.href)
                 await hero.waitForLoad('DomContentLoaded')
                 //must await here
                 let article_elems = await hero.querySelectorAll('article[data-job-id]')
@@ -193,17 +193,18 @@ export class ScrapeOperation {
                     jobIds.push(jobId)
                 }
                 const cookie = new Cookie(this.get_dict((await hero.activeTab.cookieStorage.getItems())))
-                const pageArgs = new PageArgs(pageNum,cookie,jobIds)
+                const pageArgs = new PageArgs(this.searchResultsUrl,cookie,jobIds)
                 await this.scrape_page_job_details(workerId,hero,semaphore,userAgent,pageArgs)
                 workerPagesScraped++
-                this.logger.info(`Hero ${this.id}.${workerId} successfully scraped page ${pageArgs.number}`)
+                workerJobsScraped+= jobIds.length
+                this.logger.info(`Hero ${this.id}.${workerId} successfully scraped page ${pageNum} with ${jobIds.length} jobs`)
             }
         } catch (error){
             this.logger.info(`Hero ${this.id}.${workerId} failed on ${await hero.activeTab.url}`)
             throw error
         } finally {
             await hero.close()
-            this.logger.info(`Hero instance ${this.id}.${workerId} closed, scraped ${workerPagesScraped} pages`);
+            this.logger.info(`Hero instance ${this.id}.${workerId} closed, scraped ${workerPagesScraped} pages and ${workerJobsScraped} jobs.`);
         }
     }
     /* Partitions the scraping operation into concurrent page ranges */

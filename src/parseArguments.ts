@@ -1,13 +1,62 @@
 import { InvalidArgumentError } from 'commander';
 import * as fs from 'fs';
-import { findLastPage, get_base_url } from './scrape_utils';
-import Hero from '@ulixee/hero'
-export function parseRegion(region : string){
-  const regions = new Set(['hk','th'])
-  if(!regions.has(region)){
-    throw new InvalidArgumentError('Region must be hk (hong kong) or th (thailand)')  
+import { findLastPage } from './scrape_utils';
+import HeroCore from '@ulixee/hero-core';
+import { TransportBridge } from '@ulixee/net';
+import { ConnectionToHeroCore } from '@ulixee/hero';
+import NoSandboxPlugin from './NoSandboxPlugin';
+import { isZeroResults } from './scrape_utils';
+import Hero from '@ulixee/hero';
+export async function parseSearchUrl(url: string) {
+  const SUPPORTED_HOSTNAMES = ['hk.jobsdb.com', 'th.jobsdb.com'];
+  // Early validation for empty or non-string input
+  if (!url || typeof url !== 'string') {
+    throw new InvalidArgumentError('URL must be a non-empty string');
   }
-  return region
+
+  let hero: Hero | null = null;
+  let heroCore: HeroCore | null = null;
+  let parsedUrl : URL;
+  try {
+    // Parse the URL
+    parsedUrl = new URL(url);
+
+    // Validate protocol, hostname, and pathname
+    if (
+      parsedUrl.protocol !== 'https:' ||
+      !SUPPORTED_HOSTNAMES.includes(parsedUrl.hostname) 
+    ) {
+      throw new Error()
+    }
+
+    // Initialize components
+    const bridge = new TransportBridge();
+    heroCore = new HeroCore();
+    heroCore.addConnection(bridge.transportToClient);
+    heroCore.use(NoSandboxPlugin)
+    hero = new Hero({
+      sessionPersistence: false,
+      blockedResourceTypes: ['All'],
+      connectionToCore: new ConnectionToHeroCore(bridge.transportToCore),
+    });
+
+    // Check for zero results
+    const hasZeroResults = await isZeroResults(hero, url);
+    if (hasZeroResults) {
+      throw new Error();
+    }
+  } catch (err) {
+    throw new InvalidArgumentError(`Invalid search url, urls must start with https://${SUPPORTED_HOSTNAMES[0]} or https://${SUPPORTED_HOSTNAMES[1]} and point to a valid search results page`)
+  } finally {
+    // Cleanup resources
+    if (hero) {
+      await hero.close(); // Assuming Hero has a close method
+    }
+    if (heroCore) {
+      await heroCore.close(); // Assuming HeroCore has a close method
+    }
+  }
+  return parsedUrl
 }
 export function parseSaveDir(dirPath : string){
   // Ensure the directory exists
@@ -29,9 +78,9 @@ export function parseFormat(fmt : string){
   }
   return fmt
 }
-export async function parseNumPages(numPages : string, region : string, heroes? : Hero[]) {
-  console.log(`Finding pages available to scrape on ${get_base_url(region)}...`)
-  const maxPages = await findLastPage(region)
+export async function parseNumPages(numPages : string, searchResultsUrl : URL, heroes? : Hero[]) {
+  console.log(`Finding pages available to scrape on ${searchResultsUrl}...`)
+  const maxPages = await findLastPage(searchResultsUrl)
   if(maxPages == -1){
     throw new Error("\nCouldn't find the pages available to scrape, please file an issue on github")
   }
