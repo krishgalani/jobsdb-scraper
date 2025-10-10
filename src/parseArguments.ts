@@ -19,11 +19,12 @@ export async function parseSearchUrl(url: string) {
   let parsedUrl : URL;
   try {
     // Parse the URL
+    if (url.startsWith('https://') === false){
+      url = 'https://' + url;
+    }
     parsedUrl = new URL(url);
-
     // Validate protocol, hostname, and pathname
     if (
-      parsedUrl.protocol !== 'https:' ||
       !SUPPORTED_HOSTNAMES.includes(parsedUrl.hostname) 
     ) {
       throw new Error()
@@ -41,7 +42,7 @@ export async function parseSearchUrl(url: string) {
     });
 
     // Check for zero results
-    const hasZeroResults = await isZeroResults(hero, url);
+    const hasZeroResults = await isZeroResults(hero, parsedUrl.href);
     if (hasZeroResults) {
       throw new Error();
     }
