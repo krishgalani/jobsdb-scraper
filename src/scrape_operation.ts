@@ -164,10 +164,8 @@ export class ScrapeOperation {
     }
     async startWorker(workerId : number){
         const hero = new Hero({
-            sessionPersistence : false,
-            blockedResourceTypes: [
-            'All'
-            ],
+            noChromeSandbox: true,
+            blockedResourceTypes: ['All'],
             connectionToCore: {
                 host: `localhost:${this.cloudNodePort}`,
             }

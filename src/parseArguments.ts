@@ -32,11 +32,11 @@ export async function parseSearchUrl(url: string) {
 
     // Initialize components
     const bridge = new TransportBridge();
-    heroCore = new HeroCore();
+    heroCore = new HeroCore({disableSessionPersistence: true});
     heroCore.addConnection(bridge.transportToClient);
     heroCore.use(NoSandboxPlugin)
     hero = new Hero({
-      sessionPersistence: false,
+      noChromeSandbox: true,
       blockedResourceTypes: ['All'],
       connectionToCore: new ConnectionToHeroCore(bridge.transportToCore),
     });
@@ -47,7 +47,7 @@ export async function parseSearchUrl(url: string) {
       throw new Error();
     }
   } catch (err) {
-    throw new InvalidArgumentError(`Invalid search url, urls must start with https://${SUPPORTED_HOSTNAMES[0]} or https://${SUPPORTED_HOSTNAMES[1]} and point to a valid search results page`)
+    throw new InvalidArgumentError(`Invalid search url, urls must start with either of the following ${SUPPORTED_HOSTNAMES} and point to a valid search results page`)
   } finally {
     // Cleanup resources
     if (hero) {

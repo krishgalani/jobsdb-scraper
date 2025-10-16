@@ -3,6 +3,7 @@ import HeroCore from '@ulixee/hero-core';
 import { TransportBridge } from '@ulixee/net';
 import { ConnectionToHeroCore } from '@ulixee/hero';
 import Hero from '@ulixee/hero';
+import NoSandboxPlugin from './NoSandboxPlugin';
 export const parseHtml = compile({}); // options passed here
 
 export async function isZeroResults(hero: Hero, url : string) {
@@ -49,17 +50,18 @@ export async function findLastPage(searchResultsUrl : URL, heroes? : Hero[]){
         const bridge2 = new TransportBridge();
         const connectionToCore1 = new ConnectionToHeroCore(bridge1.transportToCore);
         const connectionToCore2 = new ConnectionToHeroCore(bridge2.transportToCore);
-        heroCore = new HeroCore();
+        heroCore = new HeroCore({disableSessionPersistence: true});
+        heroCore.use(NoSandboxPlugin);
         heroCore.addConnection(bridge1.transportToClient);
         heroCore.addConnection(bridge2.transportToClient);
         heroes = [
             new Hero({
-                sessionPersistence: false,
+                noChromeSandbox: true,
                 blockedResourceTypes: ['All'],
                 connectionToCore: connectionToCore1,
             }),
             new Hero({
-                sessionPersistence: false,
+                noChromeSandbox: true,
                 blockedResourceTypes: ['All'],
                 connectionToCore: connectionToCore2,
             }),

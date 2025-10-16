@@ -6,7 +6,7 @@ const enableLogging = process.argv[3] === 'true';
 const logger = createLogger(`cloudnode-${cloudNodeIndex}`, enableLogging);
 
 async function startCloudNode() {  
-  const cloudNode = new CloudNode();
+  const cloudNode = new CloudNode({heroConfiguration: {disableSessionPersistence: true}});
   cloudNode.heroCore.use(NoSandboxPlugin);
   try {
     await cloudNode.listen();

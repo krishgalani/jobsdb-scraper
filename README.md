@@ -62,6 +62,13 @@ Scrape all accounting jobs in Thailand and return results in ndjson format
 node build/src/scrape_jobsdb https://th.jobsdb.com/jobs-in-accounting -f ndjson 
 ```
 
+## Have additional requirements? 
+
+You can contact me at krishdgala@gmail.com with your requirements for a quote. Further data scraping & analysis can be performed to suite your needs.
+
+## Questions or Bugs? 
+Please raise an issue on Github.
+
 ## How it works
 
 The server part of the program is represented by a maximum of two @ulixee/cloud locally hosted server nodes as the engines behind page navigation and fetches, both hosting a browser with many browsing environments. The decision to use two cloud nodes at most was made after testing for the most amount of parralel nodes that can be run before run-time is impacted (tests run on an M1 Macbook Air).
