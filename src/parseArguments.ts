@@ -19,7 +19,10 @@ export async function parseSearchUrl(url: string) {
   let parsedUrl : URL;
   try {
     // Parse the URL
-    if (url.startsWith('https://') === false){
+    if (SUPPORTED_HOSTNAMES.includes(url)){
+      url = url + '/jobs';
+    }
+    if (!url.startsWith('https://')){
       url = 'https://' + url;
     }
     parsedUrl = new URL(url);
