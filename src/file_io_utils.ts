@@ -4,13 +4,8 @@ import path, { delimiter } from 'path';
 import { pipeline } from 'stream/promises';
 import async from 'async'
 import {Transform} from '@json2csv/node'
-import {flatten} from '@json2csv/transforms'
-import { Parser } from '@json2csv/plainjs';
 import { DateTime } from 'luxon';
-import { queue } from 'async';
-import { Json2CSVBaseOptions } from '@json2csv/plainjs/dist/mjs/BaseParser';
-
-//Helper functions
+import {flatten} from '@json2csv/transforms'
 // converts an ISO 8601 date string to a DATETIME date string in sql
 function toSQLDateTime(isoDateStr : string) {
   if (!isoDateStr) return undefined;
@@ -39,7 +34,7 @@ function getWriteStream(filePath : string) {
 
 async function drainQueue(queue: async.QueueObject<Object>): Promise<void> {
   return new Promise<void>((resolve) => {
-    if (queue.length() === 0 && !queue.running()) {
+    if (queue.length() === 0 && queue.running() === 0) {
       resolve();
     } else {
       queue.drain(resolve);
@@ -57,28 +52,28 @@ function getWriteQueue(writeStream:fs.WriteStream) : async.QueueObject<Object>{
         // Buffer full, wait for drain and retry
         writeStream.once('drain', () => {
           if (writeStream.write(toWrite)) {
-            callback(null); // Success after drain
+            callback(); // Success after drain
           } else {
             callback(new Error('Write failed after drain')); // Unexpected failure
           }
         });
       } else {
         // Write succeeded immediately
-        process.nextTick(callback);  // we do it in the next tick to avoid an async corner case , not sure why, but gpt reccomended it 
+        callback()
       }
     } catch (error) {
       callback(error as Error); // Pass error to queue
     }
-  });  //option to add 1 for the second argument for sequentual writes, will slow performance
-}
+  },1); 
+} 
 //csv related
 
 //converts an ndjson file already written to a csv one, preserving the original
-async function convertNdjsonToCsv(ndjsonFilePath : string){
+async function convertNdjsonToCsv(ndjsonFilePath : string, topLevelFields : Set<string>){
   const csvFilePath = ndjsonFilePath.replace(".ndjson",".csv")
-  const input = fs.createReadStream(ndjsonFilePath);
-  const output = fs.createWriteStream(csvFilePath);
-  const opts:any = {ndjson : true, defaultValue : null, transforms : [flatten({separator:'_',arrays : true}),normalizeDateTimeFieldsInFlattenedObj]};
+  const input = fs.createReadStream(ndjsonFilePath, {encoding: 'utf-8'});
+  const output = fs.createWriteStream(csvFilePath, {encoding: 'utf-8'});
+  const opts:any = {ndjson : true, defaultValue : null, transforms : [flatten({ objects: true, arrays: true, separator: '_'}),normalizeDateTimeFieldsInFlattenedObj],fields : [...topLevelFields]};
   const transformOpts = {};
   const asyncOpts = {};
   const parser = new Transform(opts, asyncOpts, transformOpts);

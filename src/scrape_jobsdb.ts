@@ -27,6 +27,7 @@ if(!enableLogging){
 }
 let logger = createLogger('client',enableLogging)
 let outStream : WriteStream;
+let topLevelFields = new Set<string>();
 let outQueue : async.QueueObject<Object>;
 const cloudNodeProcesses: any[] = [];
 let numCloudNodes : number = 0; 
@@ -81,7 +82,7 @@ async function main(options : any){
     }
     //Start scraping
     for (let i = 0; i < numCloudNodes; i++) {
-      scrapeOperations.push(new ScrapeOperation(i,new URL(searchResultsUrl.href),ports[i],outQueue,logger.child({module: `scrapeOp${i+1}`}),pageQueue))
+      scrapeOperations.push(new ScrapeOperation(i,new URL(searchResultsUrl.href),ports[i],outQueue,logger.child({module: `scrapeOp${i+1}`}),pageQueue,topLevelFields))
       tasks.push(scrapeOperations[i].__call__())
       logger.info(`Scrape operation ${i+1} initialized`);
     }
@@ -106,7 +107,7 @@ async function main(options : any){
     await closeStream(outStream)
     logger.info("Outstream closed.")
     if(options.format === 'csv'){
-      await convertNdjsonToCsv(resultPath)
+      await convertNdjsonToCsv(resultPath,topLevelFields)
       unlinkSync(resultPath)
     }
   } catch (error : any) {

@@ -5,7 +5,7 @@ import Queue from 'queue-fifo';
 import { parseHtml } from './scrape_utils';
 import { v4 as uuidv4 } from 'uuid';
 import Semaphore from 'semaphore-async-await'
-
+import {flatten} from 'flat'
 import type { QueueObject } from 'async';
 import { CustomLevelLogger } from 'pino';
 import { createTimeoutPromise, sleep } from './utils';
@@ -42,16 +42,18 @@ export class ScrapeOperation {
     pageQueue : Queue<number>
     timeout : number
     logger : Logger
+    topLevelFields : Set<string>
     outQueue : QueueObject<Object>
     timeoutPromise : any
     timeoutClear : any
-    constructor(id : number, searchResultsUrl: URL, cloudNodePort : number, outQueue : QueueObject<Object>, logger: Logger, pageQueue : Queue<number>, timeout : number = 3600) {
+    constructor(id : number, searchResultsUrl: URL, cloudNodePort : number, outQueue : QueueObject<Object>, logger: Logger, pageQueue : Queue<number>, topLevelFields: Set<string>,timeout : number = 3600) {
         this.id = id
         this.searchResultsUrl = searchResultsUrl
         this.outQueue = outQueue
         this.logger = logger
         this.pageQueue = pageQueue
         this.timeout = timeout
+        this.topLevelFields = topLevelFields
         const { promise: timeoutPromise, clear: timeoutClear } = createTimeoutPromise(timeout, 'Timeout');
         this.timeoutPromise = timeoutPromise.then(() => logger.error(`Scrape op ${id} timed out.`));
         this.timeoutClear = timeoutClear;
@@ -133,6 +135,11 @@ export class ScrapeOperation {
                 } 
                 const responseJson : any = await response.json()
                 const job = responseJson.data.jobDetails.job
+                Object.keys(flatten(job,{delimiter:'_'})).forEach(key => {
+                    if (!this.topLevelFields.has(key)) {
+                        this.topLevelFields.add(key);
+                    }
+                });
                 job.content = parseHtml(job.content)
                 //write a ndjson object to outstream
                 this.outQueue.push(job, (err: any) => {

@@ -49,17 +49,17 @@ The name format of the result file is `jobsdb-<region>-<num_pages>-<YY-MM-DD HH:
 
 Scrape 50 pages of jobs in Hong Kong and return results in ndjson format
 ```shell script
-node build/src/scrape_jobsdb https://hk.jobsdb.com/jobs -n 50 -f ndjson
+node build/src/scrape_jobsdb hk.jobsdb.com/jobs -n 50 -f ndjson
 ```
 
 Scrape all Software Engineering jobs in Hong Kong and return results in csv format
 ```shell script
-node build/src/scrape_jobsdb https://hk.jobsdb.com/Software-Engineer-jobs -f csv
+node build/src/scrape_jobsdb hk.jobsdb.com/Software-Engineer-jobs -f csv
 ```
 
 Scrape all accounting jobs in Thailand and return results in ndjson format
 ```shell script
-node build/src/scrape_jobsdb https://th.jobsdb.com/jobs-in-accounting -f ndjson 
+node build/src/scrape_jobsdb th.jobsdb.com/jobs-in-accounting -f ndjson 
 ```
 
 ## Have additional requirements? 
