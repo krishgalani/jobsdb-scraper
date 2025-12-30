@@ -25,7 +25,7 @@ A few cool highlights:
 
 - While not strictly required, a residential IP address is highly recommended. Run this from your home for safest guarantees to avoid bot detection. If you must run from outside of home, I recommend using a residential IP proxy.
 
-### Option 1: Install globally (Reccomended for most users)
+### Option 1: Install globally (Recommended for most users)
 
 ```shell script
 
@@ -113,4 +113,4 @@ The client program uses the ulixee framework (github.com/ulixee), where each wor
 
 ## License
 
-[PROPRIETARY](PROPRIETARY)
+[PROPRIETARY](LICENSE)
