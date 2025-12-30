@@ -3,7 +3,7 @@
 
 <img src="https://raw.githubusercontent.com/krishgalani/jobsdb-scraper/main/assets/jobsdb.png" width="300" alt="JobsDB Logo"><br>
 
-![Static Badge](https://img.shields.io/badge/npm-package?logo=npm&logoSize=auto&color=red&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fjobsdb-scraper)
+[![NPM Version](https://img.shields.io/npm/v/jobsdb-scraper?logo=npm&logoSize=auto&color=red)](https://www.npmjs.com/package/jobsdb-scraper?activeTab=readme)
 
 
 About this scraper:
