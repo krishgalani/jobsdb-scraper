@@ -61,8 +61,8 @@ npm install --save jobsdb-scraper
 ```js
 // Warning: These operations are **NOT** thread-safe.
 import {scrapeJobsdb, findMaxPages} from 'jobsdb-scraper';
-import { ScrapeOptions } from 'jobsdb-scraper/dist/src/types.js';
-import type { ScrapeStats } from 'jobsdb-scraper/dist/src/types.js';
+import { ScrapeOptions } from 'jobsdb-scraper/dist/types.js';
+import type { ScrapeStats } from 'jobsdb-scraper/dist/types.js';
 (async () => {
     const scrapeops = new ScrapeOptions(
         //searchResultUrlString (required): The URL of the first page of search results to start scraping from.
@@ -96,7 +96,7 @@ import type { ScrapeStats } from 'jobsdb-scraper/dist/src/types.js';
 ```
 3. Alternatively you can run the locally installed package with `npx jobsdb-scraper -h`
 
-The name format of the result file is `jobsdb-<region>-<num_pages>-<YY-MM-DD HH:MM:SS>.<format>` and saved to `<path_to_current_working_directory>/jobsdb_scrape_results` by default. UTC time is used for the date. Jobs are not ordered. 
+The name format of the result file is `jobsdb-<region>-<num_pages>-<YY-MM-DD_HH:MM:SS>.<format>` by default and saved to `<path_to_current_working_directory>/jobsdb_scrape_results` by default. The results folder will be created if found not to exist. UTC time is used for the date. Jobs are not ordered. 
 
 ## Have additional requirements? 
 
