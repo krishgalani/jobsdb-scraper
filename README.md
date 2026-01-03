@@ -21,7 +21,7 @@ A few cool highlights:
 
 ### Requirements:
 
-- **18** >= **Node.js** version <= **22**   If not installed, [go here](https://nodejs.org/en/download/) to download it.  You can check with node --version, and switch versions with `nvm use <node_version>`, or `nvm alias default <node_version>` to set your default node version. **Warning, if you use the wrong node version you may get an error when trying to run.**
+- **Node.js** version **20** or **22** and **npm >=8.0.0** If not installed, [go here](https://nodejs.org/en/download/) to download it (npm should come bundled with it). You can check by doing `node -v`, `npm -v` to ensure you have installed the correct versions. To switch versions use `nvm use <node_version>`, or `nvm alias default <node_version>` if you want to set default node version. **Warning, if you use the wrong node version you may get an error when trying to run.**
 
 - While not strictly required, a residential IP address is highly recommended. Run this from your home for safest guarantees to avoid bot detection. If you must run from outside of home, I recommend using a residential IP proxy.
 
@@ -94,7 +94,6 @@ import type { ScrapeStats } from 'jobsdb-scraper/dist/types.js';
     }
 })();
 ```
-3. Alternatively you can run the locally installed package with `npx jobsdb-scraper -h`
 
 The name format of the result file is `jobsdb-<region>-<num_pages>-<YY-MM-DD_HH:MM:SS>.<format>` by default and saved to `<path_to_current_working_directory>/jobsdb_scrape_results` by default. The results folder will be created if found not to exist. UTC time is used for the date. Jobs are not ordered. 
 
