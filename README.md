@@ -4,6 +4,7 @@
 <img src="https://raw.githubusercontent.com/krishgalani/jobsdb-scraper/main/assets/jobsdb.png" width="300" alt="JobsDB Logo"><br>
 
 [![NPM Version](https://img.shields.io/npm/v/jobsdb-scraper?logo=npm&logoSize=auto&color=red)](https://www.npmjs.com/package/jobsdb-scraper?activeTab=readme)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/krishgalani)](https://www.github.com/sponsors/krishgalani)
 
 
 About this scraper:
@@ -21,7 +22,7 @@ A few cool highlights:
 
 ### Requirements:
 
-- **Node.js** version **20** or **22** and **npm >=8.0.0** If not installed, [go here](https://nodejs.org/en/download/) to download it (npm should come bundled with it). You can check by doing `node -v`, `npm -v` to ensure you have installed the correct versions. To switch versions use `nvm use <node_version>`, or `nvm alias default <node_version>` if you want to set default node version. **Warning, if you use the wrong node version you may get an error when trying to run.**
+- **Node.js** version **20** or **22** and **npm >=8.0.0** If not installed, [go here](https://nodejs.org/en/download/) to download it (npm should come bundled with it). You can check by doing `node -v`, `npm -v` to ensure you have installed the correct versions. To switch versions use `nvm use <node_version>`, or `nvm alias default <node_version>` if you want to set default node version. **Warning, if you use the wrong node version you may get an error when trying to install.**
 
 - While not strictly required, a residential IP address is highly recommended. Run this from your home for safest guarantees to avoid bot detection. If you must run from outside of home, I recommend using a residential IP proxy.
 
@@ -104,9 +105,18 @@ You can contact me at krishdgala@gmail.com with your requirements for a quote. F
 ## Questions or Bugs? 
 Please raise an issue on Github.
 
+## Support the project <3
+
+Your donation will help keep this project **free**!
+
+Please consider donating/sponsoring me if you can afford it, or if you are an organization! 
+
+[![Static Badge](https://img.shields.io/badge/Donate-8A2BE2)](https://www.github.com/sponsors/krishgalani)
+
+
 ## How it works
 
-The server part of the program is represented by a maximum of two @ulixee/cloud locally hosted server nodes as the engines behind page navigation and fetches, both hosting a browser with many browsing environments. The decision to use two cloud nodes at most was made after testing for the most amount of parralel nodes that can be run before run-time is impacted (tests run on an M1 Macbook Air).
+The server part of the program is represented by a maximum of two @ulixee/cloud locally hosted server nodes as the engines behind page navigation and fetches, both hosting a browser with many browsing environments. The decision to use two cloud nodes at most was made after testing for the most amount of parallel nodes that can be run before run-time is impacted (tests run on an M1 Macbook Air).
 
 The client program uses the ulixee framework (github.com/ulixee), where each worker (a @ulixee/hero instance) is connected to a respective @ulixee/cloud server node and has a browser environment. It pops a page to scrape from the shared queue of requested pages,  makes GETS and POST fetches to the jobsdb HTTP/GraphQL web server for the relevant data. For each page, first the jobIds are parsed from the returned HTML response. Then for each jobId a fetch to the backend GraphQL DB is initiated for job details. The results are received in real time and written to a file locally. 
 
