@@ -24,7 +24,8 @@ A few cool highlights:
 
 - **Node.js** version **20** or **22** and **npm >=8.0.0** If not installed, [go here](https://nodejs.org/en/download/) to download it (npm should come bundled with it). You can check by doing `node -v`, `npm -v` to ensure you have installed the correct versions. To switch versions use `nvm use <node_version>`, or `nvm alias default <node_version>` if you want to set default node version. **Warning, if you use the wrong node version you may get an error when trying to install.**
 
-- While not strictly required, a residential IP address is highly recommended. Run this from your home for safest guarantees to avoid bot detection. If you must run from outside of home, I recommend using a residential IP proxy.
+- While not strictly required, a residential IP address is highly recommended. Run this from your home for safest guarantees to avoid bot detection. If you must run from outside of home/work, I recommend using a residential IP proxy.
+
 
 ### Option 1: Install globally (Recommended for most users)
 
@@ -41,15 +42,21 @@ jobsdb-scraper scrape -h
 ```
 ### Usage Examples
 ```shell script
+
+# Warning. These operations are **not** thread-safe.
+
 # Scrape 50 pages of jobs in Hong Kong and return results in ndjson and csv format
 jobsdb-scraper hk.jobsdb.com/jobs -n 50 -f ndjson csv
 
-# Scrape all Software Engineering jobs in Hong Kong and return results in csv format, save to a folder called results from the current working directory.
+# Scrape all Software Engineering jobs and return results in csv format, save to a folder called results from the current working directory.
 jobsdb-scraper hk.jobsdb.com/Software-Engineer-jobs -f csv -n 'all' -s './results'
 
 # Scrape all accounting jobs in Thailand and return results in ndjson format, set the output file name to "accounting_jobs"
 jobsdb-scraper th.jobsdb.com/jobs-in-accounting -f ndjson -n 'all' --fn accounting_jobs
 ```
+
+If you are spawning the scraper process from within a script (e.g. system call), and you want to kill the scraper. You can simply send the process a 'SIGINT', and wait for the 'exit' event to allow it to shutdown gracefully.
+
 ### Option 2: Install package as a dependency 
 
 1. Open CLI In your project root:
@@ -61,7 +68,7 @@ npm install --save jobsdb-scraper
 2. Import and use!
 ```js
 // Warning: These operations are **NOT** thread-safe.
-import {scrapeJobsdb, findMaxPages} from 'jobsdb-scraper';
+import {scrapeJobsdb, findMaxPages} from 'jobsdb-scraper/dist/scrape_jobsdb.js';
 import { ScrapeOptions } from 'jobsdb-scraper/dist/types.js';
 import type { ScrapeStats } from 'jobsdb-scraper/dist/types.js';
 (async () => {
@@ -72,18 +79,29 @@ import type { ScrapeStats } from 'jobsdb-scraper/dist/types.js';
         1,
         //saveDir (optional): The directory relative to the current working directory where you want to save results. 
         './jobsdb-scrape-results',
-        //Export formats (optional): The format(s) in which you want to save the results. Ndjson or csv or both. e.g. ['ndjson', 'csv']. Ndjson by default.
+        //Export formats : The format(s) in which you want to save the results. Ndjson or csv or both. e.g. ['ndjson', 'csv']. 
         'ndjson',
         //The name of the result file  (optional,    jobsdb-<region>-<num_pages>-<yyyy-MM-dd_HH-mm-ss>.<format> by default)
         'my_scrape_results',
     )
     try {
-        //Will throw if invalid search results URL provided
-        const maxPagesHk = await findMaxPages('hk.jobsdb.com/jobs')
-        console.log(`Max Pages in HK JobsDB: ${maxPagesHk}`)
-        //Will throw if any invalid scrape options
-        const scrape_result = await scrapeJobsdb(scrapeops) 
-        if(scrape_result !== undefined){
+        //Promise will reject if invalid search results URL provided
+        const {maxPagesPromise, abortController : AbortController} = findMaxPages('hk.jobsdb.com/jobs')
+        
+        console.log(`Max Pages in HK JobsDB: ${await maxPagesPromise}`)
+        /*If aborting do this instead 
+        abortController.abort()
+        const pages = await maxPagesPromise (will resolve -1)
+        */
+
+        //Promise will reject with message if any invalid scrape options
+        const {scrapeResultPromise, abortController : AbortController} = scrapeJobsdb(scrapeops) 
+        const scrape_result = await scrapeResultPromise
+        /* Do instead of above line if you want to abort
+        abortController.abort()
+        const scrape_result = await maxPagesPromise (may be undefined or return results depending on when you abort)
+        */
+        if(scrape_result){
             //May be more than one result path if more than one export format is specified.
             const { resultPaths, scrape_stats } = scrape_result
             const { totalJobsScraped, totalPagesScraped }: ScrapeStats = scrape_stats
@@ -92,7 +110,7 @@ import type { ScrapeStats } from 'jobsdb-scraper/dist/types.js';
             console.log(`Results saved to: ${resultPaths}`);
         } 
     } catch (error: any){
-        //handle the error here
+        //handle any scraping error here
     }
 })();
 ```
