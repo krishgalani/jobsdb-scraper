@@ -1,6 +1,6 @@
 Proprietary License
 
-Copyright (c) [2025] [Krish Galani, krishdgala@gmail.com]. All rights reserved.
+Copyright (c) 2025 Krish Galani. All rights reserved.
 
 This software is proprietary and confidential.
 
@@ -15,6 +15,7 @@ Restrictions:
 - You may not remove or alter any copyright, trademark, or other proprietary notices in the Package.
 
 No Warranty:
-THE PACKAGE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE PACKAGE OR THE USE THEREOF.
+THE PACKAGE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE PACKAGE OR THE USE THEREOF. 
 
 This license applies only to the distributed version of the package published on npm. The original source code remains fully reserved and is not licensed for any use beyond what is explicitly granted above.
+

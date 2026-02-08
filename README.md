@@ -1,4 +1,14 @@
 
+<div align="center">
+
+**⚠️ DEPRECATED ⚠️**  
+Due to critical limitations and bugs with the underlying web scraping framework (Ulixee),  
+**this scraper is no longer being maintained.**  
+
+Thank you for your support!
+
+</div>
+
 # JobsDB Scraper 
 
 <img src="https://raw.githubusercontent.com/krishgalani/jobsdb-scraper/main/assets/jobsdb.png" width="300" alt="JobsDB Logo"><br>
@@ -131,13 +141,6 @@ Your donation will help keep this project **free**!
 Please consider donating/sponsoring me if you can afford it, or if you are an organization! 
 
 [![Static Badge](https://img.shields.io/badge/Donate-8A2BE2)](https://www.github.com/sponsors/krishgalani)
-
-
-## How it works
-
-The server part of the program is represented by a maximum of two @ulixee/cloud locally hosted server nodes as the engines behind page navigation and fetches, both hosting a browser with many browsing environments. The decision to use two cloud nodes at most was made after testing for the most amount of parallel nodes that can be run before run-time is impacted (tests run on an M1 Macbook Air).
-
-The client program uses the ulixee framework (github.com/ulixee), where each worker (a @ulixee/hero instance) is connected to a respective @ulixee/cloud server node and has a browser environment. It pops a page to scrape from the shared queue of requested pages,  makes GETS and POST fetches to the jobsdb HTTP/GraphQL web server for the relevant data. For each page, first the jobIds are parsed from the returned HTML response. Then for each jobId a fetch to the backend GraphQL DB is initiated for job details. The results are received in real time and written to a file locally. 
 
 ## License
 
